@@ -1,0 +1,2 @@
+config BOARD_DELL_DELL_SYSTEM_VOSTRO_3360
+	bool "Dell System Vostro 3360"

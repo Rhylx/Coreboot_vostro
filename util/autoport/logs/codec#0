@@ -1,0 +1,121 @@
+Codec: Cirrus Logic CS4213
+Address: 0
+AFG Function Id: 0x1 (unsol 1)
+Vendor Id: 0x10134213
+Subsystem Id: 0x1028055c
+Revision Id: 0x100100
+No Modem Function Group found
+Default PCM:
+    rates [0x0]:
+    bits [0x0]:
+    formats [0x0]:
+Default Amp-In caps: N/A
+Default Amp-Out caps: N/A
+State of AFG node 0x01:
+  Power states:  D0 D3 D3cold S3D3cold CLKSTOP EPSS
+  Power: setting=D0, actual=D0
+GPIO: io=2, o=0, i=0, unsolicited=1, wake=1
+  IO[0]: enable=0, dir=0, wake=0, sticky=0, data=0, unsol=0
+  IO[1]: enable=0, dir=0, wake=0, sticky=0, data=0, unsol=0
+Node 0x02 [Audio Output] wcaps 0xb041d: Stereo Amp-Out
+  Control: name="Line Out Playback Volume", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Control: name="Line Out Playback Switch", index=0, device=0
+    ControlAmp: chs=3, dir=Out, idx=0, ofs=0
+  Device: name="CS4213 Analog", type="Audio", device=0
+  Amp-Out caps: ofs=0x73, nsteps=0x7f, stepsize=0x01, mute=1
+  Amp-Out vals:  [0x00 0x00]
+  Converter: stream=5, channel=0
+  PCM:
+    rates [0x560]: 44100 48000 96000 192000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+  Power states:  D0 D3 EPSS
+  Power: setting=D0, actual=D0
+  Delay: 11 samples
+Node 0x03 [Audio Input] wcaps 0x1b051b: Stereo Amp-In
+  Control: name="Capture Volume", index=0, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Control: name="Capture Switch", index=0, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Device: name="CS4213 Analog", type="Audio", device=0
+  Amp-In caps: ofs=0x33, nsteps=0x3f, stepsize=0x03, mute=1
+  Amp-In vals:  [0x3f 0x3f] [0x3f 0x3f] [0x3f 0x3f]
+  Converter: stream=1, channel=0
+  SDI-Select: 0
+  PCM:
+    rates [0x160]: 44100 48000 96000
+    bits [0xe]: 16 20 24
+    formats [0x1]: PCM
+  Power states:  D0 D3 EPSS
+  Power: setting=D0, actual=D0
+  Delay: 11 samples
+  Connection: 3
+     0x06 0x07 0x08*
+Node 0x04 [Pin Complex] wcaps 0x410581: Stereo
+  Pincap 0x0000001c: OUT HP Detect
+  Pin Default 0x0421101f: [Jack] HP Out at Ext Right
+    Conn = 1/8, Color = Black
+    DefAssociation = 0x1, Sequence = 0xf
+  Pin-ctls: 0xc0: OUT HP
+  Unsolicited: tag=01, enabled=1
+  Power states:  D0 D3 EPSS
+  Power: setting=D3, actual=D3
+  Delay: 1 samples
+  Connection: 1
+     0x02
+Node 0x05 [Pin Complex] wcaps 0x420581: Stereo
+  Pincap 0x00000050: OUT Balanced
+  Pin Default 0x90170010: [Fixed] Speaker at Int N/A
+    Conn = Analog, Color = Unknown
+    DefAssociation = 0x1, Sequence = 0x0
+  Pin-ctls: 0x40: OUT
+  Unsolicited: tag=00, enabled=0
+  Power states:  D0 D3 EPSS
+  Power: setting=D0, actual=D0
+  Delay: 2 samples
+  Connection: 1
+     0x02
+Node 0x06 [Pin Complex] wcaps 0x41048b: Stereo Amp-In
+  Control: name="Mic Boost Volume", index=0, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Amp-In caps: ofs=0x00, nsteps=0x03, stepsize=0x27, mute=0
+  Amp-In vals:  [0x00 0x00]
+  Pincap 0x00001724: IN Detect
+    Vref caps: HIZ 50 GRD 80
+  Pin Default 0x04a1103e: [Jack] Mic at Ext Right
+    Conn = 1/8, Color = Black
+    DefAssociation = 0x3, Sequence = 0xe
+  Pin-ctls: 0x24: IN VREF_80
+  Unsolicited: tag=02, enabled=1
+  Power states:  D0 D3 EPSS
+  Power: setting=D3, actual=D3
+  Delay: 1 samples
+Node 0x07 [Pin Complex] wcaps 0x41040a: Mono Amp-In
+  Amp-In caps: ofs=0x00, nsteps=0x03, stepsize=0x27, mute=0
+  Amp-In vals:  [0x00]
+  Pincap 0x00001720: IN
+    Vref caps: HIZ 50 GRD 80
+  Pin Default 0x40f000f0: [N/A] Other at Ext N/A
+    Conn = Unknown, Color = Unknown
+    DefAssociation = 0xf, Sequence = 0x0
+  Pin-ctls: 0x00: VREF_HIZ
+  Power states:  D0 D3 EPSS
+  Power: setting=D3, actual=D3
+  Delay: 1 samples
+Node 0x08 [Pin Complex] wcaps 0x41040b: Stereo Amp-In
+  Control: name="Internal Mic Boost Volume", index=0, device=0
+    ControlAmp: chs=3, dir=In, idx=0, ofs=0
+  Amp-In caps: ofs=0x00, nsteps=0x02, stepsize=0x27, mute=0
+  Amp-In vals:  [0x01 0x01]
+  Pincap 0x00000020: IN
+  Pin Default 0x90a60030: [Fixed] Mic at Int N/A
+    Conn = Digital, Color = Unknown
+    DefAssociation = 0x3, Sequence = 0x0
+  Pin-ctls: 0x20: IN
+  Power states:  D0 D3 EPSS
+  Power: setting=D0, actual=D0
+  Delay: 1 samples
+Node 0x09 [Vendor Defined Widget] wcaps 0xf00040: Mono
+  Processing caps: benign=0, ncoeff=38
+Node 0x0a [Beep Generator Widget] wcaps 0x700000: Mono

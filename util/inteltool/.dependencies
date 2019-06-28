@@ -1,0 +1,45 @@
+ahci.o: ahci.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+amb.o: amb.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+cpu.o: cpu.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+gfx.o: gfx.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+gpio.o: gpio.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+gpio_groups.o: gpio_groups.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h \
+ pcr.h
+inteltool.o: inteltool.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h \
+ pcr.h
+ivy_memory.o: ivy_memory.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+memory.o: memory.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+pcie.o: pcie.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+pcr.o: pcr.c pcr.h inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+powermgt.o: powermgt.c \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h \
+ inteltool.h
+rootcmplx.o: rootcmplx.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h
+spi.o: spi.c inteltool.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/helpers.h \
+ /home/rhylx/Repos/coreboot/src/commonlib/include/commonlib/compiler.h

@@ -1,0 +1,4 @@
+superiotool r4.9-2207-gb91b173f3d
+Found SMSC SCH5317 (id=0x85, rev=0x18) at 0x4e
+No dump available for this Super I/O
+No extra registers known for this chip.
