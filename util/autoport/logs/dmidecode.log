@@ -575,33 +575,12 @@ Handle 0x0036, DMI type 17, 34 bytes
 Memory Device
 	Array Handle: 0x0035
 	Error Information Handle: Not Provided
-	Total Width: 64 bits
-	Data Width: 64 bits
-	Size: 2048 MB
-	Form Factor: SODIMM
-	Set: None
-	Locator: DIMMA
-	Bank Locator: Not Specified
-	Type: DDR3
-	Type Detail: Synchronous
-	Speed: 1333 MT/s
-	Manufacturer: Samsung
-	Serial Number: E2BC9704
-	Asset Tag: 9876543210
-	Part Number: M471B5773CHS-CH8  
-	Rank: Unknown
-	Configured Memory Speed: 1333 MT/s
-
-Handle 0x0037, DMI type 17, 34 bytes
-Memory Device
-	Array Handle: 0x0035
-	Error Information Handle: Not Provided
 	Total Width: Unknown
 	Data Width: Unknown
 	Size: No Module Installed
 	Form Factor: DIMM
 	Set: None
-	Locator: DIMMB
+	Locator: DIMMA
 	Bank Locator: Not Specified
 	Type: Unknown
 	Type Detail: None
@@ -612,6 +591,27 @@ Memory Device
 	Part Number: Not Specified
 	Rank: Unknown
 	Configured Memory Speed: Unknown
+
+Handle 0x0037, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x0035
+	Error Information Handle: Not Provided
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 2048 MB
+	Form Factor: SODIMM
+	Set: None
+	Locator: DIMMB
+	Bank Locator: Not Specified
+	Type: DDR3
+	Type Detail: Synchronous
+	Speed: 1600 MT/s
+	Manufacturer: Samsung
+	Serial Number: 92B3973A
+	Asset Tag: 9876543210
+	Part Number: M471B5773DH0-YK0  
+	Rank: Unknown
+	Configured Memory Speed: 1600 MT/s
 
 Handle 0x0038, DMI type 20, 35 bytes
 Memory Device Mapped Address

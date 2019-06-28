@@ -5,7 +5,7 @@ model		: 58
 model name	: Intel(R) Celeron(R) CPU 1017U @ 1.60GHz
 stepping	: 9
 microcode	: 0x17
-cpu MHz		: 900.446
+cpu MHz		: 949.363
 cache size	: 2048 KB
 physical id	: 0
 siblings	: 2
@@ -19,7 +19,7 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave lahf_lm cpuid_fault epb pti tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm arat pln pts
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
-bogomips	: 3193.68
+bogomips	: 3194.86
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 36 bits physical, 48 bits virtual
@@ -32,7 +32,7 @@ model		: 58
 model name	: Intel(R) Celeron(R) CPU 1017U @ 1.60GHz
 stepping	: 9
 microcode	: 0x17
-cpu MHz		: 939.068
+cpu MHz		: 903.710
 cache size	: 2048 KB
 physical id	: 0
 siblings	: 2
@@ -46,7 +46,7 @@ cpuid level	: 13
 wp		: yes
 flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer xsave lahf_lm cpuid_fault epb pti tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt dtherm arat pln pts
 bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds
-bogomips	: 3193.68
+bogomips	: 3194.86
 clflush size	: 64
 cache_alignment	: 64
 address sizes	: 36 bits physical, 48 bits virtual

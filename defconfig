@@ -1,0 +1,2 @@
+CONFIG_PAYLOAD_ELF=y
+CONFIG_PAYLOAD_FILE="payloads/coreinfo/build/coreinfo.elf"
