@@ -1,0 +1,190 @@
+V "GNAT Lib v8"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK_05
+
+U hw.gfx.gma.connector_info%b  hw-gfx-gma-connector_info.adb  4a3690d8 NE OO PK IU
+W gnat%s		gnat.ads		gnat.ali
+W gnat.source_info%s	g-souinf.ads		g-souinf.ali
+W hw%s			hw.ads			hw.ali
+W hw.debug%s		hw-debug.adb		hw-debug.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.config%s	hw-gfx-gma-config.adb	hw-gfx-gma-config.ali
+W hw.gfx.gma.dp_info%s	hw-gfx-gma-dp_info.ads	hw-gfx-gma-dp_info.ali
+W hw.gfx.gma.panel%s	hw-gfx-gma-panel.adb	hw-gfx-gma-panel.ali
+
+U hw.gfx.gma.connector_info%s  hw-gfx-gma-connector_info.ads  1e93c56f EE NE OO PK IU
+W hw%s			hw.ads			hw.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.edid%s		hw-gfx-edid.adb		hw-gfx-edid.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+
+D gnat.ads		20191214172731 fd2ad2f1 gnat%s
+D g-souinf.ads		20191214172731 7fd67a54 gnat.source_info%s
+D hw.ads		20191211222205 349e873c hw%s
+D hw-config.ads		20191214172731 3df8aafb hw.config%s
+D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
+D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
+D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
+D hw-gfx-dp_defs.ads	20191211222205 30f739dd hw.gfx.dp_defs%s
+D hw-gfx-dp_info.ads	20191211222205 445951f5 hw.gfx.dp_info%s
+D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
+D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
+D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
+D hw-gfx-gma-config.ads	20191214172731 9931d580 hw.gfx.gma.config%s
+D hw-gfx-gma-connector_info.ads  20191211222205 b5d129cd hw.gfx.gma.connector_info%s
+D hw-gfx-gma-connector_info.adb  20191211222205 539da531 hw.gfx.gma.connector_info%b
+D hw-gfx-gma-dp_aux_ch.ads  20191211222205 53944791 hw.gfx.gma.dp_aux_ch%s
+D hw-gfx-gma-dp_aux_request.ads  20191211222205 d673ea1e hw.gfx.gma.dp_aux_request%s
+D hw-gfx-gma-dp_info.ads  20191211222205 38def494 hw.gfx.gma.dp_info%s
+D hw-gfx-gma-panel.ads	20191211222205 616b8bb1 hw.gfx.gma.panel%s
+D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s
+D hw-gfx-i2c.ads	20191211222205 e54ab4f7 hw.gfx.i2c%s
+D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
+D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
+D hw-time.ads		20191211222205 e7f4a790 hw.time%s
+D interfac.ads		20191214172731 8908571f interfaces%s
+D system.ads		20191214172731 21923ced system%s
+D s-unstyp.ads		20191214172731 9d58a4c0 system.unsigned_types%s
+D gnat.adc		20191211220911 00000000
+X 1 gnat.ads
+34K9*GNAT 37e9 15|20r6 38r37 74r37
+X 2 g-souinf.ads
+39K14*Source_Info 92e21 15|20w11 38r42 74r42
+68V13*Enclosing_Entity{string} 15|38s54 74s54
+X 3 hw.ads
+17K9*HW 91e7 14|15r6 17r17 37r5 15|15r6 16r6 17r6 19r6 22r14 89r57 100r5
+49I12*Int64{25|54I9}
+X 5 hw-debug.ads
+16K12*Debug 41e13 15|19w9 38r21 74r21
+19U14*Put_Line 15|38s27 74s27
+X 6 hw-gfx.ads
+21K12*GFX 3|17k9 6|217e11 14|15r9 17r20 37r8 15|15r9 16r9 17r9 22r17 89r60
+. 100r8
+36I12*BPC_Type{3|49I12} 14|35r57 15|89r64
+121n38*DP{121E9} 15|40r29 76r29
+X 9 hw-gfx-dp_info.ads
+79U14*Read_Caps 15|49s18[18|19]
+80r7 Link{6|99R9} 15|50r13[18|19]
+81e7 Port{12|269E9} 15|51r13[18|19]
+82b7 Success{boolean} 15|52r13[18|19]
+84U14*Read_eDP_Rates 15|54s21[18|19]
+85r7 Link{6|99R9} 15|55r16[18|19]
+86e7 Port{12|269E9} 15|56r16[18|19]
+88U14*Preferred_Link_Setting 15|58s21[18|19]
+89r7 Link{6|99R9} 15|59r16[18|19]
+90r7 Mode{6|124R9} 15|60r16[18|19]
+91b7 Success{boolean} 15|61r16[18|19]
+93U14*Next_Link_Setting 15|77s18[18|19]
+94r7 Link{6|99R9} 15|78r13[18|19]
+95r7 Mode{6|124R9} 15|79r13[18|19]
+96b7 Success{boolean} 15|80r13[18|19]
+101U14*Dump_Link_Setting 15|62s44[18|19] 81s41[18|19]
+X 10 hw-gfx-edid.ads
+15K16*EDID 69e16 14|15w13
+X 12 hw-gfx-gma.ads
+22K16*GMA 6|21k12 12|292e15 14|17r24 37r12 15|15r13 16r13 17r13 22r21 28r26
+. 36r34 42r16 100r12
+240n22 DIGI_A{240E9} 15|29r29 41r29 93r29
+240n62 LVDS{240E9} 15|95r28
+247n16 PCH_LVDS{246E9} 15|94r53
+249n7 PCH_DP_B{246E9} 15|33r21
+249n17 PCH_DP_C{246E9} 15|34r21
+249n27 PCH_DP_D{246E9} 15|35r21
+254R9 Port_Config 263e17 14|20r25 28r25 35r37 15|25r28 70r25 89r37
+256e10*Port{240E9} 15|29r22 41r22 93r22 95r21
+257e10*PCH_Port{246E9} 15|32r27 94r42
+258e10*Display{6|121E9} 15|40r19 76r19
+259r10*Mode{6|124R9} 15|60r37 79r34
+260b10*Is_FDI{boolean} 15|94r22
+262r10*DP{6|99R9} 15|50m34 55m37 59m37 62r72 78m34 81r69
+269E9 DP_Port 269e44 15|28r30 36r38
+269n21 DP_A{269E9} 15|30r13
+269n27 DP_B{269E9} 15|33r34
+269n33 DP_C{269E9} 15|34r34
+269n39 DP_D{269E9} 15|35r34
+X 13 hw-gfx-gma-config.ads
+17K28*Config 501e22 15|15w17 42r20
+199b4*Use_PP_VDD_Override{boolean} 15|42r27
+X 14 hw-gfx-gma-connector_info.ads
+17K28*Connector_Info 12|22k16 14|37l16 37e30 15|22b25 100l16 100t30
+19U14*Preferred_Link_Setting 20=7 21<7 15|24b14 67l8 67t30
+20r7 Port_Cfg{12|254R9} 15|25b7 29r13 32r18 40r10 41r13 50m25 50r25 55m28
+. 55r28 59m28 59r28 60r28 62r63
+21b7 Success{boolean} 15|26b7 52m25 53r13 61m28 62r27 65m10
+27U14*Next_Link_Setting 28=7 29<7 15|69b14 85l8 85t25
+28r7 Port_Cfg{12|254R9} 15|70b7 76r10 78m25 78r25 79r25 81r60
+29b7 Success{boolean} 15|71b7 80m25 81r24 83m10
+35V13*Default_BPC{6|36I12} 35>26 15|89b13 98l8 98t19
+35r26 Port_Cfg{12|254R9} 15|89b26 93r13 94r13 94r33 95r12
+X 15 hw-gfx-gma-connector_info.adb
+28e7 DP_Port{12|269E9} 51r25 56r28
+X 18 hw-gfx-gma-dp_info.ads
+19K28*DP_Info[9|23] 15|17w17 49r10 54r13 58r13 62r36 77r10 81r33
+X 19 hw-gfx-gma-panel.ads
+18K28*Panel 15|16w17 43r16 45r16 19|61e21
+43U14*VDD_Override 15|43s22
+45U14*On 15|45s22
+X 25 interfac.ads
+54I9*Integer_64<long_long_integer>
+

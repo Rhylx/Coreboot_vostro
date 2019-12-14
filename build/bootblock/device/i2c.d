@@ -4,4 +4,4 @@ build/bootblock/device/i2c.o: src/device/i2c.c src/include/kconfig.h \
  src/include/device/i2c_simple.h \
  src/commonlib/include/commonlib/helpers.h \
  src/commonlib/include/commonlib/compiler.h src/include/stddef.h \
- src/include/device/i2c.h src/arch/x86/include/stdint.h
+ src/include/device/i2c.h src/include/stdint.h

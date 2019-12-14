@@ -4,4 +4,5 @@ build/postcar/arch/x86/memlayout.ld: src/arch/x86/memlayout.ld \
  src/include/memlayout.h src/arch/x86/include/arch/memlayout.h \
  3rdparty/vboot/firmware/include/vb2_constants.h \
  3rdparty/vboot/firmware/include/../2lib/include/2constants.h \
- src/arch/x86/include/arch/header.ld src/include/rules.h
+ build/fmap_config.h src/arch/x86/include/arch/header.ld \
+ src/include/rules.h

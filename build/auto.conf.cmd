@@ -1,6 +1,7 @@
 deps_config := \
 	src/lib/Kconfig \
-	src/cpu/x86/Kconfig.debug \
+	src/drivers/intel/fsp2_0/Kconfig.debug_blob \
+	src/cpu/x86/Kconfig.debug_cpu \
 	payloads/external/Memtest86Plus/Kconfig.secondary \
 	payloads/external/FILO/Kconfig \
 	payloads/external/GRUB2/Kconfig \
@@ -24,6 +25,11 @@ deps_config := \
 	payloads/Kconfig \
 	src/console/Kconfig \
 	src/acpi/Kconfig \
+	src/vendorcode/eltan/security/verified_boot/Kconfig \
+	src/vendorcode/eltan/security/mboot/Kconfig \
+	src/vendorcode/eltan/security/Kconfig \
+	src/security/intel/txt/Kconfig \
+	src/security/intel/Kconfig \
 	src/security/memory/Kconfig \
 	src/security/tpm/tss/vendor/cr50/Kconfig \
 	src/security/tpm/Kconfig \
@@ -39,6 +45,7 @@ deps_config := \
 	src/drivers/generic/adau7002/Kconfig \
 	src/drivers/generic/bayhub/Kconfig \
 	src/drivers/generic/generic/Kconfig \
+	src/drivers/generic/gfx/Kconfig \
 	src/drivers/generic/gpio_keys/Kconfig \
 	src/drivers/generic/gpio_regulator/Kconfig \
 	src/drivers/generic/ioapic/Kconfig \
@@ -62,6 +69,8 @@ deps_config := \
 	src/drivers/i2c/nct7802y/Kconfig \
 	src/drivers/i2c/pca9538/Kconfig \
 	src/drivers/i2c/pcf8523/Kconfig \
+	src/drivers/i2c/ptn3460/Kconfig \
+	src/drivers/i2c/rt1011/Kconfig \
 	src/drivers/i2c/rt5663/Kconfig \
 	src/drivers/i2c/rtd2132/Kconfig \
 	src/drivers/i2c/rx6110sa/Kconfig \
@@ -70,13 +79,13 @@ deps_config := \
 	src/drivers/i2c/w83793/Kconfig \
 	src/drivers/i2c/w83795/Kconfig \
 	src/drivers/i2c/ww_ring/Kconfig \
-	src/drivers/intel/fsp1_0/Kconfig \
 	src/drivers/intel/fsp1_1/Kconfig \
 	src/drivers/intel/fsp2_0/Kconfig \
 	src/drivers/intel/gma/Kconfig \
 	src/drivers/intel/i210/Kconfig \
 	src/drivers/intel/ish/Kconfig \
 	src/drivers/intel/mipi_camera/Kconfig \
+	src/drivers/intel/ptt/Kconfig \
 	src/drivers/intel/wifi/Kconfig \
 	src/drivers/lenovo/hybrid_graphics/Kconfig \
 	src/drivers/maxim/max77686/Kconfig \
@@ -96,9 +105,9 @@ deps_config := \
 	src/drivers/usb/acpi/Kconfig \
 	src/drivers/xgi/common/Kconfig \
 	src/drivers/xgi/z9s/Kconfig \
-	src/drivers/xpowers/axp209/Kconfig \
 	src/drivers/ams/Kconfig \
 	src/drivers/asmedia/Kconfig \
+	src/drivers/crb/Kconfig \
 	src/drivers/elog/Kconfig \
 	src/drivers/gic/Kconfig \
 	src/drivers/ipmi/Kconfig \
@@ -111,13 +120,13 @@ deps_config := \
 	src/drivers/uart/Kconfig \
 	src/drivers/usb/Kconfig \
 	src/drivers/vpd/Kconfig \
+	src/drivers/wifi/Kconfig \
 	src/device/Kconfig \
 	src/arch/arm64/armv8/Kconfig \
 	src/arch/arm/armv7/Kconfig \
 	src/arch/arm/armv4/Kconfig \
 	src/arch/arm/Kconfig \
 	src/arch/arm64/Kconfig \
-	src/arch/mips/Kconfig \
 	src/arch/ppc64/Kconfig \
 	src/arch/riscv/Kconfig \
 	src/arch/x86/Kconfig \
@@ -125,7 +134,6 @@ deps_config := \
 	src/vendorcode/amd/pi/Kconfig \
 	src/vendorcode/amd/Kconfig \
 	src/vendorcode/cavium/Kconfig \
-	src/vendorcode/eltan/Kconfig \
 	src/vendorcode/google/Kconfig \
 	src/vendorcode/intel/Kconfig \
 	src/vendorcode/siemens/Kconfig \
@@ -148,23 +156,19 @@ deps_config := \
 	src/superio/aspeed/ast2400/Kconfig \
 	src/superio/aspeed/common/Kconfig \
 	src/superio/fintek/common/Kconfig \
-	src/superio/fintek/f71805f/Kconfig \
 	src/superio/fintek/f71808a/Kconfig \
 	src/superio/fintek/f71859/Kconfig \
 	src/superio/fintek/f71863fg/Kconfig \
 	src/superio/fintek/f71869ad/Kconfig \
-	src/superio/fintek/f71872/Kconfig \
 	src/superio/fintek/f81216h/Kconfig \
+	src/superio/fintek/f81803a/Kconfig \
 	src/superio/fintek/f81865f/Kconfig \
 	src/superio/fintek/f81866d/Kconfig \
-	src/superio/intel/i8900/Kconfig \
 	src/superio/ite/common/Kconfig \
 	src/superio/ite/it8528e/Kconfig \
 	src/superio/ite/it8613e/Kconfig \
 	src/superio/ite/it8623e/Kconfig \
-	src/superio/ite/it8671f/Kconfig \
 	src/superio/ite/it8712f/Kconfig \
-	src/superio/ite/it8716f/Kconfig \
 	src/superio/ite/it8718f/Kconfig \
 	src/superio/ite/it8720f/Kconfig \
 	src/superio/ite/it8721f/Kconfig \
@@ -173,16 +177,13 @@ deps_config := \
 	src/superio/ite/it8783ef/Kconfig \
 	src/superio/ite/it8786e/Kconfig \
 	src/superio/nsc/common/Kconfig \
-	src/superio/nsc/pc87309/Kconfig \
-	src/superio/nsc/pc87360/Kconfig \
-	src/superio/nsc/pc87366/Kconfig \
 	src/superio/nsc/pc87382/Kconfig \
 	src/superio/nsc/pc87384/Kconfig \
 	src/superio/nsc/pc87392/Kconfig \
 	src/superio/nsc/pc87417/Kconfig \
-	src/superio/nsc/pc97317/Kconfig \
 	src/superio/nuvoton/common/Kconfig \
 	src/superio/nuvoton/nct5104d/Kconfig \
+	src/superio/nuvoton/nct5539d/Kconfig \
 	src/superio/nuvoton/nct5572d/Kconfig \
 	src/superio/nuvoton/nct6776/Kconfig \
 	src/superio/nuvoton/nct6779d/Kconfig \
@@ -191,23 +192,18 @@ deps_config := \
 	src/superio/nuvoton/wpcm450/Kconfig \
 	src/superio/renesas/m3885x/Kconfig \
 	src/superio/serverengines/pilot/Kconfig \
-	src/superio/smsc/dme1737/Kconfig \
 	src/superio/smsc/fdc37n972/Kconfig \
 	src/superio/smsc/kbc1100/Kconfig \
-	src/superio/smsc/lpc47b272/Kconfig \
-	src/superio/smsc/lpc47b397/Kconfig \
 	src/superio/smsc/lpc47m10x/Kconfig \
 	src/superio/smsc/lpc47m15x/Kconfig \
 	src/superio/smsc/lpc47n207/Kconfig \
 	src/superio/smsc/lpc47n217/Kconfig \
 	src/superio/smsc/lpc47n227/Kconfig \
 	src/superio/smsc/mec1308/Kconfig \
-	src/superio/smsc/sch4037/Kconfig \
 	src/superio/smsc/sio1007/Kconfig \
 	src/superio/smsc/sio1036/Kconfig \
 	src/superio/smsc/sio10n268/Kconfig \
 	src/superio/smsc/smscsuperio/Kconfig \
-	src/superio/via/vt1211/Kconfig \
 	src/superio/winbond/common/Kconfig \
 	src/superio/winbond/w83627dhg/Kconfig \
 	src/superio/winbond/w83627ehg/Kconfig \
@@ -215,27 +211,15 @@ deps_config := \
 	src/superio/winbond/w83627thg/Kconfig \
 	src/superio/winbond/w83627uhg/Kconfig \
 	src/superio/winbond/w83667hg-a/Kconfig \
-	src/superio/winbond/w83697hf/Kconfig \
 	src/superio/winbond/w83977tf/Kconfig \
-	src/superio/winbond/wpcd376i/Kconfig \
 	src/southbridge/amd/pi/hudson/Kconfig \
-	src/southbridge/amd/cimx/sb900/Kconfig \
 	src/southbridge/amd/cimx/sb800/Kconfig \
 	src/southbridge/amd/agesa/hudson/Kconfig \
 	src/southbridge/amd/agesa/Kconfig \
-	src/southbridge/amd/amd8111/Kconfig \
-	src/southbridge/amd/amd8132/Kconfig \
 	src/southbridge/amd/cimx/Kconfig \
 	src/southbridge/amd/pi/Kconfig \
-	src/southbridge/amd/rs780/Kconfig \
-	src/southbridge/amd/sb700/Kconfig \
-	src/southbridge/amd/sb800/Kconfig \
-	src/southbridge/amd/sr5650/Kconfig \
-	src/southbridge/broadcom/bcm21000/Kconfig \
-	src/southbridge/broadcom/bcm5785/Kconfig \
 	src/southbridge/intel/bd82x6x/Kconfig \
 	src/southbridge/intel/common/Kconfig \
-	src/southbridge/intel/fsp_rangeley/Kconfig \
 	src/southbridge/intel/i82371eb/Kconfig \
 	src/southbridge/intel/i82801dx/Kconfig \
 	src/southbridge/intel/i82801gx/Kconfig \
@@ -244,25 +228,19 @@ deps_config := \
 	src/southbridge/intel/i82870/Kconfig \
 	src/southbridge/intel/ibexpeak/Kconfig \
 	src/southbridge/intel/lynxpoint/Kconfig \
-	src/southbridge/nvidia/ck804/Kconfig \
-	src/southbridge/nvidia/mcp55/Kconfig \
 	src/southbridge/ricoh/rl5c476/Kconfig \
 	src/southbridge/ti/pci1x2x/Kconfig \
 	src/southbridge/ti/pci7420/Kconfig \
 	src/southbridge/ti/pcixx12/Kconfig \
-	src/northbridge/intel/fsp_rangeley/fsp/Kconfig \
 	src/northbridge/amd/pi/00660F01/Kconfig \
 	src/northbridge/amd/pi/00730F01/Kconfig \
 	src/northbridge/amd/pi/00630F01/Kconfig \
-	src/northbridge/amd/agesa/family12/Kconfig \
 	src/northbridge/amd/agesa/family14/Kconfig \
 	src/northbridge/amd/agesa/family15tn/Kconfig \
 	src/northbridge/amd/agesa/family16kb/Kconfig \
 	src/northbridge/amd/agesa/Kconfig \
-	src/northbridge/amd/amdfam10/Kconfig \
 	src/northbridge/amd/pi/Kconfig \
 	src/northbridge/intel/e7505/Kconfig \
-	src/northbridge/intel/fsp_rangeley/Kconfig \
 	src/northbridge/intel/gm45/Kconfig \
 	src/northbridge/intel/haswell/Kconfig \
 	src/northbridge/intel/i440bx/Kconfig \
@@ -271,8 +249,6 @@ deps_config := \
 	src/northbridge/intel/pineview/Kconfig \
 	src/northbridge/intel/sandybridge/Kconfig \
 	src/northbridge/intel/x4x/Kconfig \
-	src/northbridge/via/vx900/Kconfig \
-	src/cpu/via/nano/Kconfig \
 	src/cpu/ti/am335x/Kconfig \
 	src/cpu/intel/car/non-evict/Kconfig \
 	src/cpu/intel/microcode/Kconfig \
@@ -292,7 +268,6 @@ deps_config := \
 	src/cpu/intel/model_f3x/Kconfig \
 	src/cpu/intel/model_f2x/Kconfig \
 	src/cpu/intel/model_2065x/Kconfig \
-	src/cpu/intel/fsp_model_406dx/Kconfig \
 	src/cpu/intel/model_206ax/Kconfig \
 	src/cpu/intel/model_106cx/Kconfig \
 	src/cpu/intel/model_1067x/Kconfig \
@@ -311,25 +286,13 @@ deps_config := \
 	src/cpu/amd/agesa/family16kb/Kconfig \
 	src/cpu/amd/agesa/family15tn/Kconfig \
 	src/cpu/amd/agesa/family14/Kconfig \
-	src/cpu/amd/agesa/family12/Kconfig \
 	src/cpu/amd/agesa/Kconfig \
-	src/cpu/amd/family_10h-family_15h/Kconfig \
-	src/cpu/amd/socket_F_1207/Kconfig \
-	src/cpu/amd/socket_ASB2/Kconfig \
-	src/cpu/amd/socket_G34/Kconfig \
-	src/cpu/amd/socket_FM2/Kconfig \
-	src/cpu/amd/socket_C32/Kconfig \
-	src/cpu/amd/socket_AM3/Kconfig \
-	src/cpu/amd/socket_AM2r2/Kconfig \
-	src/cpu/allwinner/a10/Kconfig \
-	src/cpu/allwinner/Kconfig \
 	src/cpu/amd/Kconfig \
 	src/cpu/armltd/Kconfig \
 	src/cpu/intel/Kconfig \
 	src/cpu/qemu-power8/Kconfig \
 	src/cpu/qemu-x86/Kconfig \
 	src/cpu/ti/Kconfig \
-	src/cpu/via/Kconfig \
 	src/cpu/x86/Kconfig \
 	src/cpu/Kconfig \
 	src/soc/ucb/riscv/Kconfig \
@@ -342,6 +305,7 @@ deps_config := \
 	src/soc/qualcomm/ipq40xx/Kconfig \
 	src/soc/qualcomm/ipq806x/Kconfig \
 	src/soc/qualcomm/qcs405/Kconfig \
+	src/soc/qualcomm/sc7180/Kconfig \
 	src/soc/qualcomm/sdm845/Kconfig \
 	src/soc/nvidia/tegra124/Kconfig \
 	src/soc/nvidia/tegra210/Kconfig \
@@ -355,13 +319,13 @@ deps_config := \
 	src/soc/intel/common/block/cpu/Kconfig \
 	src/soc/intel/common/block/cse/Kconfig \
 	src/soc/intel/common/block/dsp/Kconfig \
-	src/soc/intel/common/block/ebda/Kconfig \
 	src/soc/intel/common/block/fast_spi/Kconfig \
 	src/soc/intel/common/block/gpio/Kconfig \
 	src/soc/intel/common/block/graphics/Kconfig \
 	src/soc/intel/common/block/gspi/Kconfig \
 	src/soc/intel/common/block/hda/Kconfig \
 	src/soc/intel/common/block/i2c/Kconfig \
+	src/soc/intel/common/block/imc/Kconfig \
 	src/soc/intel/common/block/itss/Kconfig \
 	src/soc/intel/common/block/lpc/Kconfig \
 	src/soc/intel/common/block/lpss/Kconfig \
@@ -378,26 +342,23 @@ deps_config := \
 	src/soc/intel/common/block/spi/Kconfig \
 	src/soc/intel/common/block/sram/Kconfig \
 	src/soc/intel/common/block/systemagent/Kconfig \
+	src/soc/intel/common/block/thermal/Kconfig \
 	src/soc/intel/common/block/timer/Kconfig \
 	src/soc/intel/common/block/uart/Kconfig \
 	src/soc/intel/common/block/xdci/Kconfig \
 	src/soc/intel/common/block/xhci/Kconfig \
 	src/soc/intel/common/block/Kconfig \
 	src/soc/intel/common/Kconfig \
+	src/soc/intel/tigerlake/Kconfig \
 	src/soc/intel/icelake/Kconfig \
 	src/soc/intel/skylake/Kconfig \
 	src/soc/intel/quark/Kconfig \
-	src/soc/intel/fsp_broadwell_de/fsp/Kconfig \
-	src/soc/intel/fsp_broadwell_de/Kconfig \
-	src/soc/intel/fsp_baytrail/fsp/Kconfig \
-	src/soc/intel/fsp_baytrail/Kconfig \
 	src/soc/intel/denverton_ns/Kconfig \
 	src/soc/intel/cannonlake/Kconfig \
 	src/soc/intel/broadwell/Kconfig \
 	src/soc/intel/braswell/Kconfig \
 	src/soc/intel/baytrail/Kconfig \
 	src/soc/intel/apollolake/Kconfig \
-	src/soc/imgtec/pistachio/Kconfig \
 	src/soc/cavium/cn81xx/Kconfig \
 	src/soc/cavium/common/Kconfig \
 	src/soc/amd/common/block/acpi/Kconfig \
@@ -413,12 +374,13 @@ deps_config := \
 	src/soc/amd/common/block/psp/Kconfig \
 	src/soc/amd/common/block/s3/Kconfig \
 	src/soc/amd/common/block/sata/Kconfig \
+	src/soc/amd/common/block/spi/Kconfig \
 	src/soc/amd/common/block/Kconfig \
 	src/soc/amd/common/Kconfig \
 	src/soc/amd/stoneyridge/Kconfig \
+	src/soc/amd/picasso/Kconfig \
 	src/soc/amd/Kconfig \
 	src/soc/cavium/Kconfig \
-	src/soc/imgtec/Kconfig \
 	src/soc/intel/Kconfig \
 	src/soc/mediatek/Kconfig \
 	src/soc/nvidia/Kconfig \
@@ -427,22 +389,14 @@ deps_config := \
 	src/soc/samsung/Kconfig \
 	src/soc/sifive/Kconfig \
 	src/soc/ucb/Kconfig \
-	src/mainboard/via/epia-m850/Kconfig \
-	src/mainboard/via/epia-m850/Kconfig.name \
 	src/mainboard/up/squared/Kconfig \
 	src/mainboard/up/squared/Kconfig.name \
-	src/mainboard/tyan/s2912_fam10/Kconfig \
-	src/mainboard/tyan/s2912_fam10/Kconfig.name \
 	src/mainboard/ti/beaglebone/Kconfig \
 	src/mainboard/ti/beaglebone/Kconfig.name \
-	src/mainboard/supermicro/h8dmr_fam10/Kconfig \
-	src/mainboard/supermicro/h8qme_fam10/Kconfig \
-	src/mainboard/supermicro/h8scm_fam10/Kconfig \
 	src/mainboard/supermicro/x10slm-f/Kconfig \
-	src/mainboard/supermicro/h8dmr_fam10/Kconfig.name \
-	src/mainboard/supermicro/h8qme_fam10/Kconfig.name \
-	src/mainboard/supermicro/h8scm_fam10/Kconfig.name \
+	src/mainboard/supermicro/x11-lga1151-series/Kconfig \
 	src/mainboard/supermicro/x10slm-f/Kconfig.name \
+	src/mainboard/supermicro/x11-lga1151-series/Kconfig.name \
 	src/mainboard/sifive/hifive-unleashed/Kconfig \
 	src/mainboard/sifive/hifive-unleashed/Kconfig.name \
 	src/mainboard/siemens/mc_apl1/variants/mc_apl1/Kconfig \
@@ -450,12 +404,9 @@ deps_config := \
 	src/mainboard/siemens/mc_apl1/variants/mc_apl3/Kconfig \
 	src/mainboard/siemens/mc_apl1/variants/mc_apl4/Kconfig \
 	src/mainboard/siemens/mc_apl1/variants/mc_apl5/Kconfig \
+	src/mainboard/siemens/mc_apl1/variants/mc_apl6/Kconfig \
 	src/mainboard/siemens/mc_apl1/Kconfig \
-	src/mainboard/siemens/mc_bdx1/Kconfig \
-	src/mainboard/siemens/mc_tcu3/Kconfig \
 	src/mainboard/siemens/mc_apl1/Kconfig.name \
-	src/mainboard/siemens/mc_bdx1/Kconfig.name \
-	src/mainboard/siemens/mc_tcu3/Kconfig.name \
 	src/mainboard/scaleway/tagada/Kconfig \
 	src/mainboard/scaleway/tagada/Kconfig.name \
 	src/mainboard/sapphire/pureplatinumh61/Kconfig \
@@ -470,10 +421,14 @@ deps_config := \
 	src/mainboard/roda/rk886ex/Kconfig.name \
 	src/mainboard/roda/rk9/Kconfig.name \
 	src/mainboard/roda/rv11/Kconfig.name \
+	src/mainboard/razer/blade_stealth_kbl/Kconfig \
+	src/mainboard/razer/blade_stealth_kbl/Kconfig.name \
 	src/mainboard/purism/librem_bdw/Kconfig \
 	src/mainboard/purism/librem_skl/Kconfig \
 	src/mainboard/purism/librem_bdw/Kconfig.name \
 	src/mainboard/purism/librem_skl/Kconfig.name \
+	src/mainboard/portwell/m107/Kconfig \
+	src/mainboard/portwell/m107/Kconfig.name \
 	src/mainboard/pcengines/apu1/Kconfig \
 	src/mainboard/pcengines/apu2/Kconfig \
 	src/mainboard/pcengines/apu1/Kconfig.name \
@@ -481,19 +436,11 @@ deps_config := \
 	src/mainboard/packardbell/ms2290/Kconfig \
 	src/mainboard/packardbell/ms2290/Kconfig.name \
 	src/mainboard/opencellular/elgon/Kconfig \
-	src/mainboard/opencellular/rotundu/Kconfig \
 	src/mainboard/opencellular/elgon/Kconfig.name \
-	src/mainboard/opencellular/rotundu/Kconfig.name \
-	src/mainboard/ocp/monolake/Kconfig \
-	src/mainboard/ocp/wedge100s/Kconfig \
-	src/mainboard/ocp/monolake/Kconfig.name \
-	src/mainboard/ocp/wedge100s/Kconfig.name \
 	src/mainboard/msi/ms7707/Kconfig \
 	src/mainboard/msi/ms7721/Kconfig \
-	src/mainboard/msi/ms9652_fam10/Kconfig \
 	src/mainboard/msi/ms7707/Kconfig.name \
 	src/mainboard/msi/ms7721/Kconfig.name \
-	src/mainboard/msi/ms9652_fam10/Kconfig.name \
 	src/mainboard/lippert/frontrunner-af/Kconfig \
 	src/mainboard/lippert/toucan-af/Kconfig \
 	src/mainboard/lippert/frontrunner-af/Kconfig.name \
@@ -502,10 +449,12 @@ deps_config := \
 	src/mainboard/lenovo/l520/Kconfig \
 	src/mainboard/lenovo/s230u/Kconfig \
 	src/mainboard/lenovo/t400/Kconfig \
+	src/mainboard/lenovo/t410/Kconfig \
 	src/mainboard/lenovo/t420/Kconfig \
 	src/mainboard/lenovo/t420s/Kconfig \
 	src/mainboard/lenovo/t430/Kconfig \
 	src/mainboard/lenovo/t430s/Kconfig \
+	src/mainboard/lenovo/t440p/Kconfig \
 	src/mainboard/lenovo/t520/Kconfig \
 	src/mainboard/lenovo/t530/Kconfig \
 	src/mainboard/lenovo/t60/Kconfig \
@@ -517,15 +466,16 @@ deps_config := \
 	src/mainboard/lenovo/x220/Kconfig \
 	src/mainboard/lenovo/x230/Kconfig \
 	src/mainboard/lenovo/x60/Kconfig \
-	src/mainboard/lenovo/z61t/Kconfig \
 	src/mainboard/lenovo/g505s/Kconfig.name \
 	src/mainboard/lenovo/l520/Kconfig.name \
 	src/mainboard/lenovo/s230u/Kconfig.name \
 	src/mainboard/lenovo/t400/Kconfig.name \
+	src/mainboard/lenovo/t410/Kconfig.name \
 	src/mainboard/lenovo/t420/Kconfig.name \
 	src/mainboard/lenovo/t420s/Kconfig.name \
 	src/mainboard/lenovo/t430/Kconfig.name \
 	src/mainboard/lenovo/t430s/Kconfig.name \
+	src/mainboard/lenovo/t440p/Kconfig.name \
 	src/mainboard/lenovo/t520/Kconfig.name \
 	src/mainboard/lenovo/t530/Kconfig.name \
 	src/mainboard/lenovo/t60/Kconfig.name \
@@ -537,19 +487,14 @@ deps_config := \
 	src/mainboard/lenovo/x220/Kconfig.name \
 	src/mainboard/lenovo/x230/Kconfig.name \
 	src/mainboard/lenovo/x60/Kconfig.name \
-	src/mainboard/lenovo/z61t/Kconfig.name \
 	src/mainboard/kontron/986lcd-m/Kconfig \
 	src/mainboard/kontron/ktqm77/Kconfig \
 	src/mainboard/kontron/986lcd-m/Kconfig.name \
 	src/mainboard/kontron/ktqm77/Kconfig.name \
 	src/mainboard/jetway/nf81-t56n-lf/Kconfig \
-	src/mainboard/jetway/pa78vm5/Kconfig \
 	src/mainboard/jetway/nf81-t56n-lf/Kconfig.name \
-	src/mainboard/jetway/pa78vm5/Kconfig.name \
 	src/mainboard/intel/apollolake_rvp/Kconfig \
 	src/mainboard/intel/baskingridge/Kconfig \
-	src/mainboard/intel/bayleybay_fsp/Kconfig \
-	src/mainboard/intel/camelbackmountain_fsp/Kconfig \
 	src/mainboard/intel/cannonlake_rvp/Kconfig \
 	src/mainboard/intel/coffeelake_rvp/Kconfig \
 	src/mainboard/intel/d510mo/Kconfig \
@@ -565,17 +510,12 @@ deps_config := \
 	src/mainboard/intel/kblrvp/Kconfig \
 	src/mainboard/intel/kunimitsu/Kconfig \
 	src/mainboard/intel/leafhill/Kconfig \
-	src/mainboard/intel/littleplains/Kconfig \
 	src/mainboard/intel/minnow3/Kconfig \
-	src/mainboard/intel/minnowmax/Kconfig \
-	src/mainboard/intel/mohonpeak/Kconfig \
 	src/mainboard/intel/saddlebrook/Kconfig \
 	src/mainboard/intel/strago/Kconfig \
 	src/mainboard/intel/wtm2/Kconfig \
 	src/mainboard/intel/apollolake_rvp/Kconfig.name \
 	src/mainboard/intel/baskingridge/Kconfig.name \
-	src/mainboard/intel/bayleybay_fsp/Kconfig.name \
-	src/mainboard/intel/camelbackmountain_fsp/Kconfig.name \
 	src/mainboard/intel/cannonlake_rvp/Kconfig.name \
 	src/mainboard/intel/coffeelake_rvp/Kconfig.name \
 	src/mainboard/intel/d510mo/Kconfig.name \
@@ -591,15 +531,10 @@ deps_config := \
 	src/mainboard/intel/kblrvp/Kconfig.name \
 	src/mainboard/intel/kunimitsu/Kconfig.name \
 	src/mainboard/intel/leafhill/Kconfig.name \
-	src/mainboard/intel/littleplains/Kconfig.name \
 	src/mainboard/intel/minnow3/Kconfig.name \
-	src/mainboard/intel/minnowmax/Kconfig.name \
-	src/mainboard/intel/mohonpeak/Kconfig.name \
 	src/mainboard/intel/saddlebrook/Kconfig.name \
 	src/mainboard/intel/strago/Kconfig.name \
 	src/mainboard/intel/wtm2/Kconfig.name \
-	src/mainboard/iei/kino-780am2-fam10/Kconfig \
-	src/mainboard/iei/kino-780am2-fam10/Kconfig.name \
 	src/mainboard/ibase/mb899/Kconfig \
 	src/mainboard/ibase/mb899/Kconfig.name \
 	src/mainboard/hp/2570p/Kconfig \
@@ -609,7 +544,6 @@ deps_config := \
 	src/mainboard/hp/8770w/Kconfig \
 	src/mainboard/hp/abm/Kconfig \
 	src/mainboard/hp/compaq_8200_elite_sff/Kconfig \
-	src/mainboard/hp/dl165_g6_fam10/Kconfig \
 	src/mainboard/hp/folio_9470m/Kconfig \
 	src/mainboard/hp/pavilion_m6_1035dx/Kconfig \
 	src/mainboard/hp/revolve_810_g1/Kconfig \
@@ -621,7 +555,6 @@ deps_config := \
 	src/mainboard/hp/8770w/Kconfig.name \
 	src/mainboard/hp/abm/Kconfig.name \
 	src/mainboard/hp/compaq_8200_elite_sff/Kconfig.name \
-	src/mainboard/hp/dl165_g6_fam10/Kconfig.name \
 	src/mainboard/hp/folio_9470m/Kconfig.name \
 	src/mainboard/hp/pavilion_m6_1035dx/Kconfig.name \
 	src/mainboard/hp/revolve_810_g1/Kconfig.name \
@@ -633,6 +566,7 @@ deps_config := \
 	src/mainboard/google/cyan/Kconfig \
 	src/mainboard/google/daisy/Kconfig \
 	src/mainboard/google/dragonegg/Kconfig \
+	src/mainboard/google/drallion/Kconfig \
 	src/mainboard/google/eve/Kconfig \
 	src/mainboard/google/fizz/Kconfig \
 	src/mainboard/google/foster/Kconfig \
@@ -660,7 +594,7 @@ deps_config := \
 	src/mainboard/google/smaug/Kconfig \
 	src/mainboard/google/storm/Kconfig \
 	src/mainboard/google/stout/Kconfig \
-	src/mainboard/google/urara/Kconfig \
+	src/mainboard/google/trogdor/Kconfig \
 	src/mainboard/google/veyron/Kconfig \
 	src/mainboard/google/veyron_mickey/Kconfig \
 	src/mainboard/google/veyron_rialto/Kconfig \
@@ -671,6 +605,7 @@ deps_config := \
 	src/mainboard/google/cyan/Kconfig.name \
 	src/mainboard/google/daisy/Kconfig.name \
 	src/mainboard/google/dragonegg/Kconfig.name \
+	src/mainboard/google/drallion/Kconfig.name \
 	src/mainboard/google/eve/Kconfig.name \
 	src/mainboard/google/fizz/Kconfig.name \
 	src/mainboard/google/foster/Kconfig.name \
@@ -698,7 +633,7 @@ deps_config := \
 	src/mainboard/google/smaug/Kconfig.name \
 	src/mainboard/google/storm/Kconfig.name \
 	src/mainboard/google/stout/Kconfig.name \
-	src/mainboard/google/urara/Kconfig.name \
+	src/mainboard/google/trogdor/Kconfig.name \
 	src/mainboard/google/veyron/Kconfig.name \
 	src/mainboard/google/veyron_mickey/Kconfig.name \
 	src/mainboard/google/veyron_rialto/Kconfig.name \
@@ -710,16 +645,10 @@ deps_config := \
 	src/mainboard/gigabyte/ga-b75m-d3h/Kconfig \
 	src/mainboard/gigabyte/ga-g41m-es2l/Kconfig \
 	src/mainboard/gigabyte/ga-h61m-s2pv/Kconfig \
-	src/mainboard/gigabyte/ma785gm/Kconfig \
-	src/mainboard/gigabyte/ma785gmt/Kconfig \
-	src/mainboard/gigabyte/ma78gm/Kconfig \
 	src/mainboard/gigabyte/ga-945gcm-s2l/Kconfig.name \
 	src/mainboard/gigabyte/ga-b75m-d3h/Kconfig.name \
 	src/mainboard/gigabyte/ga-g41m-es2l/Kconfig.name \
 	src/mainboard/gigabyte/ga-h61m-s2pv/Kconfig.name \
-	src/mainboard/gigabyte/ma785gm/Kconfig.name \
-	src/mainboard/gigabyte/ma785gmt/Kconfig.name \
-	src/mainboard/gigabyte/ma78gm/Kconfig.name \
 	src/mainboard/getac/p470/Kconfig \
 	src/mainboard/getac/p470/Kconfig.name \
 	src/mainboard/foxconn/d41s/Kconfig \
@@ -727,17 +656,17 @@ deps_config := \
 	src/mainboard/foxconn/d41s/Kconfig.name \
 	src/mainboard/foxconn/g41s-k/Kconfig.name \
 	src/mainboard/facebook/fbg1701/Kconfig \
-	src/mainboard/facebook/watson/Kconfig \
+	src/mainboard/facebook/monolith/Kconfig \
 	src/mainboard/facebook/fbg1701/Kconfig.name \
-	src/mainboard/facebook/watson/Kconfig.name \
-	src/mainboard/esd/atom15/Kconfig \
-	src/mainboard/esd/atom15/Kconfig.name \
+	src/mainboard/facebook/monolith/Kconfig.name \
+	src/mainboard/emulation/qemu-aarch64/Kconfig \
 	src/mainboard/emulation/qemu-armv7/Kconfig \
 	src/mainboard/emulation/qemu-i440fx/Kconfig \
 	src/mainboard/emulation/qemu-power8/Kconfig \
 	src/mainboard/emulation/qemu-q35/Kconfig \
 	src/mainboard/emulation/qemu-riscv/Kconfig \
 	src/mainboard/emulation/spike-riscv/Kconfig \
+	src/mainboard/emulation/qemu-aarch64/Kconfig.name \
 	src/mainboard/emulation/qemu-armv7/Kconfig.name \
 	src/mainboard/emulation/qemu-i440fx/Kconfig.name \
 	src/mainboard/emulation/qemu-power8/Kconfig.name \
@@ -748,8 +677,8 @@ deps_config := \
 	src/mainboard/elmex/pcm205401/Kconfig \
 	src/mainboard/elmex/pcm205400/Kconfig.name \
 	src/mainboard/elmex/pcm205401/Kconfig.name \
-	src/mainboard/cubietech/cubieboard/Kconfig \
-	src/mainboard/cubietech/cubieboard/Kconfig.name \
+	src/mainboard/dell/dell_system_vostro_3360/Kconfig \
+	src/mainboard/dell/dell_system_vostro_3360/Kconfig.name \
 	src/mainboard/compulab/intense_pc/Kconfig \
 	src/mainboard/compulab/intense_pc/Kconfig.name \
 	src/mainboard/cavium/cn8100_sff_evb/Kconfig \
@@ -762,18 +691,9 @@ deps_config := \
 	src/mainboard/bap/ode_e21XX/Kconfig \
 	src/mainboard/bap/ode_e20XX/Kconfig.name \
 	src/mainboard/bap/ode_e21XX/Kconfig.name \
-	src/mainboard/avalue/eax-785e/Kconfig \
-	src/mainboard/avalue/eax-785e/Kconfig.name \
 	src/mainboard/asus/am1i-a/Kconfig \
 	src/mainboard/asus/f2a85-m/Kconfig \
 	src/mainboard/asus/h61m-cs/Kconfig \
-	src/mainboard/asus/kcma-d8/Kconfig \
-	src/mainboard/asus/kfsn4-dre/Kconfig \
-	src/mainboard/asus/kgpe-d16/Kconfig \
-	src/mainboard/asus/m4a78-em/Kconfig \
-	src/mainboard/asus/m4a785-m/Kconfig \
-	src/mainboard/asus/m4a785t-m/Kconfig \
-	src/mainboard/asus/m5a88-v/Kconfig \
 	src/mainboard/asus/maximus_iv_gene-z/Kconfig \
 	src/mainboard/asus/p2b-d/Kconfig \
 	src/mainboard/asus/p2b-ds/Kconfig \
@@ -783,6 +703,7 @@ deps_config := \
 	src/mainboard/asus/p3b-f/Kconfig \
 	src/mainboard/asus/p5gc-mx/Kconfig \
 	src/mainboard/asus/p5qc/Kconfig \
+	src/mainboard/asus/p5ql-em/Kconfig \
 	src/mainboard/asus/p5qpl-am/Kconfig \
 	src/mainboard/asus/p8h61-m_lx/Kconfig \
 	src/mainboard/asus/p8h61-m_pro/Kconfig \
@@ -790,13 +711,6 @@ deps_config := \
 	src/mainboard/asus/am1i-a/Kconfig.name \
 	src/mainboard/asus/f2a85-m/Kconfig.name \
 	src/mainboard/asus/h61m-cs/Kconfig.name \
-	src/mainboard/asus/kcma-d8/Kconfig.name \
-	src/mainboard/asus/kfsn4-dre/Kconfig.name \
-	src/mainboard/asus/kgpe-d16/Kconfig.name \
-	src/mainboard/asus/m4a78-em/Kconfig.name \
-	src/mainboard/asus/m4a785-m/Kconfig.name \
-	src/mainboard/asus/m4a785t-m/Kconfig.name \
-	src/mainboard/asus/m5a88-v/Kconfig.name \
 	src/mainboard/asus/maximus_iv_gene-z/Kconfig.name \
 	src/mainboard/asus/p2b-d/Kconfig.name \
 	src/mainboard/asus/p2b-ds/Kconfig.name \
@@ -806,6 +720,7 @@ deps_config := \
 	src/mainboard/asus/p3b-f/Kconfig.name \
 	src/mainboard/asus/p5gc-mx/Kconfig.name \
 	src/mainboard/asus/p5qc/Kconfig.name \
+	src/mainboard/asus/p5ql-em/Kconfig.name \
 	src/mainboard/asus/p5qpl-am/Kconfig.name \
 	src/mainboard/asus/p8h61-m_lx/Kconfig.name \
 	src/mainboard/asus/p8h61-m_pro/Kconfig.name \
@@ -829,60 +744,44 @@ deps_config := \
 	src/mainboard/aopen/dxplplusu/Kconfig \
 	src/mainboard/aopen/dxplplusu/Kconfig.name \
 	src/mainboard/amd/bettong/Kconfig \
-	src/mainboard/amd/bimini_fam10/Kconfig \
 	src/mainboard/amd/db-ft3b-lc/Kconfig \
 	src/mainboard/amd/gardenia/Kconfig \
 	src/mainboard/amd/inagua/Kconfig \
 	src/mainboard/amd/lamar/Kconfig \
-	src/mainboard/amd/mahogany_fam10/Kconfig \
 	src/mainboard/amd/olivehill/Kconfig \
 	src/mainboard/amd/olivehillplus/Kconfig \
+	src/mainboard/amd/padmelon/Kconfig \
 	src/mainboard/amd/parmer/Kconfig \
 	src/mainboard/amd/persimmon/Kconfig \
-	src/mainboard/amd/serengeti_cheetah_fam10/Kconfig \
 	src/mainboard/amd/south_station/Kconfig \
 	src/mainboard/amd/thatcher/Kconfig \
-	src/mainboard/amd/tilapia_fam10/Kconfig \
-	src/mainboard/amd/torpedo/Kconfig \
 	src/mainboard/amd/union_station/Kconfig \
 	src/mainboard/amd/bettong/Kconfig.name \
-	src/mainboard/amd/bimini_fam10/Kconfig.name \
 	src/mainboard/amd/db-ft3b-lc/Kconfig.name \
 	src/mainboard/amd/gardenia/Kconfig.name \
 	src/mainboard/amd/inagua/Kconfig.name \
 	src/mainboard/amd/lamar/Kconfig.name \
-	src/mainboard/amd/mahogany_fam10/Kconfig.name \
 	src/mainboard/amd/olivehill/Kconfig.name \
 	src/mainboard/amd/olivehillplus/Kconfig.name \
+	src/mainboard/amd/padmelon/Kconfig.name \
 	src/mainboard/amd/parmer/Kconfig.name \
 	src/mainboard/amd/persimmon/Kconfig.name \
-	src/mainboard/amd/serengeti_cheetah_fam10/Kconfig.name \
 	src/mainboard/amd/south_station/Kconfig.name \
 	src/mainboard/amd/thatcher/Kconfig.name \
-	src/mainboard/amd/tilapia_fam10/Kconfig.name \
-	src/mainboard/amd/torpedo/Kconfig.name \
 	src/mainboard/amd/union_station/Kconfig.name \
-	src/mainboard/advansus/a785e-i/Kconfig \
-	src/mainboard/advansus/a785e-i/Kconfig.name \
-	src/mainboard/adi/rcc-dff/Kconfig \
-	src/mainboard/adi/rcc-dff/Kconfig.name \
-	src/mainboard/adi/Kconfig \
 	src/mainboard/adlink/Kconfig \
-	src/mainboard/advansus/Kconfig \
 	src/mainboard/amd/Kconfig \
 	src/mainboard/aopen/Kconfig \
 	src/mainboard/apple/Kconfig \
 	src/mainboard/asrock/Kconfig \
 	src/mainboard/asus/Kconfig \
-	src/mainboard/avalue/Kconfig \
 	src/mainboard/bap/Kconfig \
 	src/mainboard/biostar/Kconfig \
 	src/mainboard/cavium/Kconfig \
 	src/mainboard/compulab/Kconfig \
-	src/mainboard/cubietech/Kconfig \
+	src/mainboard/dell/Kconfig \
 	src/mainboard/elmex/Kconfig \
 	src/mainboard/emulation/Kconfig \
-	src/mainboard/esd/Kconfig \
 	src/mainboard/facebook/Kconfig \
 	src/mainboard/foxconn/Kconfig \
 	src/mainboard/getac/Kconfig \
@@ -891,18 +790,18 @@ deps_config := \
 	src/mainboard/google/Kconfig \
 	src/mainboard/hp/Kconfig \
 	src/mainboard/ibase/Kconfig \
-	src/mainboard/iei/Kconfig \
 	src/mainboard/intel/Kconfig \
 	src/mainboard/jetway/Kconfig \
 	src/mainboard/kontron/Kconfig \
 	src/mainboard/lenovo/Kconfig \
 	src/mainboard/lippert/Kconfig \
 	src/mainboard/msi/Kconfig \
-	src/mainboard/ocp/Kconfig \
 	src/mainboard/opencellular/Kconfig \
 	src/mainboard/packardbell/Kconfig \
 	src/mainboard/pcengines/Kconfig \
+	src/mainboard/portwell/Kconfig \
 	src/mainboard/purism/Kconfig \
+	src/mainboard/razer/Kconfig \
 	src/mainboard/roda/Kconfig \
 	src/mainboard/samsung/Kconfig \
 	src/mainboard/sapphire/Kconfig \
@@ -911,26 +810,20 @@ deps_config := \
 	src/mainboard/sifive/Kconfig \
 	src/mainboard/supermicro/Kconfig \
 	src/mainboard/ti/Kconfig \
-	src/mainboard/tyan/Kconfig \
 	src/mainboard/up/Kconfig \
-	src/mainboard/via/Kconfig \
-	src/mainboard/adi/Kconfig.name \
 	src/mainboard/adlink/Kconfig.name \
-	src/mainboard/advansus/Kconfig.name \
 	src/mainboard/amd/Kconfig.name \
 	src/mainboard/aopen/Kconfig.name \
 	src/mainboard/apple/Kconfig.name \
 	src/mainboard/asrock/Kconfig.name \
 	src/mainboard/asus/Kconfig.name \
-	src/mainboard/avalue/Kconfig.name \
 	src/mainboard/bap/Kconfig.name \
 	src/mainboard/biostar/Kconfig.name \
 	src/mainboard/cavium/Kconfig.name \
 	src/mainboard/compulab/Kconfig.name \
-	src/mainboard/cubietech/Kconfig.name \
+	src/mainboard/dell/Kconfig.name \
 	src/mainboard/elmex/Kconfig.name \
 	src/mainboard/emulation/Kconfig.name \
-	src/mainboard/esd/Kconfig.name \
 	src/mainboard/facebook/Kconfig.name \
 	src/mainboard/foxconn/Kconfig.name \
 	src/mainboard/getac/Kconfig.name \
@@ -939,18 +832,18 @@ deps_config := \
 	src/mainboard/google/Kconfig.name \
 	src/mainboard/hp/Kconfig.name \
 	src/mainboard/ibase/Kconfig.name \
-	src/mainboard/iei/Kconfig.name \
 	src/mainboard/intel/Kconfig.name \
 	src/mainboard/jetway/Kconfig.name \
 	src/mainboard/kontron/Kconfig.name \
 	src/mainboard/lenovo/Kconfig.name \
 	src/mainboard/lippert/Kconfig.name \
 	src/mainboard/msi/Kconfig.name \
-	src/mainboard/ocp/Kconfig.name \
 	src/mainboard/opencellular/Kconfig.name \
 	src/mainboard/packardbell/Kconfig.name \
 	src/mainboard/pcengines/Kconfig.name \
+	src/mainboard/portwell/Kconfig.name \
 	src/mainboard/purism/Kconfig.name \
+	src/mainboard/razer/Kconfig.name \
 	src/mainboard/roda/Kconfig.name \
 	src/mainboard/samsung/Kconfig.name \
 	src/mainboard/sapphire/Kconfig.name \
@@ -959,9 +852,7 @@ deps_config := \
 	src/mainboard/sifive/Kconfig.name \
 	src/mainboard/supermicro/Kconfig.name \
 	src/mainboard/ti/Kconfig.name \
-	src/mainboard/tyan/Kconfig.name \
 	src/mainboard/up/Kconfig.name \
-	src/mainboard/via/Kconfig.name \
 	src/mainboard/Kconfig \
 	src/Kconfig
 

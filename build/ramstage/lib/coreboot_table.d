@@ -2,11 +2,13 @@ build/ramstage/lib/coreboot_table.o: src/lib/coreboot_table.c \
  src/include/kconfig.h build/config.h src/include/rules.h \
  src/commonlib/include/commonlib/compiler.h \
  src/arch/x86/include/arch/cbconfig.h src/include/console/console.h \
- src/arch/x86/include/stdint.h src/arch/x86/include/arch/cpu.h \
- src/include/stddef.h src/commonlib/include/commonlib/helpers.h \
+ src/include/stdint.h src/arch/x86/include/arch/cpu.h src/include/types.h \
+ src/include/stdbool.h src/include/stddef.h \
+ src/commonlib/include/commonlib/helpers.h \
  src/commonlib/include/commonlib/compiler.h \
- src/include/console/post_codes.h src/include/console/vtxprintf.h \
- src/commonlib/include/commonlib/loglevel.h src/include/console/uart.h \
+ src/include/console/post_codes.h \
+ src/commonlib/include/commonlib/loglevel.h \
+ src/include/console/vtxprintf.h src/include/console/uart.h \
  src/include/ip_checksum.h src/include/boot/coreboot_tables.h \
  src/commonlib/include/commonlib/coreboot_tables.h \
  src/include/boot/tables.h src/include/boot_device.h \
@@ -21,27 +23,24 @@ build/ramstage/lib/coreboot_table.o: src/lib/coreboot_table.c \
  src/commonlib/include/commonlib/cbfs_serialized.h \
  3rdparty/vboot/firmware/include/vb2_api.h \
  3rdparty/vboot/firmware/include/../2lib/include/2api.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2common.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2api.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2return_codes.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2sha.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2crypto.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2struct.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2gbb_flags.h \
- 3rdparty/vboot/firmware/include/../2lib/include/2sysincludes.h \
- src/include/inttypes.h \
  3rdparty/vboot/firmware/include/../2lib/include/2constants.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2crypto.h \
  3rdparty/vboot/firmware/include/../2lib/include/2fw_hash_tags.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2gbb_flags.h \
  3rdparty/vboot/firmware/include/../2lib/include/2id.h \
  3rdparty/vboot/firmware/include/../2lib/include/2recovery_reasons.h \
- src/include/program_loading.h src/include/bootmem.h \
- src/include/memrange.h src/include/cbmem.h \
- src/commonlib/include/commonlib/cbmem_id.h src/include/spi_flash.h \
- src/include/spi-generic.h src/security/vboot/misc.h src/include/assert.h \
- src/arch/x86/include/arch/hlt.h \
- src/arch/x86/include/arch/early_variables.h \
- src/arch/x86/include/arch/symbols.h src/security/vboot/vboot_common.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2return_codes.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2sysincludes.h \
+ src/include/ctype.h src/include/inttypes.h src/include/program_loading.h \
+ src/include/bootmem.h src/include/memrange.h src/include/cbmem.h \
+ src/commonlib/include/commonlib/cbmem_id.h src/include/bootsplash.h \
+ src/include/spi_flash.h src/include/spi-generic.h \
+ src/security/vboot/misc.h src/include/assert.h \
+ src/arch/x86/include/arch/hlt.h src/security/vboot/vboot_common.h \
  3rdparty/vboot/firmware/include/vboot_api.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2return_codes.h \
  3rdparty/vboot/firmware/include/gpt.h \
  3rdparty/vboot/firmware/include/vboot_struct.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2struct.h \
+ 3rdparty/vboot/firmware/include/../2lib/include/2api.h \
  src/security/vboot/vbnv_layout.h

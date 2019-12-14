@@ -1,0 +1,290 @@
+V "GNAT Lib v8"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK_05
+
+U hw.gfx.gma.config_helpers%b  hw-gfx-gma-config_helpers.adb  2441cb87 NE OO PK IU
+W hw%s			hw.ads			hw.ali
+W hw.debug%s		hw-debug.adb		hw-debug.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.config%s	hw-gfx-gma-config.adb	hw-gfx-gma-config.ali
+W hw.gfx.gma.connector_info%s  hw-gfx-gma-connector_info.adb  hw-gfx-gma-connector_info.ali
+W hw.gfx.gma.dp_info%s	hw-gfx-gma-dp_info.ads	hw-gfx-gma-dp_info.ali
+W hw.gfx.gma.registers%s  hw-gfx-gma-registers.adb  hw-gfx-gma-registers.ali
+
+U hw.gfx.gma.config_helpers%s  hw-gfx-gma-config_helpers.ads  412cd8ae EE NE OO PK IU
+W hw%s			hw.ads			hw.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+
+D hw.ads		20191211222205 349e873c hw%s
+D hw-config.ads		20191214172731 3df8aafb hw.config%s
+D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
+D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
+D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
+D hw-gfx-dp_defs.ads	20191211222205 30f739dd hw.gfx.dp_defs%s
+D hw-gfx-dp_info.ads	20191211222205 445951f5 hw.gfx.dp_info%s
+D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
+D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
+D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
+D hw-gfx-gma-config.ads	20191214172731 9931d580 hw.gfx.gma.config%s
+D hw-gfx-gma-config_helpers.ads  20191211222205 474cdd7c hw.gfx.gma.config_helpers%s
+D hw-gfx-gma-config_helpers.adb  20191211222205 943df8e0 hw.gfx.gma.config_helpers%b
+D hw-gfx-gma-connector_info.ads  20191211222205 b5d129cd hw.gfx.gma.connector_info%s
+D hw-gfx-gma-dp_aux_ch.ads  20191211222205 53944791 hw.gfx.gma.dp_aux_ch%s
+D hw-gfx-gma-dp_aux_request.ads  20191211222205 d673ea1e hw.gfx.gma.dp_aux_request%s
+D hw-gfx-gma-dp_info.ads  20191211222205 38def494 hw.gfx.gma.dp_info%s
+D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s
+D hw-gfx-i2c.ads	20191211222205 e54ab4f7 hw.gfx.i2c%s
+D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
+D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
+D hw-time.ads		20191211222205 e7f4a790 hw.time%s
+D interfac.ads		20191214172731 8908571f interfaces%s
+D system.ads		20191214172731 21923ced system%s
+D s-unstyp.ads		20191214172731 9d58a4c0 system.unsigned_types%s
+D gnat.adc		20191211220911 00000000
+X 1 hw.ads
+17K9*HW 91e7 12|15w6 17r17 45r13 88r5 13|15r6 16r6 17r6 18r6 20r6 22r14 246r5
+34M12*Word32{23|68M9}
+48I12*Int32{23|51I9}
+49I12*Int64{23|54I9}
+53I12*Pos32{23|51I9} 12|45r16
+54I12*Pos64{23|54I9}
+X 3 hw-debug.ads
+16K12*Debug 41e13 13|20w9 187r33 188r33 189r33 190r33 191r33
+18U14*Put 13|187s39 189s39
+19U14*Put_Line 13|191s39
+30U14*Put_Int64 13|188s39 190s39
+X 4 hw-gfx.ads
+21K12*GFX 1|17k9 4|217e11 12|17r20 88r8 13|15r9 16r9 17r9 18r9 22r17 246r8
+31I12*Width_Type{1|53I12}
+32I12*Height_Type{1|53I12}
+33I12*Position_Type{1|48I12}
+35N4*Auto_BPC 13|175r33
+36I12*BPC_Type{1|49I12}
+38n42*Y_Tiled{38E9} 13|242r27 243r25
+41n27*No_Rotation{41E9} 13|242r53
+43R9*Framebuffer_Type 55e14 12|50r15 60r27 13|217r27
+46i7*Height{32I12} 12|56r11
+48i7*Start_Y{33I12} 12|56r23
+49i7*BPC{36I12} 13|240r15
+51i7*V_Stride{32I12} 12|56r37
+52e7*Tiling{38E9} 13|242r17 243r16
+53e7*Rotation{41E9} 13|242r42
+54m7*Offset{1|34M12} 12|55r11 13|238r14 239r14
+69I12*Frequency_Type{1|54I12} 12|80r62 84r25 13|83r62 85r13 85r31 99r25 183r40
+71n44*DP_Lane_Count_2{71E9} 13|136r58
+78n45*DP_Bandwidth_2_7{78E9} 13|124r54
+91e7*Max_Link_Rate{78E9} 13|124m34
+92e7*Max_Lane_Count{71E9} 13|125m34 136m40
+94b7*Enhanced_Framing{boolean} 13|127m34
+101r10*Receiver_Caps{89R9} 13|124m20 125m20 127m20 136m26
+107r4*Default_DP{99R9} 13|172r25 173r25 207r25 208r25
+121E9*Display_Type 121e52 12|27r62 13|72r62 75r14 204r25
+121n38*DP{121E9} 13|80r37
+121n42*HDMI{121E9} 13|79r37 179r32
+121n48*VGA{121E9} 13|78r37
+124R9*Mode_Type 138e14 12|33r25 51r15 61r27 13|155r25 218r27
+126i7*Dotclock{69I12} 13|89r36 91r37 103r36 105m30 186r33 188r64 192m33
+127i7*H_Visible{31I12} 12|53r34 75r28 75r55 13|233r38 236r39
+131i7*V_Visible{32I12} 12|54r35 76r28 76r55 13|234r39 237r40
+137i7*BPC{36I12} 13|175r27 176m27 184r67
+180r4*Invalid_Mode{124R9} 13|205r25
+185V13 Rotation_90{boolean} 13|243s40
+188V13 Rotated_Width{31I12} 12|53s7 13|233s12 235s12 236s12
+190V13 Rotated_Height{32I12} 12|54s7 13|234s12 237s12
+X 7 hw-gfx-dp_info.ads
+88U14*Preferred_Link_Setting 13|140s15[17|19]
+X 10 hw-gfx-gma.ads
+22K16*GMA 4|21k12 10|292e15 12|17r24 88r12 13|15r13 16r13 17r13 18r13 22r21
+. 246r12
+36n24*G45{36E9} 13|33r18
+36n29*Ironlake{36E9} 13|40r18
+52E9*Port_Type 61e14 12|32r25 13|154r25
+53n7*Disabled{52E9} 12|71r27 13|88r33 102r33 162r18
+54n7*Internal{52E9} 13|35r25 41r58 50r24 62r18 77r18
+55n7*DP1{52E9} 13|36r33 51r32 67r18 80r18
+56n7*DP2{52E9} 13|37r33 52r32 68r18
+57n7*DP3{52E9} 13|38r33 53r32 69r18 80r25
+58n7*HDMI1{52E9} 13|36r25 51r24 64r18 79r18
+59n7*HDMI2{52E9} 13|37r25 52r24 65r18
+60n7*HDMI3{52E9} 13|38r25 53r24 66r18 79r27
+61n7*Analog{52E9} 13|39r25 54r24 63r18 78r18
+62E12*Active_Port_Type{52E9} 12|22r15 25r33 27r37 13|27r14 57r33 72r37
+86e7*Port{52E9} 12|71r20 72r23 72r40 13|88r25 102r25
+87r7*Framebuffer{4|43R9} 12|73r23 73r47
+88r7*Cursor{71R9} 12|74r23 74r42
+89r7*Mode{4|124R9} 12|75r23 75r50 76r23 76r50 13|89r31 91r32 103r31 105m25
+91E9*Pipe_Index 91e53 12|21r15 31r25 62r27 70r20 13|26r14 87r16 101r16 153r25
+. 219r27
+91n24*Primary{91E9} 13|45r27 238r63
+91n33*Secondary{91E9} 13|46r27 160r47
+91n44*Tertiary{91E9} 13|47r27
+92A9*Pipe_Configs(85R9)<91E9> 12|69r39 80r41 83r25 13|83r41 98r25
+96N4*VGA_PLANE_FRAMEBUFFER_OFFSET 12|55r20 13|238r24 239r23
+240E9 GPU_Port 240e72 12|23r14 13|28r14 202r25
+240n22 DIGI_A{240E9} 13|42r19 50r40
+240n30 DIGI_B{240E9} 13|36r41 45r40 51r40
+240n38 DIGI_C{240E9} 13|37r41 46r40 52r40 129r52
+240n46 DIGI_D{240E9} 13|38r41 47r40 53r40
+240n54 DIGI_E{240E9} 13|54r40
+240n62 LVDS{240E9} 13|35r41
+240n68 VGA{240E9} 13|39r41
+246E9 PCH_Port 249e36 12|25r58 13|57r58 203r25
+247n7 PCH_DAC{246E9} 13|63r31
+247n16 PCH_LVDS{246E9} 13|62r31
+248n7 PCH_HDMI_B{246E9} 13|64r31
+248n19 PCH_HDMI_C{246E9} 13|65r31
+248n31 PCH_HDMI_D{246E9} 13|66r31
+249n7 PCH_DP_B{246E9} 13|67r31
+249n17 PCH_DP_C{246E9} 13|68r31
+249n27 PCH_DP_D{246E9} 13|69r31
+254R9 Port_Config 263e17 12|30r25 13|114r25 152r25 166r22 201r22
+256e10*Port{240E9} 13|126r42 129r45 167m13 202m13
+257e10*PCH_Port{246E9} 13|168m13 203m13
+258e10*Display{4|121E9} 13|169m13 179r22 204m13
+259r10*Mode{4|124R9} 13|140r62 170m13 175r22 176m22 184r62 186r28 188r59
+. 192m28 205m13
+260b10*Is_FDI{boolean} 13|171m13 197r22 206m13
+261r10*FDI{4|99R9} 13|124m16 125m16 127m16 136m22 140m48 172m13 207m13
+262r10*DP{4|99R9} 13|173m13 208m13
+286V13 Valid_Stride{boolean} 13|240s27
+X 11 hw-gfx-gma-config.ads
+17K28*Config 501e22 13|15w17 32r15 41r19 77r37 126r10 129r10 160r11 161r10
+. 171r25 184r19 235r34 241r13
+19e4*Gen{10|36E9} 13|32r22
+44e4*Internal_Display{4|122E12} 13|77r44
+68A9*Valid_Port_Array(boolean)<10|52E9>
+88a4*Valid_Port{68A9} 13|161r17
+157b4*Internal_Is_EDP{boolean} 13|41r26
+169V13*Has_Tertiary_Pipe{boolean} 13|160s18
+184b4*Has_Plane_Control{boolean} 13|241r20
+224V13*Has_FDI_C{boolean} 13|129s17
+294A9*FDI_Per_Port(boolean)<10|52E9>
+295V13*Is_FDI_Port{294A9} 13|171s32
+301A9*FDI_Lanes_Per_Port(4|71E9)<10|240E9>
+302a4*FDI_Lane_Count{301A9} 13|126r17
+347A9*Width_Per_Pipe(4|31I12)<10|91E9>
+349V13*Maximum_Scalable_Width{347A9} 13|235s41
+374i4*HDMI_Max_Clock_24bpp{4|69I12} 13|184r26
+X 12 hw-gfx-gma-config_helpers.ads
+17K28*Config_Helpers 10|22k16 12|88l16 88e30 13|22b25 246l16 246t30
+20V13*To_GPU_Port{10|240E9} 21>7 22>7 13|25b13 55l8 55t19 167s25
+21e7 Pipe{10|91E9} 13|26b7 44r24
+22e7 Port{10|62E12} 13|27b7 34r22 41r51 49r21
+25V13*To_PCH_Port{10|246E9} 25>26 13|57b13 70l8 70t19 168s25
+25e26 Port{10|62E12} 13|57b26 61r15
+27V13*To_Display_Type{4|121E9} 27>30 13|72b13 81l8 81t23 169s25
+27e30 Port{10|62E12} 13|72b30 76r15
+29U14*Fill_Port_Config 30<7 31>7 32>7 33>7 34<7 13|151b14 210l8 210t24
+30r7 Port_Cfg{10|254R9} 13|152b7 166m10 175r13 176m13 176r62 179r13 184r53
+. 186r19 188r50 192m19 197r13 198m33 201m10
+31e7 Pipe{10|91E9} 13|153b7 160r39 167r38
+32e7 Port{10|52E9} 13|154b7 161r29 162r10 167r44 168r38 169r42 171r45
+33r7 Mode{4|124R9} 13|155b7 170r25
+34b7 Success{boolean} 13|156b7 159m7 165r10 198m43
+49V13*Valid_FB{boolean} 50>7 51>7
+50r7 FB{4|43R9} 53r22 54r23 55r8 56r8 56r20 56r34
+51r7 Mode{4|124R9} 53r29 54r30
+59V13*Validate_Config{boolean} 60>7 61>7 62>7 13|216b13 244l8 244t23
+60r7 FB{4|43R9} 13|217b7 233r27 234r28 235r27 236r27 237r28 238r11 239r11
+. 240r12 240r41 242r14 242r39 243r13 243r53
+61r7 Mode{4|124R9} 13|218b7 233r33 234r34 236r34 237r35
+62e7 Pipe{10|91E9} 13|219b7 235r65 238r56
+69V13*Stable_FB{boolean} 69>24 69>31
+69a24 Old_C{10|92A9} 72r30 73r37 74r32 75r40 76r40
+69a31 New_C{10|92A9} 71r10 72r13 73r13 74r13 75r13 76r13
+70e15 P{10|91E9} 71r17 72r20 72r37 73r20 73r44 74r20 74r39 75r20 75r47 76r20
+. 76r47
+80V13*Highest_Dotclock{4|69I12} 80>31 13|83b13 95l8 95t24
+80a31 Configs{10|92A9} 13|83b31 88r13 89r19 91r20
+82U14*Limit_Dotclocks 83=7 84>7 13|97b14 108l8 108t23
+83a7 Configs{10|92A9} 13|98b7 102r13 103r19 105m13
+84i7 Max{4|69I12} 13|99b7 103r13 105r42
+X 13 hw-gfx-gma-config_helpers.adb
+85i7 Max{4|69I12} 89r13 91m13 94r14
+87e11 I{10|91E9} 88r22 89r28 91r29
+101e11 I{10|91E9} 102r22 103r28 105r22
+113U14 Configure_FDI_Link 113b14 114=7 115<7 141l8 141t26 198s13
+114r7 Port_Cfg{10|254R9} 124m7 125m7 126r33 127m7 129r36 136m13 140m39 140r39
+. 140r53
+115b7 Success{boolean} 140m68
+121N7 FDI_TX_CTL_FDI_TX_ENABLE 133r25
+122b7 Enabled{boolean} 134m25 135r13
+183i16 Max_Dotclock{4|69I12} 186r44 190r50 192r45
+X 14 hw-gfx-gma-connector_info.ads
+17K28*Connector_Info 13|16w17 176r34 14|37e30
+35V13*Default_BPC{4|36I12} 13|176s49
+X 17 hw-gfx-gma-dp_info.ads
+19K28*DP_Info[7|23] 13|17w17 140r7
+X 18 hw-gfx-gma-registers.ads
+19K28*Registers 13|18w17 131r10 132r25 18|1807e25
+208n7*FDI_TX_CTL_C{36E9} 13|132r35
+1696U14*Is_Set_Mask 13|131s20
+1697e8 Register{1636E12} 13|132r13
+1698m8 Mask{1|34M12} 13|133r13
+1699b8 Result{boolean} 13|134r13
+X 23 interfac.ads
+51I9*Integer_32<integer>
+54I9*Integer_64<long_long_integer>
+68M9*Unsigned_32
+

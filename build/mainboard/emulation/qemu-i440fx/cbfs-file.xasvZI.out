@@ -1,3 +1,0 @@
-# This image was built using coreboot 4.9-2217-g16a70c3d40
-CONFIG_PAYLOAD_ELF=y
-CONFIG_PAYLOAD_FILE="payloads/coreinfo/build/coreinfo.elf"
