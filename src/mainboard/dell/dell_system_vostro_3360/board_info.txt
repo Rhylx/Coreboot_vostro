@@ -1,4 +1,0 @@
-Category: desktop
-ROM protocol: SPI
-Flashrom support: n
-FIXME: check category, , put ROM package, ROM socketed, Release year
