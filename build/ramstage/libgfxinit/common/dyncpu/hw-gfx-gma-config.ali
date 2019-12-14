@@ -63,18 +63,18 @@ RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 RV SPARK_05
 
-U hw.gfx.gma.config%b	hw-gfx-gma-config.adb	a167899d NE OO PK IU
+U hw.gfx.gma.config%b	hw-gfx-gma-config.adb	df56f651 NE OO PK IU
 W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
 
-U hw.gfx.gma.config%s	hw-gfx-gma-config.ads	abcf576e NE OO PK IU
+U hw.gfx.gma.config%s	hw-gfx-gma-config.ads	d5fe28a2 NE OO PK IU
 W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20191214172731 3df8aafb hw.config%s
+D hw-config.ads		20191214174437 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20191214172731 9931d580 hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20191214174437 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-config.adb	20191211222205 38565c1d hw.gfx.gma.config%b
 D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
 D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
@@ -99,8 +99,8 @@ X 3 hw-gfx.ads
 71n44*DP_Lane_Count_2{71E9} 6|303r17 304r60
 71n61*DP_Lane_Count_4{71E9} 6|304r39
 121n26*None{121E9} 6|155r70
-121n32*LVDS{121E9} 6|156r69
-121n38*DP{121E9} 6|44r49 157r69
+121n32*LVDS{121E9} 6|44r49 156r69
+121n38*DP{121E9} 6|157r69
 122E12*Internal_Type{121E9} 6|44r32
 X 5 hw-gfx-gma.ads
 22K16*GMA 3|21k12 5|292e15 6|17r24 86r47 501r12 7|15r21 31r12

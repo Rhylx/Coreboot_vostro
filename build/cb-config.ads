@@ -461,11 +461,11 @@ package CB.Config is
    INTEL_GMA_SSC_ALTERNATE_REF                    : constant boolean := false;
    INTEL_GMA_SWSMISCI                             : constant boolean := false;
    GFX_GMA                                        : constant boolean := true;
-   GFX_GMA_INTERNAL_IS_EDP                        : constant boolean := true;
-   GFX_GMA_INTERNAL_IS_LVDS                       : constant boolean := false;
+   GFX_GMA_INTERNAL_IS_EDP                        : constant boolean := false;
+   GFX_GMA_INTERNAL_IS_LVDS                       : constant boolean := true;
    GFX_GMA_DYN_CPU                                : constant boolean := true;
    GFX_GMA_GENERATION                             : constant string  := "Ironlake";
-   GFX_GMA_INTERNAL_PORT                          : constant string  := "DP";
+   GFX_GMA_INTERNAL_PORT                          : constant string  := "LVDS";
    GFX_GMA_ANALOG_I2C_PORT                        : constant string  := "PCH_DAC";
    DRIVER_INTEL_I210                              : constant boolean := false;
    DRIVERS_INTEL_MIPI_CAMERA                      : constant boolean := false;

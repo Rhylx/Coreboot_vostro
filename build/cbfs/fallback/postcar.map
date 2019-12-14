@@ -2333,10 +2333,10 @@ END GROUP
                 0x0000000002004489                coreboot_extra_version
  *fill*         0x000000000200448a        0x2 
  .rodata.coreboot_version
-                0x000000000200448c       0x15 build/postcar/lib/version.o
+                0x000000000200448c       0x1b build/postcar/lib/version.o
                 0x000000000200448c                coreboot_version
                 0x00000000020044a8                . = ALIGN (0x8)
- *fill*         0x00000000020044a1        0x7 
+ *fill*         0x00000000020044a7        0x1 
                 0x00000000020044a8                _etext = .
 
 .iplt           0x00000000020044a8        0x0

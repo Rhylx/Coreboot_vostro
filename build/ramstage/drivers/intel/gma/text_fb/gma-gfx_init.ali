@@ -79,7 +79,7 @@ D gma-gfx_init.ads	20191211220911 22280f7a gma.gfx_init%s
 D gma-gfx_init.adb	20191211220911 abb563ed gma.gfx_init%b
 D gma-mainboard.ads	20191211221029 4cc84d8f gma.mainboard%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20191214172731 3df8aafb hw.config%s
+D hw-config.ads		20191214174437 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s

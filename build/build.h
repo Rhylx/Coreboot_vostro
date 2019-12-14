@@ -2,7 +2,7 @@
 #ifndef __BUILD_H
 #define __BUILD_H
 
-#define COREBOOT_VERSION "4.11-417-gb274727a3a"
+#define COREBOOT_VERSION "4.11-417-gb274727a3a-dirty"
 /* timesource: git */
 #define COREBOOT_VERSION_TIMESTAMP 1576316312
 #define COREBOOT_ORIGIN_GIT_REVISION "b274727a3a"

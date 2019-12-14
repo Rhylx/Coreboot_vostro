@@ -62,7 +62,7 @@ RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 RV SPARK_05
 
-U hw.gfx.gma.config_helpers%b  hw-gfx-gma-config_helpers.adb  2441cb87 NE OO PK IU
+U hw.gfx.gma.config_helpers%b  hw-gfx-gma-config_helpers.adb  5a70b44b NE OO PK IU
 W hw%s			hw.ads			hw.ali
 W hw.debug%s		hw-debug.adb		hw-debug.ali
 W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
@@ -77,7 +77,7 @@ W hw%s			hw.ads			hw.ali
 W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20191214172731 3df8aafb hw.config%s
+D hw-config.ads		20191214174437 3df8aafb hw.config%s
 D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
@@ -86,7 +86,7 @@ D hw-gfx-dp_info.ads	20191211222205 445951f5 hw.gfx.dp_info%s
 D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20191214172731 9931d580 hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20191214174437 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-config_helpers.ads  20191211222205 474cdd7c hw.gfx.gma.config_helpers%s
 D hw-gfx-gma-config_helpers.adb  20191211222205 943df8e0 hw.gfx.gma.config_helpers%b
 D hw-gfx-gma-connector_info.ads  20191211222205 b5d129cd hw.gfx.gma.connector_info%s
