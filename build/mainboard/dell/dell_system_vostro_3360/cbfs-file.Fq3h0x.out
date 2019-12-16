@@ -1,0 +1,5 @@
+# This image was built using coreboot 4.11-417-gb274727a3a-dirty
+CONFIG_USE_BLOBS=y
+CONFIG_VENDOR_DELL=y
+CONFIG_PAYLOAD_ELF=y
+CONFIG_PAYLOAD_FILE="payloads/coreinfo/build/coreinfo.elf"
