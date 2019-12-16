@@ -60,13 +60,13 @@ RR NO_IMPLICIT_LOOPS
 RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 
-U ramstage_adamain%b	b__ramstage.adb		431f6e18 NE OO PK IL
+U ramstage_adamain%b	b__ramstage.adb		2b133250 NE OO PK IL
 
-U ramstage_adamain%s	b__ramstage.ads		fedb8d46 EE NE OO PK IL
+U ramstage_adamain%s	b__ramstage.ads		96d7d10e EE NE OO PK IL
 W system%s		system.ads		system.ali
 
-D b__ramstage.ads	20191214174510 df49b1ab ramstage_adamain%s
-D b__ramstage.adb	20191214174510 9c56dfb3 ramstage_adamain%b
+D b__ramstage.ads	20191216223452 b745ede3 ramstage_adamain%s
+D b__ramstage.adb	20191216223452 9c56dfb3 ramstage_adamain%b
 D system.ads		20191214172731 21923ced system%s
 D gnat.adc		20191211220911 00000000
 X 1 b__ramstage.ads

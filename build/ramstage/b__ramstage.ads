@@ -203,7 +203,7 @@ package ramstage_adamain is
    pragma Export (C, u00096, "hw__time__timerS");
    u00097 : constant Version_32 := 16#ee9ba06b#;
    pragma Export (C, u00097, "gma__mainboardS");
-   u00098 : constant Version_32 := 16#52ec21b6#;
+   u00098 : constant Version_32 := 16#fc311517#;
    pragma Export (C, u00098, "cb__configS");
 
    --  BEGIN ELABORATION ORDER

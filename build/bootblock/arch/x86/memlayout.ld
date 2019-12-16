@@ -14,7 +14,7 @@ SECTIONS
  _ecar_stack = .;
  _ = ASSERT(. <= ., "preram_cbmem_console overlaps the previous region!"); . = .; _preram_cbmem_console = .; _ = ASSERT(. == ALIGN(4), "preram_cbmem_console must be aligned to 4!"); _ = ASSERT(. <= . + 0xc00, "epreram_cbmem_console overlaps the previous region!"); . = . + 0xc00; _epreram_cbmem_console = .;
  _ = ASSERT(. <= ., "timestamp overlaps the previous region!"); . = .; _timestamp = .; _ = ASSERT(. == ALIGN(8), "timestamp must be aligned to 8!"); _ = ASSERT(. <= . + 0x200, "etimestamp overlaps the previous region!"); . = . + 0x200; _etimestamp = .; _ = ASSERT(0x200 >= 212, "Timestamp region must fit timestamp_cache!");
- _ = ASSERT(. <= ., "fmap_cache overlaps the previous region!"); . = .; _fmap_cache = .; _ = ASSERT(. == ALIGN(4), "fmap_cache must be aligned to 4!"); _ = ASSERT(. <= . + 0xe0, "efmap_cache overlaps the previous region!"); . = . + 0xe0; _efmap_cache = .; _ = ASSERT(0xe0 >= 0xe0, "FMAP does not fit in FMAP_CACHE! (0xe0 < 0xe0)");
+ _ = ASSERT(. <= ., "fmap_cache overlaps the previous region!"); . = .; _fmap_cache = .; _ = ASSERT(. == ALIGN(4), "fmap_cache must be aligned to 4!"); _ = ASSERT(. <= . + 0x10a, "efmap_cache overlaps the previous region!"); . = . + 0x10a; _efmap_cache = .; _ = ASSERT(0x10a >= 0x10a, "FMAP does not fit in FMAP_CACHE! (0x10a < 0x10a)");
  _car_ehci_dbg_info = .;
         . += 80;
         _ecar_ehci_dbg_info = .;
