@@ -152,7 +152,7 @@ package body ramstage_adamain is
    --   libgfxinit/common/hw-gfx-gma-display_probing.o
    --   drivers/intel/gma/gma.o
    --   mainboard/dell/dell_system_vostro_3360/gma-mainboard.o
-   --   drivers/intel/gma/text_fb/gma-gfx_init.o
+   --   drivers/intel/gma/hires_fb/gma-gfx_init.o
    --   -L./
    --   -L/home/rhylx/Repos/coreboot/build/libgnat-x86_32/adalib/
    --   -static

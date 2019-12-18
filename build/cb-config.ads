@@ -95,6 +95,7 @@ package CB.Config is
    CBFS_SIZE                                      : constant         := 16#0010_0000#;
    POST_IO                                        : constant boolean := true;
    USBDEBUG_HCD_INDEX                             : constant         := 2;
+   PAYLOAD_CONFIGFILE                             : constant string  := "";
    OVERRIDE_DEVICETREE                            : constant string  := "";
    BOOT_DEVICE_SPI_FLASH_BUS                      : constant         := 0;
    UART_FOR_CONSOLE                               : constant         := 0;
@@ -300,6 +301,7 @@ package CB.Config is
    -- Embedded Controllers
    --
    EC_GOOGLE_WILCO                                : constant boolean := false;
+   SEABIOS_PS2_TIMEOUT                            : constant         := 0;
    --
    -- Intel Firmware
    --
@@ -367,8 +369,12 @@ package CB.Config is
    --
    -- Display
    --
-   VGA_TEXT_FRAMEBUFFER                           : constant boolean := true;
-   GENERIC_LINEAR_FRAMEBUFFER                     : constant boolean := false;
+   VGA_TEXT_FRAMEBUFFER                           : constant boolean := false;
+   GENERIC_LINEAR_FRAMEBUFFER                     : constant boolean := true;
+   LINEAR_FRAMEBUFFER                             : constant boolean := true;
+   BOOTSPLASH                                     : constant boolean := false;
+   LINEAR_FRAMEBUFFER_MAX_WIDTH                   : constant         := 2560;
+   LINEAR_FRAMEBUFFER_MAX_HEIGHT                  : constant         := 1600;
    SMBUS_HAS_AUX_CHANNELS                         : constant boolean := false;
    PCI                                            : constant boolean := true;
    NO_MMCONF_SUPPORT                              : constant boolean := false;
@@ -477,7 +483,6 @@ package CB.Config is
    DRIVERS_MC146818                               : constant boolean := true;
    LPC_TPM                                        : constant boolean := false;
    MAINBOARD_HAS_LPC_TPM                          : constant boolean := false;
-   VGA                                            : constant boolean := true;
    DRIVERS_RICOH_RCE822                           : constant boolean := false;
    DRIVER_SIEMENS_NC_FPGA                         : constant boolean := false;
    NC_FPGA_NOTIFY_CB_READY                        : constant boolean := false;
@@ -581,16 +586,27 @@ package CB.Config is
    -- Payload
    --
    PAYLOAD_NONE                                   : constant boolean := false;
-   PAYLOAD_ELF                                    : constant boolean := true;
+   PAYLOAD_ELF                                    : constant boolean := false;
    PAYLOAD_FILO                                   : constant boolean := false;
    PAYLOAD_GRUB2                                  : constant boolean := false;
    PAYLOAD_LINUXBOOT                              : constant boolean := false;
-   PAYLOAD_SEABIOS                                : constant boolean := false;
+   PAYLOAD_SEABIOS                                : constant boolean := true;
    PAYLOAD_UBOOT                                  : constant boolean := false;
    PAYLOAD_YABITS                                 : constant boolean := false;
    PAYLOAD_LINUX                                  : constant boolean := false;
    PAYLOAD_TIANOCORE                              : constant boolean := false;
-   PAYLOAD_FILE                                   : constant string  := "payloads/coreinfo/build/coreinfo.elf";
+   PAYLOAD_FILE                                   : constant string  := "payloads/external/SeaBIOS/seabios/out/bios.bin.elf";
+   SEABIOS_STABLE                                 : constant boolean := true;
+   SEABIOS_MASTER                                 : constant boolean := false;
+   SEABIOS_REVISION                               : constant boolean := false;
+   SEABIOS_THREAD_OPTIONROMS                      : constant boolean := false;
+   SEABIOS_VGA_COREBOOT                           : constant boolean := true;
+   SEABIOS_BOOTORDER_FILE                         : constant string  := "";
+   SEABIOS_ADD_SERCON_PORT_FILE                   : constant boolean := false;
+   PAYLOAD_VGABIOS_FILE                           : constant string  := "payloads/external/SeaBIOS/seabios/out/vgabios.bin";
+   --
+   -- Using default SeaBIOS log level
+   --
    PAYLOAD_OPTIONS                                : constant string  := "";
    PXE                                            : constant boolean := false;
    COMPRESSED_PAYLOAD_LZMA                        : constant boolean := true;

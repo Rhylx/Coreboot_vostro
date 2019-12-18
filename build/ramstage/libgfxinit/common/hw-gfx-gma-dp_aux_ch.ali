@@ -83,7 +83,7 @@ W hw.gfx.gma.dp_aux_request%s  hw-gfx-gma-dp_aux_request.adb  hw-gfx-gma-dp_aux_
 Z hw.gfx.i2c%s		hw-gfx-i2c.ads		hw-gfx-i2c.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20191216223417 3df8aafb hw.config%s
+D hw-config.ads		20191218211257 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
 D hw-gfx-dp_aux_ch.adb	20191211222205 d137e7c3 hw.gfx.dp_aux_ch%b
