@@ -412,7 +412,7 @@ package CB.Config is
    SPI_FLASH                                      : constant boolean := true;
    SPI_SDCARD                                     : constant boolean := false;
    BOOT_DEVICE_SPI_FLASH_RW_NOMMAP                : constant boolean := true;
-   BOOT_DEVICE_SPI_FLASH_RW_NOMMAP_EARLY          : constant boolean := true;
+   BOOT_DEVICE_SPI_FLASH_RW_NOMMAP_EARLY          : constant boolean := false;
    SPI_FLASH_NO_FAST_READ                         : constant boolean := false;
    SPI_FLASH_ADESTO                               : constant boolean := true;
    SPI_FLASH_AMIC                                 : constant boolean := true;
@@ -542,8 +542,7 @@ package CB.Config is
    CONSOLE_NE2K                                   : constant boolean := false;
    CONSOLE_CBMEM                                  : constant boolean := true;
    CONSOLE_CBMEM_BUFFER_SIZE                      : constant         := 16#0002_0000#;
-   CONSOLE_SPI_FLASH                              : constant boolean := true;
-   CONSOLE_SPI_FLASH_BUFFER_SIZE                  : constant         := 16#0002_0000#;
+   CONSOLE_SPI_FLASH                              : constant boolean := false;
    DEFAULT_CONSOLE_LOGLEVEL_8                     : constant boolean := true;
    DEFAULT_CONSOLE_LOGLEVEL_7                     : constant boolean := false;
    DEFAULT_CONSOLE_LOGLEVEL_6                     : constant boolean := false;

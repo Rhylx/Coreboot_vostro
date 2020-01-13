@@ -95,7 +95,7 @@ D a-unccon.ads		20191214172731 f9eb8f06 ada.unchecked_conversion%s
 D gnat.ads		20191214172731 fd2ad2f1 gnat%s
 D g-souinf.ads		20191214172731 7fd67a54 gnat.source_info%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20191218211257 3df8aafb hw.config%s
+D hw-config.ads		20200113113549 3df8aafb hw.config%s
 D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
