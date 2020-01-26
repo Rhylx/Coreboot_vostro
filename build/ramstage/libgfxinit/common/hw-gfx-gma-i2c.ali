@@ -82,12 +82,12 @@ W hw.gfx.i2c%s		hw-gfx-i2c.ads		hw-gfx-i2c.ali
 D gnat.ads		20191214172731 fd2ad2f1 gnat%s
 D g-souinf.ads		20191214172731 7fd67a54 gnat.source_info%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200113113549 3df8aafb hw.config%s
+D hw-config.ads		20200123235224 3df8aafb hw.config%s
 D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200113113549 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200123235224 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-i2c.ads	20191211222205 dc3da378 hw.gfx.gma.i2c%s
 D hw-gfx-gma-i2c.adb	20191211222205 53119437 hw.gfx.gma.i2c%b
 D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s

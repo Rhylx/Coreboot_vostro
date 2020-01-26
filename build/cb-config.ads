@@ -92,10 +92,9 @@ package CB.Config is
    DRAM_RESET_GATE_GPIO                           : constant         := 60;
    DEVICETREE                                     : constant string  := "devicetree.cb";
    PRERAM_CBMEM_CONSOLE_SIZE                      : constant         := 16#0c00#;
-   CBFS_SIZE                                      : constant         := 16#0010_0000#;
+   CBFS_SIZE                                      : constant         := 16#0040_0000#;
    POST_IO                                        : constant boolean := true;
    USBDEBUG_HCD_INDEX                             : constant         := 2;
-   PAYLOAD_CONFIGFILE                             : constant string  := "";
    OVERRIDE_DEVICETREE                            : constant string  := "";
    BOOT_DEVICE_SPI_FLASH_BUS                      : constant         := 0;
    UART_FOR_CONSOLE                               : constant         := 0;
@@ -301,7 +300,6 @@ package CB.Config is
    -- Embedded Controllers
    --
    EC_GOOGLE_WILCO                                : constant boolean := false;
-   SEABIOS_PS2_TIMEOUT                            : constant         := 0;
    --
    -- Intel Firmware
    --
@@ -589,25 +587,23 @@ package CB.Config is
    PAYLOAD_FILO                                   : constant boolean := false;
    PAYLOAD_GRUB2                                  : constant boolean := false;
    PAYLOAD_LINUXBOOT                              : constant boolean := false;
-   PAYLOAD_SEABIOS                                : constant boolean := true;
+   PAYLOAD_SEABIOS                                : constant boolean := false;
    PAYLOAD_UBOOT                                  : constant boolean := false;
    PAYLOAD_YABITS                                 : constant boolean := false;
    PAYLOAD_LINUX                                  : constant boolean := false;
-   PAYLOAD_TIANOCORE                              : constant boolean := false;
-   PAYLOAD_FILE                                   : constant string  := "payloads/external/SeaBIOS/seabios/out/bios.bin.elf";
-   SEABIOS_STABLE                                 : constant boolean := true;
-   SEABIOS_MASTER                                 : constant boolean := false;
-   SEABIOS_REVISION                               : constant boolean := false;
-   SEABIOS_THREAD_OPTIONROMS                      : constant boolean := false;
-   SEABIOS_VGA_COREBOOT                           : constant boolean := true;
-   SEABIOS_BOOTORDER_FILE                         : constant string  := "";
-   SEABIOS_ADD_SERCON_PORT_FILE                   : constant boolean := false;
-   PAYLOAD_VGABIOS_FILE                           : constant string  := "payloads/external/SeaBIOS/seabios/out/vgabios.bin";
-   --
-   -- Using default SeaBIOS log level
-   --
+   PAYLOAD_TIANOCORE                              : constant boolean := true;
+   PAYLOAD_FILE                                   : constant string  := "payloads/external/tianocore/tianocore/Build/UEFIPAYLOAD.fd";
    PAYLOAD_OPTIONS                                : constant string  := "";
    PXE                                            : constant boolean := false;
+   TIANOCORE_COREBOOTPAYLOAD                      : constant boolean := true;
+   TIANOCORE_UEFIPAYLOAD                          : constant boolean := false;
+   TIANOCORE_REVISION_ID                          : constant string  := "";
+   TIANOCORE_TARGET_IA32                          : constant boolean := false;
+   TIANOCORE_TARGET_X64                           : constant boolean := true;
+   TIANOCORE_DEBUG                                : constant boolean := false;
+   TIANOCORE_RELEASE                              : constant boolean := true;
+   TIANOCORE_USE_8254_TIMER                       : constant boolean := false;
+   TIANOCORE_BOOTSPLASH_IMAGE                     : constant boolean := false;
    COMPRESSED_PAYLOAD_LZMA                        : constant boolean := true;
    COMPRESSED_PAYLOAD_LZ4                         : constant boolean := false;
    PAYLOAD_IS_FLAT_BINARY                         : constant boolean := false;

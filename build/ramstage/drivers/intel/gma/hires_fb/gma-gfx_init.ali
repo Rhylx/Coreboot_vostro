@@ -61,7 +61,7 @@ RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 RV SPARK_05
 
-U gma.gfx_init%b	gma-gfx_init.adb	34febdd2 NE OO PK IU
+U gma.gfx_init%b	gma-gfx_init.adb	963b2453 NE OO PK IU
 W cb%s			cb.ads			cb.ali
 W cb.config%s		cb-config.ads		cb-config.ali
 W gma%s			gma.adb			gma.ali
@@ -79,13 +79,13 @@ W interfaces%s		interfac.ads		interfac.ali
 W interfaces.c%s	i-c.adb			i-c.ali
 
 D cb.ads		20191211220911 e6df39c3 cb%s
-D cb-config.ads		20200113113549 4819fa53 cb.config%s
+D cb-config.ads		20200123235224 eadc63d2 cb.config%s
 D gma.ads		20191211220911 f34d3a16 gma%s
 D gma-gfx_init.ads	20191211220911 22280f7a gma.gfx_init%s
 D gma-gfx_init.adb	20191211220911 9a235f24 gma.gfx_init%b
 D gma-mainboard.ads	20191211221029 4cc84d8f gma.mainboard%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200113113549 3df8aafb hw.config%s
+D hw-config.ads		20200123235224 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
@@ -103,9 +103,9 @@ D gnat.adc		20191211220911 00000000
 X 1 cb.ads
 1K9*CB 2e7 5|1r6 3r5
 X 2 cb-config.ads
-1K12*Config 670e14 5|1w9 67r24 68r24
-376N4*LINEAR_FRAMEBUFFER_MAX_WIDTH 5|67r31
-377N4*LINEAR_FRAMEBUFFER_MAX_HEIGHT 5|68r31
+1K12*Config 666e14 5|1w9 67r24 68r24
+374N4*LINEAR_FRAMEBUFFER_MAX_WIDTH 5|67r31
+375N4*LINEAR_FRAMEBUFFER_MAX_HEIGHT 5|68r31
 X 3 gma.ads
 5K9*GMA 14e8 4|6r9 38r5 5|14r6 16r14 117r5
 X 4 gma-gfx_init.ads
