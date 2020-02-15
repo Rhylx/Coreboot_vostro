@@ -70,11 +70,11 @@ U hw.gfx.gma.pch.sideband%s  hw-gfx-gma-pch-sideband.ads  6e79b0ce EE NE OO PK I
 W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200123235224 3df8aafb hw.config%s
+D hw-config.ads		20200214135301 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200123235224 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200214135301 9931d580 hw.gfx.gma.config%s
 D hw-gfx-gma-pch.ads	20191211222205 e6dc1f0f hw.gfx.gma.pch%s
 D hw-gfx-gma-pch-sideband.ads  20191211222205 88a5afc1 hw.gfx.gma.pch.sideband%s
 D hw-gfx-gma-pch-sideband.adb  20191211222205 81b1eee8 hw.gfx.gma.pch.sideband%b
@@ -82,9 +82,9 @@ D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s
 D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
 D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
 D hw-time.ads		20191211222205 e7f4a790 hw.time%s
-D interfac.ads		20191214172731 8908571f interfaces%s
-D system.ads		20191214172731 21923ced system%s
-D s-unstyp.ads		20191214172731 9d58a4c0 system.unsigned_types%s
+D interfac.ads		20200214135301 8908571f interfaces%s
+D system.ads		20200214135301 21923ced system%s
+D s-unstyp.ads		20200214135301 9d58a4c0 system.unsigned_types%s
 D gnat.adc		20191211220911 00000000
 X 1 hw.ads
 17K9*HW 91e7 8|15r17 50r5 9|15r6 17r14 138r5

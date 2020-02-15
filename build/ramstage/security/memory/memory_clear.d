@@ -1,17 +1,18 @@
 build/ramstage/security/memory/memory_clear.o: \
  src/security/memory/memory_clear.c src/include/kconfig.h build/config.h \
- src/include/rules.h src/commonlib/include/commonlib/compiler.h \
+ src/include/rules.h src/commonlib/bsd/include/commonlib/bsd/compiler.h \
  src/include/cpu/x86/pae.h src/include/stdint.h src/include/stddef.h \
  src/commonlib/include/commonlib/helpers.h \
- src/commonlib/include/commonlib/compiler.h src/include/memrange.h \
- src/include/device/resource.h src/include/bootmem.h \
- src/include/boot/coreboot_tables.h \
+ src/commonlib/bsd/include/commonlib/bsd/helpers.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h \
+ src/include/memrange.h src/include/device/resource.h \
+ src/include/bootmem.h src/include/boot/coreboot_tables.h \
  src/commonlib/include/commonlib/coreboot_tables.h src/include/types.h \
- src/include/stdbool.h src/include/bootstate.h src/include/string.h \
- src/include/stdlib.h src/include/console/vtxprintf.h \
- src/include/main_decl.h src/include/symbols.h \
- src/include/console/console.h src/arch/x86/include/arch/cpu.h \
- src/include/console/post_codes.h \
+ src/commonlib/bsd/include/commonlib/bsd/cb_err.h src/include/stdbool.h \
+ src/include/bootstate.h src/include/string.h \
+ src/include/console/vtxprintf.h src/include/main_decl.h \
+ src/include/symbols.h src/include/console/console.h \
+ src/arch/x86/include/arch/cpu.h src/include/console/post_codes.h \
  src/commonlib/include/commonlib/loglevel.h \
  src/arch/x86/include/arch/memory_clear.h src/security/memory/memory.h \
  src/include/cbmem.h src/commonlib/include/commonlib/cbmem_id.h \

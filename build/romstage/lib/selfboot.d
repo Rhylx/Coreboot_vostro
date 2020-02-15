@@ -1,17 +1,19 @@
 build/romstage/lib/selfboot.o: src/lib/selfboot.c src/include/kconfig.h \
  build/config.h src/include/rules.h \
- src/commonlib/include/commonlib/compiler.h \
- src/commonlib/include/commonlib/compression.h src/include/stddef.h \
- src/commonlib/include/commonlib/helpers.h \
- src/commonlib/include/commonlib/compiler.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h \
+ src/commonlib/bsd/include/commonlib/bsd/compression.h \
+ src/include/stddef.h src/commonlib/include/commonlib/helpers.h \
+ src/commonlib/bsd/include/commonlib/bsd/helpers.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h \
  src/commonlib/include/commonlib/endian.h src/include/stdint.h \
- src/include/string.h src/include/stdlib.h \
- src/include/console/vtxprintf.h src/include/console/console.h \
- src/arch/x86/include/arch/cpu.h src/include/types.h \
+ src/include/string.h src/include/console/vtxprintf.h \
+ src/include/console/console.h src/arch/x86/include/arch/cpu.h \
+ src/include/types.h src/commonlib/bsd/include/commonlib/bsd/cb_err.h \
  src/include/stdbool.h src/include/console/post_codes.h \
- src/commonlib/include/commonlib/loglevel.h src/include/symbols.h \
- src/include/cbfs.h src/commonlib/include/commonlib/cbfs.h \
- src/commonlib/include/commonlib/cbfs_serialized.h \
+ src/commonlib/include/commonlib/loglevel.h src/include/stdlib.h \
+ src/include/symbols.h src/include/cbfs.h \
+ src/commonlib/include/commonlib/cbfs.h \
+ src/commonlib/bsd/include/commonlib/bsd/cbfs_serialized.h \
  src/commonlib/include/commonlib/region.h src/include/sys/types.h \
  src/include/sys/../types.h src/commonlib/include/commonlib/mem_pool.h \
  3rdparty/vboot/firmware/include/vb2_api.h \

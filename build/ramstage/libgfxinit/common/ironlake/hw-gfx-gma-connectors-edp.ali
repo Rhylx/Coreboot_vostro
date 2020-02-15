@@ -87,12 +87,12 @@ W hw.time%s		hw-time.adb		hw-time.ali
 U hw.gfx.gma.connectors.edp%s  hw-gfx-gma-connectors-edp.ads  b70e0f24 EE NE OO PK IU
 W hw.gfx.gma.connectors%s  hw-gfx-gma-connectors.adb  hw-gfx-gma-connectors.ali
 
-D ada.ads		20191214172731 3ffc8e18 ada%s
-D a-unccon.ads		20191214172731 f9eb8f06 ada.unchecked_conversion%s
-D gnat.ads		20191214172731 fd2ad2f1 gnat%s
-D g-souinf.ads		20191214172731 7fd67a54 gnat.source_info%s
+D ada.ads		20200214135301 3ffc8e18 ada%s
+D a-unccon.ads		20200214135301 f9eb8f06 ada.unchecked_conversion%s
+D gnat.ads		20200214135301 fd2ad2f1 gnat%s
+D g-souinf.ads		20200214135301 7fd67a54 gnat.source_info%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200123235224 3df8aafb hw.config%s
+D hw-config.ads		20200214135301 3df8aafb hw.config%s
 D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
@@ -102,7 +102,7 @@ D hw-gfx-dp_training.ads  20191211222205 c086c1de hw.gfx.dp_training%s
 D hw-gfx-dp_training.adb  20191211222205 78c2d18b hw.gfx.dp_training%b
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200123235224 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200214135301 9931d580 hw.gfx.gma.config%s
 D hw-gfx-gma-connectors.ads  20191211222205 cca0fab5 hw.gfx.gma.connectors%s
 D hw-gfx-gma-connectors-edp.ads  20191211222205 7baef591 hw.gfx.gma.connectors.edp%s
 D hw-gfx-gma-connectors-edp.adb  20191211222205 e61b57e6 hw.gfx.gma.connectors.edp%b
@@ -114,9 +114,9 @@ D hw-gfx-i2c.ads	20191211222205 e54ab4f7 hw.gfx.i2c%s
 D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
 D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
 D hw-time.ads		20191211222205 e7f4a790 hw.time%s
-D interfac.ads		20191214172731 8908571f interfaces%s
-D system.ads		20191214172731 21923ced system%s
-D s-unstyp.ads		20191214172731 9d58a4c0 system.unsigned_types%s
+D interfac.ads		20200214135301 8908571f interfaces%s
+D system.ads		20200214135301 21923ced system%s
+D s-unstyp.ads		20200214135301 9d58a4c0 system.unsigned_types%s
 D gnat.adc		20191211220911 00000000
 X 3 gnat.ads
 34K9*GNAT 37e9 19|22r6 84r37 187r37 251r37 272r37

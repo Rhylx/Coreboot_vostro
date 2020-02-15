@@ -1,6 +1,6 @@
 build/dsdt.aml: src/mainboard/dell/dell_system_vostro_3360/dsdt.asl \
  src/include/kconfig.h build/config.h src/include/rules.h \
- src/commonlib/include/commonlib/compiler.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h \
  src/arch/x86/include/arch/acpi.h \
  src/mainboard/dell/dell_system_vostro_3360/acpi/platform.asl \
  src/cpu/intel/common/acpi/cpu.asl \

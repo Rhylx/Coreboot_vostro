@@ -7,11 +7,11 @@ DefinitionBlock(
  0x20141018
 )
 {
-Method(_WAK,1)
+Method(_WAK, 1)
 {
- Return(Package(){0,0})
+ Return(Package() {0, 0})
 }
-Method(_PTS,1)
+Method(_PTS, 1)
 {
 }
 External (\_PR.CNOT, MethodObj)
@@ -58,11 +58,29 @@ Method(GOS, 0)
   If (_OSI("Windows 2001 SP1")) {
    Store (2001, OSYS)
   }
+  If (_OSI("Windows 2001.1")) {
+   Store (2001, OSYS)
+  }
+  If (_OSI("Windows 2001.1 SP1")) {
+   Store (2001, OSYS)
+  }
   If (_OSI("Windows 2001 SP2")) {
    Store (2002, OSYS)
   }
   If (_OSI("Windows 2006")) {
    Store (2006, OSYS)
+  }
+  If (_OSI("Windows 2006 SP1")) {
+   Store (2006, OSYS)
+  }
+  If (_OSI("Windows 2006.1")) {
+   Store (2006, OSYS)
+  }
+  If (_OSI("Windows 2009")) {
+   Store (2009, OSYS)
+  }
+  If (_OSI("Windows 2012")) {
+   Store (2012, OSYS)
   }
  }
 }
@@ -563,8 +581,7 @@ Device (PEGP)
  Name (_ADR, 0x00010000)
  Method (_STA)
  {
-  ShiftRight (\_SB.PCI0.MCHC.DVEN, 3, Local0)
-  Return (And (Local0, 1))
+  Return (((\_SB.PCI0.MCHC.DVEN >> 3) & 1) * 0xf)
  }
  Device (DEV0)
  {
@@ -576,8 +593,7 @@ Device (PEG1)
  Name (_ADR, 0x00010001)
  Method (_STA)
  {
-  ShiftRight (\_SB.PCI0.MCHC.DVEN, 2, Local0)
-  Return (And (Local0, 1))
+  Return (((\_SB.PCI0.MCHC.DVEN >> 2) & 1) * 0xf)
  }
  Device (DEV0)
  {
@@ -589,8 +605,7 @@ Device (PEG2)
  Name (_ADR, 0x00010002)
  Method (_STA)
  {
-  ShiftRight (\_SB.PCI0.MCHC.DVEN, 1, Local0)
-  Return (And (Local0, 1))
+  Return (((\_SB.PCI0.MCHC.DVEN >> 1) & 1) * 0xf)
  }
  Device (DEV0)
  {
@@ -602,8 +617,7 @@ Device (PEG6)
  Name (_ADR, 0x00060000)
  Method (_STA)
  {
-  ShiftRight (\_SB.PCI0.MCHC.DVEN, 13, Local0)
-  Return (And (Local0, 1))
+  Return (((\_SB.PCI0.MCHC.DVEN >> 13) & 1) * 0xf)
  }
  Device (DEV0)
  {
@@ -637,7 +651,7 @@ Device (PDRC)
   CreateDwordField (PDRS, ^PCIX._BAS, XBR0)
   XBR0 = \_SB.PCI0.MCHC.PXBR << 26
   CreateDwordField (PDRS, ^PCIX._LEN, XSZ0)
-  XSZ0 = 0x10000000 << \_SB.PCI0.MCHC.PXSZ
+  XSZ0 = 0x10000000 >> \_SB.PCI0.MCHC.PXSZ
   Return(PDRS)
  }
 }

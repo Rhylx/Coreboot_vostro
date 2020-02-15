@@ -83,7 +83,7 @@ W hw.gfx.gma.dp_aux_request%s  hw-gfx-gma-dp_aux_request.adb  hw-gfx-gma-dp_aux_
 Z hw.gfx.i2c%s		hw-gfx-i2c.ads		hw-gfx-i2c.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200123235224 3df8aafb hw.config%s
+D hw-config.ads		20200214135301 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
 D hw-gfx-dp_aux_ch.adb	20191211222205 d137e7c3 hw.gfx.dp_aux_ch%b
@@ -97,9 +97,9 @@ D hw-gfx-i2c.ads	20191211222205 e54ab4f7 hw.gfx.i2c%s
 D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
 D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
 D hw-time.ads		20191211222205 e7f4a790 hw.time%s
-D interfac.ads		20191214172731 8908571f interfaces%s
-D system.ads		20191214172731 21923ced system%s
-D s-unstyp.ads		20191214172731 9d58a4c0 system.unsigned_types%s
+D interfac.ads		20200214135301 8908571f interfaces%s
+D system.ads		20200214135301 21923ced system%s
+D s-unstyp.ads		20200214135301 9d58a4c0 system.unsigned_types%s
 D gnat.adc		20191211220911 00000000
 X 1 hw.ads
 17K9*HW 91e7 10|15r6 17r6 19r17 20r11

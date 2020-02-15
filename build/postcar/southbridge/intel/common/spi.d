@@ -1,14 +1,16 @@
 build/postcar/southbridge/intel/common/spi.o: \
  src/southbridge/intel/common/spi.c src/include/kconfig.h build/config.h \
- src/include/rules.h src/commonlib/include/commonlib/compiler.h \
- src/include/stdint.h src/include/stdlib.h src/include/stddef.h \
+ src/include/rules.h src/commonlib/bsd/include/commonlib/bsd/compiler.h \
+ src/include/stdint.h src/include/string.h src/include/stddef.h \
  src/commonlib/include/commonlib/helpers.h \
- src/commonlib/include/commonlib/compiler.h src/include/string.h \
+ src/commonlib/bsd/include/commonlib/bsd/helpers.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h \
  src/include/console/vtxprintf.h src/include/bootstate.h \
  src/include/delay.h src/include/device/mmio.h \
  src/arch/x86/include/arch/mmio.h src/include/endian.h \
  src/arch/x86/include/arch/byteorder.h src/include/swab.h \
- src/include/types.h src/include/stdbool.h src/include/device/pci_ops.h \
+ src/include/types.h src/commonlib/bsd/include/commonlib/bsd/cb_err.h \
+ src/include/stdbool.h src/include/device/pci_ops.h \
  src/include/device/device.h src/include/device/resource.h \
  src/include/device/path.h src/include/device/pci_type.h \
  src/arch/x86/include/arch/pci_ops.h \
@@ -23,5 +25,5 @@ build/postcar/southbridge/intel/common/spi.o: \
  src/include/sys/types.h src/include/sys/../types.h \
  src/commonlib/include/commonlib/mem_pool.h \
  src/include/boot/coreboot_tables.h \
- src/commonlib/include/commonlib/coreboot_tables.h \
+ src/commonlib/include/commonlib/coreboot_tables.h src/include/timer.h \
  src/southbridge/intel/common/spi.h

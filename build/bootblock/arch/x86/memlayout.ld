@@ -37,9 +37,8 @@ SECTIONS
 _bogus = ASSERT((0x20000 == 0) || (SIZEOF(.car.data) <= 0x20000), "Cache as RAM area is too full");
 _bogus3 = ASSERT(0x10000 > 0x0, "BSP stack size not configured");
 }
- gdtptr16_offset = gdtptr16 & 0xffff;
- nullidt_offset = nullidt & 0xffff;
- ap_sipi_vector_in_rom = (_start16bit >> 12) & 0xff;
+gdtptr16_offset = gdtptr16 & 0xffff;
+nullidt_offset = nullidt & 0xffff;
 SECTIONS {
  _TOO_LOW = 0xfffffff0 - 0xfff0;
  _bogus = ASSERT(_start16bit >= _TOO_LOW, "_start16bit too low. Please report.");
@@ -51,7 +50,7 @@ SECTIONS {
  }
 }
 SECTIONS {
- . = (0xfffffff0 - 0x80) - (__id_end - __id_start) + 0x10;
+ . = (0xffffffff - 0x80) - (__id_end - __id_start) + 1;
  .id (.): {
   KEEP(*(.id))
  }
