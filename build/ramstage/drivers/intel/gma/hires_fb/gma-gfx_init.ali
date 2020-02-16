@@ -61,7 +61,7 @@ RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 RV SPARK_05
 
-U gma.gfx_init%b	gma-gfx_init.adb	45d41cd5 NE OO PK IU
+U gma.gfx_init%b	gma-gfx_init.adb	8aaed72a NE OO PK IU
 W cb%s			cb.ads			cb.ali
 W cb.config%s		cb-config.ads		cb-config.ali
 W gma%s			gma.adb			gma.ali
@@ -79,13 +79,13 @@ W interfaces%s		interfac.ads		interfac.ali
 W interfaces.c%s	i-c.adb			i-c.ali
 
 D cb.ads		20191211220911 e6df39c3 cb%s
-D cb-config.ads		20200216151832 39335b54 cb.config%s
+D cb-config.ads		20200216160243 f64990ab cb.config%s
 D gma.ads		20191211220911 f34d3a16 gma%s
 D gma-gfx_init.ads	20191211220911 22280f7a gma.gfx_init%s
 D gma-gfx_init.adb	20191211220911 9a235f24 gma.gfx_init%b
 D gma-mainboard.ads	20200214134300 4cc84d8f gma.mainboard%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200216151832 3df8aafb hw.config%s
+D hw-config.ads		20200216160245 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
@@ -94,18 +94,18 @@ D hw-gfx-gma-display_probing.ads  20191211222205 63e0551c hw.gfx.gma.display_pro
 D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
 D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
 D hw-time.ads		20191211222205 e7f4a790 hw.time%s
-D interfac.ads		20200214135301 8908571f interfaces%s
-D i-c.ads		20200214135301 da31d5c9 interfaces.c%s
-D system.ads		20200214135301 21923ced system%s
-D s-parame.ads		20200214135301 c706fdbb system.parameters%s
-D s-unstyp.ads		20200214135301 9d58a4c0 system.unsigned_types%s
+D interfac.ads		20200216160245 8908571f interfaces%s
+D i-c.ads		20200216160245 da31d5c9 interfaces.c%s
+D system.ads		20200216160245 21923ced system%s
+D s-parame.ads		20200216160245 c706fdbb system.parameters%s
+D s-unstyp.ads		20200216160245 9d58a4c0 system.unsigned_types%s
 D gnat.adc		20191211220911 00000000
 X 1 cb.ads
 1K9*CB 2e7 5|1r6 3r5
 X 2 cb-config.ads
-1K12*Config 664e14 5|1w9 67r24 68r24
-375N4*LINEAR_FRAMEBUFFER_MAX_WIDTH 5|67r31
-376N4*LINEAR_FRAMEBUFFER_MAX_HEIGHT 5|68r31
+1K12*Config 672e14 5|1w9 67r24 68r24
+377N4*LINEAR_FRAMEBUFFER_MAX_WIDTH 5|67r31
+378N4*LINEAR_FRAMEBUFFER_MAX_HEIGHT 5|68r31
 X 3 gma.ads
 5K9*GMA 14e8 4|6r9 38r5 5|14r6 16r14 117r5
 X 4 gma-gfx_init.ads

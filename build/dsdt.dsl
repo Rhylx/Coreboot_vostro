@@ -5,7 +5,7 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of build/dsdt.aml, Sun Feb 16 15:19:16 2020
+ * Disassembly of build/dsdt.aml, Sun Feb 16 16:04:06 2020
  *
  * Original Table Header:
  *     Signature        "DSDT"

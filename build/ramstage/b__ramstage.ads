@@ -191,7 +191,7 @@ package ramstage_adamain is
    pragma Export (C, u00090, "gmaB");
    u00091 : constant Version_32 := 16#b0c08193#;
    pragma Export (C, u00091, "gmaS");
-   u00092 : constant Version_32 := 16#45d41cd5#;
+   u00092 : constant Version_32 := 16#8aaed72a#;
    pragma Export (C, u00092, "gma__gfx_initB");
    u00093 : constant Version_32 := 16#3fca6799#;
    pragma Export (C, u00093, "gma__gfx_initS");
@@ -203,7 +203,7 @@ package ramstage_adamain is
    pragma Export (C, u00096, "hw__time__timerS");
    u00097 : constant Version_32 := 16#ee9ba06b#;
    pragma Export (C, u00097, "gma__mainboardS");
-   u00098 : constant Version_32 := 16#dfec6297#;
+   u00098 : constant Version_32 := 16#1096a968#;
    pragma Export (C, u00098, "cb__configS");
 
    --  BEGIN ELABORATION ORDER
