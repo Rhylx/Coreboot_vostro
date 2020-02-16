@@ -75,8 +75,8 @@ D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-debug.adb		20191211222205 7f5a7b27 hw.debug%b
 D hw-debug_sink.ads	20191211220911 2fec8092 hw.debug_sink%s
 D hw-time.ads		20191211222205 e7f4a790 hw.time%s
-D interfac.ads		20200216160245 8908571f interfaces%s
-D system.ads		20200216160245 21923ced system%s
+D interfac.ads		20200216164320 8908571f interfaces%s
+D system.ads		20200216164320 21923ced system%s
 D gnat.adc		20191211220911 00000000
 X 1 hw.ads
 17K9*HW 91e7 2|16r9 41r5 3|15w6 16r6 17r6 19r10 20r10 22r14 63r7 74r7 109r10

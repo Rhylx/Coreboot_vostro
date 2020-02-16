@@ -97,7 +97,6 @@ package CB.Config is
    CBFS_SIZE                                      : constant         := 16#0040_0000#;
    POST_IO                                        : constant boolean := true;
    USBDEBUG_HCD_INDEX                             : constant         := 2;
-   PAYLOAD_CONFIGFILE                             : constant string  := "";
    OVERRIDE_DEVICETREE                            : constant string  := "";
    BOOT_DEVICE_SPI_FLASH_BUS                      : constant         := 0;
    UART_FOR_CONSOLE                               : constant         := 0;
@@ -117,7 +116,7 @@ package CB.Config is
    MAINBOARD_SMBIOS_PRODUCT_NAME                  : constant string  := "Dell System Vostro 3360";
    HAVE_IFD_BIN                                   : constant boolean := false;
    MAINBOARD_VERSION                              : constant string  := "1.0";
-   DRIVERS_PS2_KEYBOARD                           : constant boolean := false;
+   DRIVERS_PS2_KEYBOARD                           : constant boolean := true;
    DRIVERS_UART_8250IO                            : constant boolean := true;
    PCIEXP_L1_SUB_STATE                            : constant boolean := false;
    NO_POST                                        : constant boolean := false;
@@ -304,7 +303,6 @@ package CB.Config is
    -- Embedded Controllers
    --
    EC_GOOGLE_WILCO                                : constant boolean := false;
-   SEABIOS_PS2_TIMEOUT                            : constant         := 0;
    --
    -- Intel Firmware
    --
@@ -469,11 +467,11 @@ package CB.Config is
    INTEL_GMA_SSC_ALTERNATE_REF                    : constant boolean := false;
    INTEL_GMA_SWSMISCI                             : constant boolean := false;
    GFX_GMA                                        : constant boolean := true;
-   GFX_GMA_INTERNAL_IS_EDP                        : constant boolean := true;
-   GFX_GMA_INTERNAL_IS_LVDS                       : constant boolean := false;
+   GFX_GMA_INTERNAL_IS_EDP                        : constant boolean := false;
+   GFX_GMA_INTERNAL_IS_LVDS                       : constant boolean := true;
    GFX_GMA_DYN_CPU                                : constant boolean := true;
    GFX_GMA_GENERATION                             : constant string  := "Ironlake";
-   GFX_GMA_INTERNAL_PORT                          : constant string  := "DP";
+   GFX_GMA_INTERNAL_PORT                          : constant string  := "LVDS";
    GFX_GMA_ANALOG_I2C_PORT                        : constant string  := "PCH_DAC";
    DRIVER_INTEL_I210                              : constant boolean := false;
    DRIVERS_INTEL_MIPI_CAMERA                      : constant boolean := false;
@@ -590,25 +588,20 @@ package CB.Config is
    PAYLOAD_NONE                                   : constant boolean := false;
    PAYLOAD_ELF                                    : constant boolean := false;
    PAYLOAD_FILO                                   : constant boolean := false;
-   PAYLOAD_GRUB2                                  : constant boolean := false;
+   PAYLOAD_GRUB2                                  : constant boolean := true;
    PAYLOAD_LINUXBOOT                              : constant boolean := false;
-   PAYLOAD_SEABIOS                                : constant boolean := true;
+   PAYLOAD_SEABIOS                                : constant boolean := false;
    PAYLOAD_UBOOT                                  : constant boolean := false;
    PAYLOAD_YABITS                                 : constant boolean := false;
    PAYLOAD_LINUX                                  : constant boolean := false;
    PAYLOAD_TIANOCORE                              : constant boolean := false;
-   PAYLOAD_FILE                                   : constant string  := "payloads/external/SeaBIOS/seabios/out/bios.bin.elf";
-   SEABIOS_STABLE                                 : constant boolean := true;
-   SEABIOS_MASTER                                 : constant boolean := false;
-   SEABIOS_REVISION                               : constant boolean := false;
-   SEABIOS_THREAD_OPTIONROMS                      : constant boolean := false;
-   SEABIOS_VGA_COREBOOT                           : constant boolean := true;
-   SEABIOS_BOOTORDER_FILE                         : constant string  := "";
-   SEABIOS_ADD_SERCON_PORT_FILE                   : constant boolean := false;
-   PAYLOAD_VGABIOS_FILE                           : constant string  := "payloads/external/SeaBIOS/seabios/out/vgabios.bin";
-   --
-   -- Using default SeaBIOS log level
-   --
+   PAYLOAD_FILE                                   : constant string  := "payloads/external/GRUB2/grub2/build/default_payload.elf";
+   GRUB2_STABLE                                   : constant boolean := true;
+   GRUB2_MASTER                                   : constant boolean := false;
+   GRUB2_REVISION                                 : constant boolean := false;
+   GRUB2_EXTRA_MODULES                            : constant string  := "";
+   GRUB2_INCLUDE_RUNTIME_CONFIG_FILE              : constant boolean := true;
+   GRUB2_RUNTIME_CONFIG_FILE                      : constant string  := "grub.cfg";
    PAYLOAD_OPTIONS                                : constant string  := "";
    PXE                                            : constant boolean := false;
    COMPRESSED_PAYLOAD_LZMA                        : constant boolean := true;

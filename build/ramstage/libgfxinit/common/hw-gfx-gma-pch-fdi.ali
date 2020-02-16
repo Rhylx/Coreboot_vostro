@@ -60,7 +60,7 @@ RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 RV SPARK_05
 
-U hw.gfx.gma.pch.fdi%b	hw-gfx-gma-pch-fdi.adb	7ff7a84a NE OO PK IU
+U hw.gfx.gma.pch.fdi%b	hw-gfx-gma-pch-fdi.adb	01c6d786 NE OO PK IU
 W hw%s			hw.ads			hw.ali
 W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
 W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
@@ -73,11 +73,11 @@ U hw.gfx.gma.pch.fdi%s	hw-gfx-gma-pch-fdi.ads	9accaa52 EE NE OO PK IU
 W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200216160245 3df8aafb hw.config%s
+D hw-config.ads		20200216224915 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200216160245 9931d580 hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200216224915 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-pch.ads	20191211222205 e6dc1f0f hw.gfx.gma.pch%s
 D hw-gfx-gma-pch-fdi.ads  20191211222205 7c10b55d hw.gfx.gma.pch.fdi%s
 D hw-gfx-gma-pch-fdi.adb  20191211222205 8d044510 hw.gfx.gma.pch.fdi%b
@@ -85,9 +85,9 @@ D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s
 D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
 D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
 D hw-time.ads		20191211222205 e7f4a790 hw.time%s
-D interfac.ads		20200216160245 8908571f interfaces%s
-D system.ads		20200216160245 21923ced system%s
-D s-unstyp.ads		20200216160245 9d58a4c0 system.unsigned_types%s
+D interfac.ads		20200216164320 8908571f interfaces%s
+D system.ads		20200216164320 21923ced system%s
+D s-unstyp.ads		20200216164320 9d58a4c0 system.unsigned_types%s
 D gnat.adc		20191211220911 00000000
 X 1 hw.ads
 17K9*HW 91e7 8|15r9 30r5 9|15r6 16r6 17r6 19r14 297r5

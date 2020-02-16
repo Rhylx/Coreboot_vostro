@@ -64,8 +64,8 @@ U hw%s			hw.ads			bd96d023 NE OO PK IU
 W interfaces%s		interfac.ads		interfac.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D interfac.ads		20200216160245 8908571f interfaces%s
-D system.ads		20200216160245 21923ced system%s
+D interfac.ads		20200216164320 8908571f interfaces%s
+D system.ads		20200216164320 21923ced system%s
 D gnat.adc		20191211220911 00000000
 X 1 hw.ads
 17K9*HW 91l5 91e7

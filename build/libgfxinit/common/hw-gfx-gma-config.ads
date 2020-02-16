@@ -41,7 +41,7 @@ private package HW.GFX.GMA.Config is
 
 
 
-   Internal_Display : constant Internal_Type := DP;
+   Internal_Display : constant Internal_Type := LVDS;
 
    Analog_I2C_Port : constant PCH_Port := PCH_DAC;
 
