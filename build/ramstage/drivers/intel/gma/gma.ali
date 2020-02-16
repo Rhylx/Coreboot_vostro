@@ -76,7 +76,7 @@ W interfaces.c%s	i-c.adb			i-c.ali
 D gma.ads		20191211220911 f34d3a16 gma%s
 D gma.adb		20191211220911 ff318b33 gma%b
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200214135301 3df8aafb hw.config%s
+D hw-config.ads		20200216151832 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-edid.ads	20191211222205 99bc6e4c hw.gfx.edid%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s

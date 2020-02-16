@@ -372,8 +372,8 @@ package CB.Config is
    GENERIC_LINEAR_FRAMEBUFFER                     : constant boolean := true;
    LINEAR_FRAMEBUFFER                             : constant boolean := true;
    BOOTSPLASH                                     : constant boolean := false;
-   LINEAR_FRAMEBUFFER_MAX_WIDTH                   : constant         := 2560;
-   LINEAR_FRAMEBUFFER_MAX_HEIGHT                  : constant         := 1600;
+   LINEAR_FRAMEBUFFER_MAX_WIDTH                   : constant         := 1366;
+   LINEAR_FRAMEBUFFER_MAX_HEIGHT                  : constant         := 768;
    PCI                                            : constant boolean := true;
    NO_MMCONF_SUPPORT                              : constant boolean := false;
    MMCONF_SUPPORT                                 : constant boolean := true;
