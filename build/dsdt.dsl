@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of build/dsdt.aml, Sun Feb 16 22:50:00 2020
+ * Disassembly of build/dsdt.aml, Sat Feb 29 17:46:45 2020
  *
  * Original Table Header:
  *     Signature        "DSDT"
- *     Length           0x00002709 (9993)
+ *     Length           0x000027B3 (10163)
  *     Revision         0x02
- *     Checksum         0x7F
+ *     Checksum         0x9A
  *     OEM ID           "COREv4"
  *     OEM Table ID     "COREBOOT"
  *     OEM Revision     0x20141018 (538185752)
@@ -755,6 +755,11 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             {
                 Name (_ADR, Zero)  // _ADR: Address
             }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (One))
+            }
         }
 
         Device (PEG1)
@@ -768,6 +773,11 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             Device (DEV0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (0x02))
             }
         }
 
@@ -783,6 +793,11 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             {
                 Name (_ADR, Zero)  // _ADR: Address
             }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (0x03))
+            }
         }
 
         Device (PEG6)
@@ -796,6 +811,11 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             Device (DEV0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (0x04))
             }
         }
 
@@ -2513,6 +2533,47 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
                     {
                         Return (0x0B)
                     }
+                }
+            }
+
+            Device (PS2K)
+            {
+                Name (_HID, EisaId ("PNP0303") /* IBM Enhanced Keyboard (101/102-key, PS/2 Mouse) */)  // _HID: Hardware ID
+                Name (_CID, EisaId ("PNP030B"))  // _CID: Compatible ID
+                Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                {
+                    IO (Decode16,
+                        0x0060,             // Range Minimum
+                        0x0060,             // Range Maximum
+                        0x01,               // Alignment
+                        0x01,               // Length
+                        )
+                    IO (Decode16,
+                        0x0064,             // Range Minimum
+                        0x0064,             // Range Maximum
+                        0x01,               // Alignment
+                        0x01,               // Length
+                        )
+                    IRQ (Edge, ActiveHigh, Exclusive, )
+                        {1}
+                })
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    Return (0x0F)
+                }
+            }
+
+            Device (PS2M)
+            {
+                Name (_HID, EisaId ("PNP0F13") /* PS/2 Mouse */)  // _HID: Hardware ID
+                Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                {
+                    IRQ (Edge, ActiveHigh, Exclusive, )
+                        {12}
+                })
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    Return (0x0F)
                 }
             }
 

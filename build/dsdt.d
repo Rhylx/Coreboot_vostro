@@ -24,6 +24,7 @@ build/dsdt.aml: src/mainboard/dell/dell_system_vostro_3360/dsdt.asl \
  src/southbridge/intel/bd82x6x/acpi/lpc.asl \
  src/southbridge/intel/bd82x6x/acpi/irqlinks.asl \
  src/mainboard/dell/dell_system_vostro_3360/acpi/ec.asl \
+ src/drivers/pc80/pc/ps2_controller.asl \
  src/mainboard/dell/dell_system_vostro_3360/acpi/superio.asl \
  src/southbridge/intel/bd82x6x/acpi/sata.asl \
  src/southbridge/intel/common/acpi/smbus.asl

@@ -92,7 +92,7 @@ D a-unccon.ads		20200216164320 f9eb8f06 ada.unchecked_conversion%s
 D gnat.ads		20200216164320 fd2ad2f1 gnat%s
 D g-souinf.ads		20200216164320 7fd67a54 gnat.source_info%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200216224915 3df8aafb hw.config%s
+D hw-config.ads		20200222001332 3df8aafb hw.config%s
 D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-dp_aux_ch.ads	20191211222205 e884c770 hw.gfx.dp_aux_ch%s
@@ -102,7 +102,7 @@ D hw-gfx-dp_training.ads  20191211222205 c086c1de hw.gfx.dp_training%s
 D hw-gfx-dp_training.adb  20191211222205 78c2d18b hw.gfx.dp_training%b
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200216224915 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200222001332 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-connectors.ads  20191211222205 cca0fab5 hw.gfx.gma.connectors%s
 D hw-gfx-gma-connectors-edp.ads  20191211222205 7baef591 hw.gfx.gma.connectors.edp%s
 D hw-gfx-gma-connectors-edp.adb  20191211222205 e61b57e6 hw.gfx.gma.connectors.edp%b

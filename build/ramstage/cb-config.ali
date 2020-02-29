@@ -59,11 +59,11 @@ RR NO_IMPLICIT_LOOPS
 RV NO_OBSOLESCENT_FEATURES
 RR NO_WIDE_CHARACTERS
 
-U cb.config%s		cb-config.ads		24e4c313 NE OO PK IU
+U cb.config%s		cb-config.ads		daf91343 NE OO PK IU
 W cb%s			cb.ads			cb.ali
 
 D cb.ads		20191211220911 e6df39c3 cb%s
-D cb-config.ads		20200216224915 c23bfad0 cb.config%s
+D cb-config.ads		20200222001332 3c262a80 cb.config%s
 D system.ads		20200216164320 21923ced system%s
 D gnat.adc		20191211220911 00000000
 X 1 cb.ads

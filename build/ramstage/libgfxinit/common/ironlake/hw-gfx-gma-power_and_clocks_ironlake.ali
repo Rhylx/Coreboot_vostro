@@ -75,11 +75,11 @@ W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
 W hw.gfx.gma.config_helpers%s  hw-gfx-gma-config_helpers.adb  hw-gfx-gma-config_helpers.ali
 
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200216224915 3df8aafb hw.config%s
+D hw-config.ads		20200222001332 3df8aafb hw.config%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200216224915 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200222001332 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-config_helpers.ads  20191211222205 474cdd7c hw.gfx.gma.config_helpers%s
 D hw-gfx-gma-power_and_clocks_ironlake.ads  20191211222205 008c0d0c hw.gfx.gma.power_and_clocks_ironlake%s
 D hw-gfx-gma-power_and_clocks_ironlake.adb  20191211222205 71eb14e5 hw.gfx.gma.power_and_clocks_ironlake%b

@@ -599,7 +599,7 @@ package CB.Config is
    GRUB2_STABLE                                   : constant boolean := true;
    GRUB2_MASTER                                   : constant boolean := false;
    GRUB2_REVISION                                 : constant boolean := false;
-   GRUB2_EXTRA_MODULES                            : constant string  := "";
+   GRUB2_EXTRA_MODULES                            : constant string  := "all_video usbserial_ftdi usbserial_pl2303";
    GRUB2_INCLUDE_RUNTIME_CONFIG_FILE              : constant boolean := true;
    GRUB2_RUNTIME_CONFIG_FILE                      : constant string  := "grub.cfg";
    PAYLOAD_OPTIONS                                : constant string  := "";

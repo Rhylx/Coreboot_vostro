@@ -81,12 +81,12 @@ W hw.time%s		hw-time.adb		hw-time.ali
 D gnat.ads		20200216164320 fd2ad2f1 gnat%s
 D g-souinf.ads		20200216164320 7fd67a54 gnat.source_info%s
 D hw.ads		20191211222205 349e873c hw%s
-D hw-config.ads		20200216224915 3df8aafb hw.config%s
+D hw-config.ads		20200222001332 3df8aafb hw.config%s
 D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
 D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
 D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
 D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
-D hw-gfx-gma-config.ads	20200216224915 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-config.ads	20200222001332 e700aa4c hw.gfx.gma.config%s
 D hw-gfx-gma-panel.ads	20191211222205 616b8bb1 hw.gfx.gma.panel%s
 D hw-gfx-gma-panel.adb	20191211222205 5ae5d6b2 hw.gfx.gma.panel%b
 D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s

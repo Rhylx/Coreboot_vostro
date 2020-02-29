@@ -563,7 +563,7 @@ Discarded input sections
                 0x0000000000000000       0x4b build/postcar/cpu/x86/pae/pgtbl.o
  .text.paging_identity_map_addr
                 0x0000000000000000       0x8f build/postcar/cpu/x86/pae/pgtbl.o
- .rodata.__func__.2969
+ .rodata.__func__.2967
                 0x0000000000000000        0xb build/postcar/cpu/x86/pae/pgtbl.o
  .debug_info    0x0000000000000000     0x138b build/postcar/cpu/x86/pae/pgtbl.o
  .debug_abbrev  0x0000000000000000      0x52d build/postcar/cpu/x86/pae/pgtbl.o
@@ -1340,7 +1340,7 @@ Discarded input sections
  .data          0x0000000000000000        0x0 build/postcar/lib/lzma.o
  .bss           0x0000000000000000        0x0 build/postcar/lib/lzma.o
  .comment       0x0000000000000000       0x38 build/postcar/lib/lzma.o
- .eh_frame      0x0000000000000000       0xa4 build/postcar/lib/lzma.o
+ .eh_frame      0x0000000000000000       0xb4 build/postcar/lib/lzma.o
  .text          0x0000000000000000        0x0 build/postcar/lib/lzmadecode.o
  .data          0x0000000000000000        0x0 build/postcar/lib/lzmadecode.o
  .bss           0x0000000000000000        0x0 build/postcar/lib/lzmadecode.o
@@ -1766,7 +1766,7 @@ END GROUP
                 0x0000000002100000                _epostcar = (_postcar + 0x100000)
                 0x0000000000000001                _ = ASSERT (((_eprogram - _program) <= 0x100000), Aftercar exceeded its allotted size! (1M))
 
-.text           0x0000000002000000     0x4490
+.text           0x0000000002000000     0x44c8
                 0x0000000002000000                _program = .
                 0x0000000002000000                _text = .
  *(.rom.text)
@@ -2063,301 +2063,301 @@ END GROUP
  .text.cbmem_entry_start
                 0x00000000020028d9       0x15 build/postcar/lib/imd_cbmem.o
                 0x00000000020028d9                cbmem_entry_start
- .text.ulzman   0x00000000020028ee       0xba build/postcar/lib/lzma.o
+ .text.ulzman   0x00000000020028ee       0xce build/postcar/lib/lzma.o
                 0x00000000020028ee                ulzman
  .text.LzmaDecodeProperties
-                0x00000000020029a8       0x50 build/postcar/lib/lzmadecode.o
-                0x00000000020029a8                LzmaDecodeProperties
+                0x00000000020029bc       0x50 build/postcar/lib/lzmadecode.o
+                0x00000000020029bc                LzmaDecodeProperties
  .text.LzmaDecode
-                0x00000000020029f8      0xcf2 build/postcar/lib/lzmadecode.o
-                0x00000000020029f8                LzmaDecode
- .text.memcmp   0x00000000020036ea       0x26 build/postcar/lib/memcmp.o
-                0x00000000020036ea                memcmp
+                0x0000000002002a0c      0xcf2 build/postcar/lib/lzmadecode.o
+                0x0000000002002a0c                LzmaDecode
+ .text.memcmp   0x00000000020036fe       0x26 build/postcar/lib/memcmp.o
+                0x00000000020036fe                memcmp
  .text.prog_locate_hook
-                0x0000000002003710        0x3 build/postcar/lib/prog_loaders.o
-                0x0000000002003710                prog_locate_hook
+                0x0000000002003724        0x3 build/postcar/lib/prog_loaders.o
+                0x0000000002003724                prog_locate_hook
  .text.prog_locate
-                0x0000000002003713       0x61 build/postcar/lib/prog_loaders.o
-                0x0000000002003713                prog_locate
+                0x0000000002003727       0x61 build/postcar/lib/prog_loaders.o
+                0x0000000002003727                prog_locate
  .text.run_ramstage
-                0x0000000002003774      0x10d build/postcar/lib/prog_loaders.o
-                0x0000000002003774                run_ramstage
+                0x0000000002003788      0x10d build/postcar/lib/prog_loaders.o
+                0x0000000002003788                run_ramstage
  .text.platform_segment_loaded
-                0x0000000002003881        0x1 build/postcar/lib/prog_ops.o
-                0x0000000002003881                platform_segment_loaded
+                0x0000000002003895        0x1 build/postcar/lib/prog_ops.o
+                0x0000000002003895                platform_segment_loaded
  .text.arch_segment_loaded
-                0x0000000002003882        0x1 build/postcar/lib/prog_ops.o
-                0x0000000002003882                arch_segment_loaded
+                0x0000000002003896        0x1 build/postcar/lib/prog_ops.o
+                0x0000000002003896                arch_segment_loaded
  .text.prog_segment_loaded
-                0x0000000002003883       0x2f build/postcar/lib/prog_ops.o
-                0x0000000002003883                prog_segment_loaded
+                0x0000000002003897       0x2f build/postcar/lib/prog_ops.o
+                0x0000000002003897                prog_segment_loaded
  .text.platform_prog_run
-                0x00000000020038b2        0x1 build/postcar/lib/prog_ops.o
-                0x00000000020038b2                platform_prog_run
+                0x00000000020038c6        0x1 build/postcar/lib/prog_ops.o
+                0x00000000020038c6                platform_prog_run
  .text.prog_run
-                0x00000000020038b3       0x1b build/postcar/lib/prog_ops.o
-                0x00000000020038b3                prog_run
+                0x00000000020038c7       0x1b build/postcar/lib/prog_ops.o
+                0x00000000020038c7                prog_run
  .text.board_reset
-                0x00000000020038ce       0x20 build/postcar/lib/reset.o
-                0x00000000020038ce                board_reset
+                0x00000000020038e2       0x20 build/postcar/lib/reset.o
+                0x00000000020038e2                board_reset
  .text.rmodule_parse
-                0x00000000020038ee       0x41 build/postcar/lib/rmodule.o
-                0x00000000020038ee                rmodule_parse
+                0x0000000002003902       0x41 build/postcar/lib/rmodule.o
+                0x0000000002003902                rmodule_parse
  .text.rmodule_parameters
-                0x000000000200392f       0x1e build/postcar/lib/rmodule.o
-                0x000000000200392f                rmodule_parameters
+                0x0000000002003943       0x1e build/postcar/lib/rmodule.o
+                0x0000000002003943                rmodule_parameters
  .text.rmodule_entry
-                0x000000000200394d       0x14 build/postcar/lib/rmodule.o
-                0x000000000200394d                rmodule_entry
+                0x0000000002003961       0x14 build/postcar/lib/rmodule.o
+                0x0000000002003961                rmodule_entry
  .text.rmodule_load
-                0x0000000002003961       0xde build/postcar/lib/rmodule.o
-                0x0000000002003961                rmodule_load
+                0x0000000002003975       0xde build/postcar/lib/rmodule.o
+                0x0000000002003975                rmodule_load
  .text.rmodule_calc_region
-                0x0000000002003a3f       0x5a build/postcar/lib/rmodule.o
-                0x0000000002003a3f                rmodule_calc_region
+                0x0000000002003a53       0x5a build/postcar/lib/rmodule.o
+                0x0000000002003a53                rmodule_calc_region
  .text.rmodule_stage_load
-                0x0000000002003a99      0x129 build/postcar/lib/rmodule.o
-                0x0000000002003a99                rmodule_stage_load
+                0x0000000002003aad      0x129 build/postcar/lib/rmodule.o
+                0x0000000002003aad                rmodule_stage_load
  .text.romstage_handoff_is_resume
-                0x0000000002003bc2       0x1f build/postcar/lib/romstage_handoff.o
-                0x0000000002003bc2                romstage_handoff_is_resume
- .text.strnlen  0x0000000002003be1       0x16 build/postcar/lib/string.o
-                0x0000000002003be1                strnlen
- .text.strcmp   0x0000000002003bf7       0x20 build/postcar/lib/string.o
-                0x0000000002003bf7                strcmp
+                0x0000000002003bd6       0x1f build/postcar/lib/romstage_handoff.o
+                0x0000000002003bd6                romstage_handoff_is_resume
+ .text.strnlen  0x0000000002003bf5       0x16 build/postcar/lib/string.o
+                0x0000000002003bf5                strnlen
+ .text.strcmp   0x0000000002003c0b       0x20 build/postcar/lib/string.o
+                0x0000000002003c0b                strcmp
  .text.skip_atoi
-                0x0000000002003c17       0x27 build/postcar/lib/string.o
-                0x0000000002003c17                skip_atoi
+                0x0000000002003c2b       0x27 build/postcar/lib/string.o
+                0x0000000002003c2b                skip_atoi
  .text.timestamp_should_run
-                0x0000000002003c3e       0x14 build/postcar/lib/timestamp.o
+                0x0000000002003c52       0x14 build/postcar/lib/timestamp.o
  .text.timestamp_reinit
-                0x0000000002003c52       0x46 build/postcar/lib/timestamp.o
+                0x0000000002003c66       0x46 build/postcar/lib/timestamp.o
  .text.timestamp_add
-                0x0000000002003c98       0x95 build/postcar/lib/timestamp.o
-                0x0000000002003c98                timestamp_add
+                0x0000000002003cac       0x95 build/postcar/lib/timestamp.o
+                0x0000000002003cac                timestamp_add
  .text.timestamp_add_now
-                0x0000000002003d2d       0x18 build/postcar/lib/timestamp.o
-                0x0000000002003d2d                timestamp_add_now
+                0x0000000002003d41       0x18 build/postcar/lib/timestamp.o
+                0x0000000002003d41                timestamp_add_now
  .text.smm_region
-                0x0000000002003d45       0x21 build/postcar/northbridge/intel/sandybridge/memmap.o
-                0x0000000002003d45                smm_region
+                0x0000000002003d59       0x21 build/postcar/northbridge/intel/sandybridge/memmap.o
+                0x0000000002003d59                smm_region
  .text.do_board_reset
-                0x0000000002003d66        0x8 build/postcar/southbridge/intel/common/reset.o
-                0x0000000002003d66                do_board_reset
-                0x0000000002003d70                . = ALIGN (0x8)
- *fill*         0x0000000002003d6e        0x2 
-                0x0000000002003d70                _cbmem_init_hooks = .
+                0x0000000002003d7a        0x8 build/postcar/southbridge/intel/common/reset.o
+                0x0000000002003d7a                do_board_reset
+                0x0000000002003d88                . = ALIGN (0x8)
+ *fill*         0x0000000002003d82        0x6 
+                0x0000000002003d88                _cbmem_init_hooks = .
  *(.rodata.cbmem_init_hooks)
  .rodata.cbmem_init_hooks
-                0x0000000002003d70        0x4 build/postcar/lib/cbmem_console.o
+                0x0000000002003d88        0x4 build/postcar/lib/cbmem_console.o
  .rodata.cbmem_init_hooks
-                0x0000000002003d74        0x4 build/postcar/lib/ext_stage_cache.o
+                0x0000000002003d8c        0x4 build/postcar/lib/ext_stage_cache.o
  .rodata.cbmem_init_hooks
-                0x0000000002003d78        0x4 build/postcar/lib/fmap.o
+                0x0000000002003d90        0x4 build/postcar/lib/fmap.o
  .rodata.cbmem_init_hooks
-                0x0000000002003d7c        0x4 build/postcar/lib/timestamp.o
-                0x0000000002003d80                _ecbmem_init_hooks = .
-                0x0000000002003d80                . = ALIGN (0x8)
-                0x0000000002003d80                _rsbe_init_begin = .
+                0x0000000002003d94        0x4 build/postcar/lib/timestamp.o
+                0x0000000002003d98                _ecbmem_init_hooks = .
+                0x0000000002003d98                . = ALIGN (0x8)
+                0x0000000002003d98                _rsbe_init_begin = .
  *(.rsbe_init)
-                0x0000000002003d80                _ersbe_init_begin = .
-                0x0000000002003d80                . = ALIGN (0x8)
+                0x0000000002003d98                _ersbe_init_begin = .
+                0x0000000002003d98                . = ALIGN (0x8)
  *(.rodata)
- .rodata        0x0000000002003d80       0x40 build/postcar/commonlib/bsd/lz4_wrapper.o
+ *fill*         0x0000000002003d98        0x8 
+ .rodata        0x0000000002003da0       0x40 build/postcar/commonlib/bsd/lz4_wrapper.o
  *(.rodata.*)
  .rodata.system_reset.str1.1
-                0x0000000002003dc0        0xe build/postcar/arch/x86/cf9_reset.o
- *fill*         0x0000000002003dce        0x2 
+                0x0000000002003de0        0xe build/postcar/arch/x86/cf9_reset.o
+ *fill*         0x0000000002003dee        0x2 
  .rodata.__func__.1294
-                0x0000000002003dd0        0xd build/postcar/arch/x86/cf9_reset.o
- *fill*         0x0000000002003ddd        0x3 
+                0x0000000002003df0        0xd build/postcar/arch/x86/cf9_reset.o
+ *fill*         0x0000000002003dfd        0x3 
  .rodata.boot_dev
-                0x0000000002003de0       0x14 build/postcar/arch/x86/mmap_boot.o
+                0x0000000002003e00       0x14 build/postcar/arch/x86/mmap_boot.o
  .rodata.cbfs_for_each_file.str1.1
-                0x0000000002003df4        0x9 build/postcar/commonlib/cbfs.o
+                0x0000000002003e14        0x9 build/postcar/commonlib/cbfs.o
  .rodata.cbfs_locate.str1.1
-                0x0000000002003dfd       0x4f build/postcar/commonlib/cbfs.o
+                0x0000000002003e1d       0x4f build/postcar/commonlib/cbfs.o
  .rodata.mem_rdev_ro_ops
-                0x0000000002003e4c       0x14 build/postcar/commonlib/region.o
-                0x0000000002003e4c                mem_rdev_ro_ops
+                0x0000000002003e6c       0x14 build/postcar/commonlib/region.o
+                0x0000000002003e6c                mem_rdev_ro_ops
  .rodata.console_init.str1.1
-                0x0000000002003e60       0x38 build/postcar/console/init.o
+                0x0000000002003e80       0x38 build/postcar/console/init.o
  .rodata.console_time_report.str1.1
-                0x0000000002003e98       0x3e build/postcar/console/printk.o
+                0x0000000002003eb8       0x3e build/postcar/console/printk.o
  .rodata.number.str1.1
-                0x0000000002003ed6       0x22 build/postcar/console/vtxprintf.o
+                0x0000000002003ef6       0x22 build/postcar/console/vtxprintf.o
  .rodata.vtxprintf.str1.1
-                0x0000000002003ef8        0x7 build/postcar/console/vtxprintf.o
+                0x0000000002003f18        0x7 build/postcar/console/vtxprintf.o
  .rodata.resolve_timebase.str1.1
-                0x0000000002003eff       0x22 build/postcar/cpu/intel/common/fsb.o
- *fill*         0x0000000002003f21        0x3 
+                0x0000000002003f1f       0x22 build/postcar/cpu/intel/common/fsb.o
+ *fill*         0x0000000002003f41        0x3 
  .rodata.f2x_fsb.1307
-                0x0000000002003f24       0x10 build/postcar/cpu/intel/common/fsb.o
+                0x0000000002003f44       0x10 build/postcar/cpu/intel/common/fsb.o
  .rodata.rangeley_fsb.1308
-                0x0000000002003f34        0x8 build/postcar/cpu/intel/common/fsb.o
+                0x0000000002003f54        0x8 build/postcar/cpu/intel/common/fsb.o
  .rodata.core2_fsb.1306
-                0x0000000002003f3c       0x10 build/postcar/cpu/intel/common/fsb.o
+                0x0000000002003f5c       0x10 build/postcar/cpu/intel/common/fsb.o
  .rodata.core_fsb.1305
-                0x0000000002003f4c       0x10 build/postcar/cpu/intel/common/fsb.o
+                0x0000000002003f6c       0x10 build/postcar/cpu/intel/common/fsb.o
  .rodata.smm_subregion.str1.1
-                0x0000000002003f5c       0x43 build/postcar/cpu/x86/smm/tseg_region.o
+                0x0000000002003f7c       0x43 build/postcar/cpu/x86/smm/tseg_region.o
  .rodata.stage_cache_external_region.str1.1
-                0x0000000002003f9f       0x20 build/postcar/cpu/x86/smm/tseg_region.o
- *fill*         0x0000000002003fbf        0x1 
+                0x0000000002003fbf       0x20 build/postcar/cpu/x86/smm/tseg_region.o
+ *fill*         0x0000000002003fdf        0x1 
  .rodata.pci_mmconf
-                0x0000000002003fc0        0x4 build/postcar/device/pci_ops.o
-                0x0000000002003fc0                pci_mmconf
- .rodata.bases  0x0000000002003fc4       0x10 build/postcar/drivers/uart/uart8250io.o
+                0x0000000002003fe0        0x4 build/postcar/device/pci_ops.o
+                0x0000000002003fe0                pci_mmconf
+ .rodata.bases  0x0000000002003fe4       0x10 build/postcar/drivers/uart/uart8250io.o
  .rodata.cbfs_boot_region_device.str1.1
-                0x0000000002003fd4        0x9 build/postcar/lib/cbfs.o
+                0x0000000002003ff4        0x9 build/postcar/lib/cbfs.o
  .rodata.cbmemc_reinit.str1.1
-                0x0000000002003fdd       0x3f build/postcar/lib/cbmem_console.o
+                0x0000000002003ffd       0x3f build/postcar/lib/cbmem_console.o
  .rodata.stage_cache_setup.str1.1
-                0x000000000200401c       0x63 build/postcar/lib/ext_stage_cache.o
+                0x000000000200403c       0x63 build/postcar/lib/ext_stage_cache.o
  .rodata.stage_cache_add.str1.1
-                0x000000000200407f       0x4d build/postcar/lib/ext_stage_cache.o
+                0x000000000200409f       0x4d build/postcar/lib/ext_stage_cache.o
  .rodata.stage_cache_load_stage.str1.1
-                0x00000000020040cc       0x4f build/postcar/lib/ext_stage_cache.o
+                0x00000000020040ec       0x4f build/postcar/lib/ext_stage_cache.o
  .rodata.find_fmap_directory.str1.1
-                0x000000000200411b       0xae build/postcar/lib/fmap.o
+                0x000000000200413b       0xae build/postcar/lib/fmap.o
  .rodata.fmap_locate_area.str1.1
-                0x00000000020041c9       0x25 build/postcar/lib/fmap.o
+                0x00000000020041e9       0x25 build/postcar/lib/fmap.o
  .rodata.imdr_create_empty.str1.1
-                0x00000000020041ee       0x2a build/postcar/lib/imd.o
+                0x000000000200420e       0x2a build/postcar/lib/imd.o
                                          0x4f (size before relaxing)
  .rodata.ulzman.str1.1
-                0x0000000002004218       0x64 build/postcar/lib/lzma.o
+                0x0000000002004238       0x7c build/postcar/lib/lzma.o
  .rodata.run_ramstage.str1.1
-                0x000000000200427c       0x58 build/postcar/lib/prog_loaders.o
+                0x00000000020042b4       0x58 build/postcar/lib/prog_loaders.o
  .rodata.addrspace_32bit
-                0x00000000020042d4       0x14 build/postcar/lib/prog_loaders.o
-                0x00000000020042d4                addrspace_32bit
+                0x000000000200430c       0x14 build/postcar/lib/prog_loaders.o
+                0x000000000200430c                addrspace_32bit
  .rodata.board_reset.str1.1
-                0x00000000020042e8        0xe build/postcar/lib/reset.o
+                0x0000000002004320        0xe build/postcar/lib/reset.o
  .rodata.__func__.1227
-                0x00000000020042e8        0xc build/postcar/lib/reset.o
+                0x0000000002004320        0xc build/postcar/lib/reset.o
  .rodata.rmodule_load.str1.1
-                0x00000000020042f4       0x94 build/postcar/lib/rmodule.o
+                0x000000000200432c       0x94 build/postcar/lib/rmodule.o
  .rodata.rmodule_calc_region.str1.1
-                0x0000000002004388       0x40 build/postcar/lib/rmodule.o
+                0x00000000020043c0       0x40 build/postcar/lib/rmodule.o
  .rodata.rmodule_stage_load.str1.1
-                0x00000000020043c8       0x28 build/postcar/lib/rmodule.o
+                0x0000000002004400       0x28 build/postcar/lib/rmodule.o
  .rodata.timestamp_reinit.str1.1
-                0x00000000020043f0       0x25 build/postcar/lib/timestamp.o
+                0x0000000002004428       0x25 build/postcar/lib/timestamp.o
  .rodata.timestamp_add.str1.1
-                0x0000000002004415       0x3e build/postcar/lib/timestamp.o
- *fill*         0x0000000002004453        0x1 
+                0x000000000200444d       0x3e build/postcar/lib/timestamp.o
+ *fill*         0x000000000200448b        0x1 
  .rodata.coreboot_build
-                0x0000000002004454       0x1d build/postcar/lib/version.o
-                0x0000000002004454                coreboot_build
+                0x000000000200448c       0x1d build/postcar/lib/version.o
+                0x000000000200448c                coreboot_build
  .rodata.coreboot_extra_version
-                0x0000000002004471        0x1 build/postcar/lib/version.o
-                0x0000000002004471                coreboot_extra_version
- *fill*         0x0000000002004472        0x2 
+                0x00000000020044a9        0x1 build/postcar/lib/version.o
+                0x00000000020044a9                coreboot_extra_version
+ *fill*         0x00000000020044aa        0x2 
  .rodata.coreboot_version
-                0x0000000002004474       0x16 build/postcar/lib/version.o
-                0x0000000002004474                coreboot_version
-                0x0000000002004490                . = ALIGN (0x8)
- *fill*         0x000000000200448a        0x6 
-                0x0000000002004490                _etext = .
+                0x00000000020044ac       0x1c build/postcar/lib/version.o
+                0x00000000020044ac                coreboot_version
+                0x00000000020044c8                . = ALIGN (0x8)
+                0x00000000020044c8                _etext = .
 
-.iplt           0x0000000002004490        0x0
- .iplt          0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+.iplt           0x00000000020044c8        0x0
+ .iplt          0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
 
-.rel.dyn        0x0000000002004490        0x0
- .rel.got       0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
- .rel.iplt      0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+.rel.dyn        0x00000000020044c8        0x0
+ .rel.got       0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+ .rel.iplt      0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.startup.main
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
- .rel.text.die  0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+ .rel.text.die  0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.post_code
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.boot_device_ro_subregion
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.cbfs_boot_region_device
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.cbmem_run_init_hooks
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.find_fmap_directory
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.prog_locate
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.prog_segment_loaded
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
  .rel.text.prog_run
-                0x0000000002004490        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+                0x00000000020044c8        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
 
-.data           0x0000000002004490       0x40
-                0x00000000020044c0                . = ALIGN (0x40)
- *fill*         0x0000000002004490       0x30 
-                0x00000000020044c0                _data = .
-                0x00000000020044c0                _rmodule_params = .
+.data           0x00000000020044c8       0x48
+                0x0000000002004500                . = ALIGN (0x40)
+ *fill*         0x00000000020044c8       0x38 
+                0x0000000002004500                _data = .
+                0x0000000002004500                _rmodule_params = .
  *(.module_parameters)
  .module_parameters
-                0x00000000020044c0        0x8 build/postcar/arch/x86/exit_car.o
-                0x00000000020044c0                post_car_stack_top
-                0x00000000020044c8                _ermodule_params = .
+                0x0000000002004500        0x8 build/postcar/arch/x86/exit_car.o
+                0x0000000002004500                post_car_stack_top
+                0x0000000002004508                _ermodule_params = .
  *(.data)
  *(.data.*)
  .data.console_loglevel
-                0x00000000020044c8        0x4 build/postcar/console/init.o
+                0x0000000002004508        0x4 build/postcar/console/init.o
  .data.console_lock
-                0x00000000020044cc        0x4 build/postcar/console/printk.o
+                0x000000000200450c        0x4 build/postcar/console/printk.o
  *(.sdata)
  *(.sdata.*)
-                0x00000000020044d0                . = ALIGN (0x8)
-                0x00000000020044d0                _edata = .
+                0x0000000002004510                . = ALIGN (0x8)
+                0x0000000002004510                _edata = .
 
-.got            0x00000000020044d0        0x0
- .got           0x00000000020044d0        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+.got            0x0000000002004510        0x0
+ .got           0x0000000002004510        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
 
-.got.plt        0x00000000020044d0        0x0
- .got.plt       0x00000000020044d0        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+.got.plt        0x0000000002004510        0x0
+ .got.plt       0x0000000002004510        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
 
-.igot.plt       0x00000000020044d0        0x0
- .igot.plt      0x00000000020044d0        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
+.igot.plt       0x0000000002004510        0x0
+ .igot.plt      0x0000000002004510        0x0 build/postcar/mainboard/dell/dell_system_vostro_3360/static.o
 
-.bss            0x00000000020044d0     0x42e0
-                0x00000000020044d0                . = ALIGN (0x8)
-                0x00000000020044d0                _bss = .
+.bss            0x0000000002004510     0x42e0
+                0x0000000002004510                . = ALIGN (0x8)
+                0x0000000002004510                _bss = .
  *(.bss)
  *(.bss.*)
  .bss.console_inited
-                0x00000000020044d0        0x4 build/postcar/console/init.o
+                0x0000000002004510        0x4 build/postcar/console/init.o
  .bss.console_usecs
-                0x00000000020044d4        0x4 build/postcar/console/printk.o
- .bss.mt_stop   0x00000000020044d8        0x4 build/postcar/console/printk.o
- .bss.mt_start  0x00000000020044dc        0x4 build/postcar/console/printk.o
+                0x0000000002004514        0x4 build/postcar/console/printk.o
+ .bss.mt_stop   0x0000000002004518        0x4 build/postcar/console/printk.o
+ .bss.mt_start  0x000000000200451c        0x4 build/postcar/console/printk.o
  .bss.timer_tsc
-                0x00000000020044e0        0x4 build/postcar/cpu/intel/common/fsb.o
+                0x0000000002004520        0x4 build/postcar/cpu/intel/common/fsb.o
  .bss.timer_fsb
-                0x00000000020044e4        0x4 build/postcar/cpu/intel/common/fsb.o
+                0x0000000002004524        0x4 build/postcar/cpu/intel/common/fsb.o
  .bss.mono_counter
-                0x00000000020044e8       0x10 build/postcar/cpu/x86/tsc/delay_tsc.o
- *fill*         0x00000000020044f8        0x8 
+                0x0000000002004528       0x10 build/postcar/cpu/x86/tsc/delay_tsc.o
+ *fill*         0x0000000002004538        0x8 
  .bss.static_console
-                0x0000000002004500      0x400 build/postcar/lib/cbmem_console.o
+                0x0000000002004540      0x400 build/postcar/lib/cbmem_console.o
  .bss.current_console
-                0x0000000002004900        0x4 build/postcar/lib/cbmem_console.o
+                0x0000000002004940        0x4 build/postcar/lib/cbmem_console.o
  .bss.imd_stage_cache
-                0x0000000002004904       0x10 build/postcar/lib/ext_stage_cache.o
+                0x0000000002004944       0x10 build/postcar/lib/ext_stage_cache.o
  .bss.fmap_cache
-                0x0000000002004914       0x14 build/postcar/lib/fmap.o
+                0x0000000002004954       0x14 build/postcar/lib/fmap.o
  .bss.fmap_print_once
-                0x0000000002004928        0x4 build/postcar/lib/fmap.o
- .bss.imd       0x000000000200492c       0x10 build/postcar/lib/imd_cbmem.o
+                0x0000000002004968        0x4 build/postcar/lib/fmap.o
+ .bss.imd       0x000000000200496c       0x10 build/postcar/lib/imd_cbmem.o
  .bss._cbmem_top_ptr
-                0x000000000200493c        0x4 build/postcar/lib/imd_cbmem.o
-                0x000000000200493c                _cbmem_top_ptr
+                0x000000000200497c        0x4 build/postcar/lib/imd_cbmem.o
+                0x000000000200497c                _cbmem_top_ptr
  .bss.scratchpad.1316
-                0x0000000002004940     0x3e6c build/postcar/lib/lzma.o
+                0x0000000002004980     0x3e6c build/postcar/lib/lzma.o
  .bss.glob_ts_table
-                0x00000000020087ac        0x4 build/postcar/lib/timestamp.o
+                0x00000000020087ec        0x4 build/postcar/lib/timestamp.o
  *(.sbss)
  *(.sbss.*)
-                0x00000000020087b0                . = ALIGN (0x8)
-                0x00000000020087b0                _ebss = .
-                0x00000000020087b0                _eprogram = .
+                0x00000000020087f0                . = ALIGN (0x8)
+                0x00000000020087f0                _ebss = .
+                0x00000000020087f0                _eprogram = .
                 0x0000000000000000                zeroptr = 0x0
 
 /DISCARD/
@@ -2368,7 +2368,7 @@ END GROUP
  *(.eh_frame)
 OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
 
-.debug_info     0x0000000000000000    0x18618
+.debug_info     0x0000000000000000    0x1862a
  .debug_info    0x0000000000000000      0x6f1 build/postcar/arch/x86/boot.o
  .debug_info    0x00000000000006f1      0x32c build/postcar/arch/x86/cf9_reset.o
  .debug_info    0x0000000000000a1d       0x26 build/postcar/arch/x86/exit_car.o
@@ -2381,48 +2381,48 @@ OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
  .debug_info    0x000000000000114e      0x64f build/postcar/arch/x86/postcar.o
  .debug_info    0x000000000000179d      0x186 build/postcar/arch/x86/timestamp.o
  .debug_info    0x0000000000001923      0xc2e build/postcar/commonlib/bsd/lz4_wrapper.o
- .debug_info    0x0000000000002551     0x1eb8 build/postcar/commonlib/cbfs.o
- .debug_info    0x0000000000004409     0x194d build/postcar/commonlib/region.o
- .debug_info    0x0000000000005d56      0x3ea build/postcar/console/console.o
- .debug_info    0x0000000000006140      0x132 build/postcar/console/die.o
- .debug_info    0x0000000000006272      0xdf3 build/postcar/console/init.o
- .debug_info    0x0000000000007065      0x125 build/postcar/console/post.o
- .debug_info    0x000000000000718a      0x5d1 build/postcar/console/printk.o
- .debug_info    0x000000000000775b      0x459 build/postcar/console/vtxprintf.o
- .debug_info    0x0000000000007bb4       0x26 build/postcar/cpu/intel/car/non-evict/exit_car.o
- .debug_info    0x0000000000007bda      0x6db build/postcar/cpu/intel/common/fsb.o
- .debug_info    0x00000000000082b5      0x166 build/postcar/cpu/x86/lapic/boot_cpu.o
- .debug_info    0x000000000000841b      0x144 build/postcar/cpu/x86/mtrr/debug.o
- .debug_info    0x000000000000855f      0x464 build/postcar/cpu/x86/smm/tseg_region.o
- .debug_info    0x00000000000089c3      0x3e6 build/postcar/cpu/x86/tsc/delay_tsc.o
- .debug_info    0x0000000000008da9      0xf29 build/postcar/device/pci_ops.o
- .debug_info    0x0000000000009cd2      0x81c build/postcar/drivers/uart/uart8250io.o
- .debug_info    0x000000000000a4ee      0x583 build/postcar/drivers/uart/util.o
- .debug_info    0x000000000000aa71      0x483 build/postcar/lib/boot_device.o
- .debug_info    0x000000000000aef4     0x1513 build/postcar/lib/cbfs.o
- .debug_info    0x000000000000c407      0x3b5 build/postcar/lib/cbmem_common.o
- .debug_info    0x000000000000c7bc      0x791 build/postcar/lib/cbmem_console.o
- .debug_info    0x000000000000cf4d      0xd01 build/postcar/lib/ext_stage_cache.o
- .debug_info    0x000000000000dc4e      0xed6 build/postcar/lib/fmap.o
- .debug_info    0x000000000000eb24      0x20d build/postcar/lib/gcc.o
- .debug_info    0x000000000000ed31       0x5b build/postcar/lib/halt.o
- .debug_info    0x000000000000ed8c     0x2131 build/postcar/lib/imd.o
- .debug_info    0x0000000000010ebd      0xb4e build/postcar/lib/imd_cbmem.o
- .debug_info    0x0000000000011a0b      0x2c8 build/postcar/lib/lzma.o
- .debug_info    0x0000000000011cd3      0x662 build/postcar/lib/lzmadecode.o
- .debug_info    0x0000000000012335      0x10c build/postcar/lib/memcmp.o
- .debug_info    0x0000000000012441      0xf25 build/postcar/lib/prog_loaders.o
- .debug_info    0x0000000000013366      0x4d1 build/postcar/lib/prog_ops.o
- .debug_info    0x0000000000013837      0x168 build/postcar/lib/reset.o
- .debug_info    0x000000000001399f      0xee9 build/postcar/lib/rmodule.o
- .debug_info    0x0000000000014888      0x20d build/postcar/lib/romstage_handoff.o
- .debug_info    0x0000000000014a95      0x603 build/postcar/lib/string.o
- .debug_info    0x0000000000015098      0xcc2 build/postcar/lib/timestamp.o
- .debug_info    0x0000000000015d5a      0x1e0 build/postcar/lib/version.o
- .debug_info    0x0000000000015f3a      0xfc1 build/postcar/northbridge/intel/sandybridge/memmap.o
- .debug_info    0x0000000000016efb       0x52 build/postcar/southbridge/intel/common/reset.o
- .debug_info    0x0000000000016f4d      0xbc3 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
- .debug_info    0x0000000000017b10      0xb08 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x0000000000002551     0x1eca build/postcar/commonlib/cbfs.o
+ .debug_info    0x000000000000441b     0x194d build/postcar/commonlib/region.o
+ .debug_info    0x0000000000005d68      0x3ea build/postcar/console/console.o
+ .debug_info    0x0000000000006152      0x132 build/postcar/console/die.o
+ .debug_info    0x0000000000006284      0xdf3 build/postcar/console/init.o
+ .debug_info    0x0000000000007077      0x125 build/postcar/console/post.o
+ .debug_info    0x000000000000719c      0x5d1 build/postcar/console/printk.o
+ .debug_info    0x000000000000776d      0x459 build/postcar/console/vtxprintf.o
+ .debug_info    0x0000000000007bc6       0x26 build/postcar/cpu/intel/car/non-evict/exit_car.o
+ .debug_info    0x0000000000007bec      0x6db build/postcar/cpu/intel/common/fsb.o
+ .debug_info    0x00000000000082c7      0x166 build/postcar/cpu/x86/lapic/boot_cpu.o
+ .debug_info    0x000000000000842d      0x144 build/postcar/cpu/x86/mtrr/debug.o
+ .debug_info    0x0000000000008571      0x464 build/postcar/cpu/x86/smm/tseg_region.o
+ .debug_info    0x00000000000089d5      0x3e6 build/postcar/cpu/x86/tsc/delay_tsc.o
+ .debug_info    0x0000000000008dbb      0xf29 build/postcar/device/pci_ops.o
+ .debug_info    0x0000000000009ce4      0x81c build/postcar/drivers/uart/uart8250io.o
+ .debug_info    0x000000000000a500      0x583 build/postcar/drivers/uart/util.o
+ .debug_info    0x000000000000aa83      0x483 build/postcar/lib/boot_device.o
+ .debug_info    0x000000000000af06     0x1513 build/postcar/lib/cbfs.o
+ .debug_info    0x000000000000c419      0x3b5 build/postcar/lib/cbmem_common.o
+ .debug_info    0x000000000000c7ce      0x791 build/postcar/lib/cbmem_console.o
+ .debug_info    0x000000000000cf5f      0xd01 build/postcar/lib/ext_stage_cache.o
+ .debug_info    0x000000000000dc60      0xed6 build/postcar/lib/fmap.o
+ .debug_info    0x000000000000eb36      0x20d build/postcar/lib/gcc.o
+ .debug_info    0x000000000000ed43       0x5b build/postcar/lib/halt.o
+ .debug_info    0x000000000000ed9e     0x2131 build/postcar/lib/imd.o
+ .debug_info    0x0000000000010ecf      0xb4e build/postcar/lib/imd_cbmem.o
+ .debug_info    0x0000000000011a1d      0x2c8 build/postcar/lib/lzma.o
+ .debug_info    0x0000000000011ce5      0x662 build/postcar/lib/lzmadecode.o
+ .debug_info    0x0000000000012347      0x10c build/postcar/lib/memcmp.o
+ .debug_info    0x0000000000012453      0xf25 build/postcar/lib/prog_loaders.o
+ .debug_info    0x0000000000013378      0x4d1 build/postcar/lib/prog_ops.o
+ .debug_info    0x0000000000013849      0x168 build/postcar/lib/reset.o
+ .debug_info    0x00000000000139b1      0xee9 build/postcar/lib/rmodule.o
+ .debug_info    0x000000000001489a      0x20d build/postcar/lib/romstage_handoff.o
+ .debug_info    0x0000000000014aa7      0x603 build/postcar/lib/string.o
+ .debug_info    0x00000000000150aa      0xcc2 build/postcar/lib/timestamp.o
+ .debug_info    0x0000000000015d6c      0x1e0 build/postcar/lib/version.o
+ .debug_info    0x0000000000015f4c      0xfc1 build/postcar/northbridge/intel/sandybridge/memmap.o
+ .debug_info    0x0000000000016f0d       0x52 build/postcar/southbridge/intel/common/reset.o
+ .debug_info    0x0000000000016f5f      0xbc3 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x0000000000017b22      0xb08 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
 
 .debug_abbrev   0x0000000000000000     0x6211
  .debug_abbrev  0x0000000000000000      0x1a3 build/postcar/arch/x86/boot.o
@@ -2480,7 +2480,7 @@ OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
  .debug_abbrev  0x0000000000005df0      0x23a /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
  .debug_abbrev  0x000000000000602a      0x1e7 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
 
-.debug_loc      0x0000000000000000     0xa5a9
+.debug_loc      0x0000000000000000     0xa5bb
  .debug_loc     0x0000000000000000       0x3c build/postcar/arch/x86/boot.o
  .debug_loc     0x000000000000003c       0xb8 build/postcar/arch/x86/cf9_reset.o
  .debug_loc     0x00000000000000f4       0x16 build/postcar/arch/x86/memmove.o
@@ -2511,18 +2511,18 @@ OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
  .debug_loc     0x0000000000004c30      0x2df build/postcar/lib/fmap.o
  .debug_loc     0x0000000000004f0f     0x1b78 build/postcar/lib/imd.o
  .debug_loc     0x0000000000006a87      0x1fa build/postcar/lib/imd_cbmem.o
- .debug_loc     0x0000000000006c81       0xa6 build/postcar/lib/lzma.o
- .debug_loc     0x0000000000006d27     0x1923 build/postcar/lib/lzmadecode.o
- .debug_loc     0x000000000000864a      0x123 build/postcar/lib/memcmp.o
- .debug_loc     0x000000000000876d       0xec build/postcar/lib/prog_loaders.o
- .debug_loc     0x0000000000008859       0x58 build/postcar/lib/prog_ops.o
- .debug_loc     0x00000000000088b1      0x47f build/postcar/lib/rmodule.o
- .debug_loc     0x0000000000008d30       0x81 build/postcar/lib/romstage_handoff.o
- .debug_loc     0x0000000000008db1      0x65c build/postcar/lib/string.o
- .debug_loc     0x000000000000940d      0x2cb build/postcar/lib/timestamp.o
- .debug_loc     0x00000000000096d8      0x12c build/postcar/northbridge/intel/sandybridge/memmap.o
- .debug_loc     0x0000000000009804      0x79c /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
- .debug_loc     0x0000000000009fa0      0x609 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_loc     0x0000000000006c81       0xb8 build/postcar/lib/lzma.o
+ .debug_loc     0x0000000000006d39     0x1923 build/postcar/lib/lzmadecode.o
+ .debug_loc     0x000000000000865c      0x123 build/postcar/lib/memcmp.o
+ .debug_loc     0x000000000000877f       0xec build/postcar/lib/prog_loaders.o
+ .debug_loc     0x000000000000886b       0x58 build/postcar/lib/prog_ops.o
+ .debug_loc     0x00000000000088c3      0x47f build/postcar/lib/rmodule.o
+ .debug_loc     0x0000000000008d42       0x81 build/postcar/lib/romstage_handoff.o
+ .debug_loc     0x0000000000008dc3      0x65c build/postcar/lib/string.o
+ .debug_loc     0x000000000000941f      0x2cb build/postcar/lib/timestamp.o
+ .debug_loc     0x00000000000096ea      0x12c build/postcar/northbridge/intel/sandybridge/memmap.o
+ .debug_loc     0x0000000000009816      0x79c /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
+ .debug_loc     0x0000000000009fb2      0x609 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
 
 .debug_aranges  0x0000000000000000      0xc98
  .debug_aranges
@@ -2686,7 +2686,7 @@ OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
  .debug_ranges  0x0000000000001b78       0x28 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
  .debug_ranges  0x0000000000001ba0       0x20 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
 
-.debug_line     0x0000000000000000     0x98c2
+.debug_line     0x0000000000000000     0x98d1
  .debug_line    0x0000000000000000      0x150 build/postcar/arch/x86/boot.o
  .debug_line    0x0000000000000150      0x204 build/postcar/arch/x86/cf9_reset.o
  .debug_line    0x0000000000000354       0x73 build/postcar/arch/x86/exit_car.o
@@ -2726,23 +2726,23 @@ OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
  .debug_line    0x00000000000057a7       0x83 build/postcar/lib/halt.o
  .debug_line    0x000000000000582a      0xf47 build/postcar/lib/imd.o
  .debug_line    0x0000000000006771      0x46b build/postcar/lib/imd_cbmem.o
- .debug_line    0x0000000000006bdc      0x115 build/postcar/lib/lzma.o
- .debug_line    0x0000000000006cf1      0xe54 build/postcar/lib/lzmadecode.o
- .debug_line    0x0000000000007b45       0x92 build/postcar/lib/memcmp.o
- .debug_line    0x0000000000007bd7      0x379 build/postcar/lib/prog_loaders.o
- .debug_line    0x0000000000007f50      0x108 build/postcar/lib/prog_ops.o
- .debug_line    0x0000000000008058      0x103 build/postcar/lib/reset.o
- .debug_line    0x000000000000815b      0x5ef build/postcar/lib/rmodule.o
- .debug_line    0x000000000000874a      0x13e build/postcar/lib/romstage_handoff.o
- .debug_line    0x0000000000008888      0x412 build/postcar/lib/string.o
- .debug_line    0x0000000000008c9a      0x44a build/postcar/lib/timestamp.o
- .debug_line    0x00000000000090e4       0x4b build/postcar/lib/version.o
- .debug_line    0x000000000000912f      0x277 build/postcar/northbridge/intel/sandybridge/memmap.o
- .debug_line    0x00000000000093a6       0x84 build/postcar/southbridge/intel/common/reset.o
- .debug_line    0x000000000000942a      0x214 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
- .debug_line    0x000000000000963e      0x284 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000006bdc      0x124 build/postcar/lib/lzma.o
+ .debug_line    0x0000000000006d00      0xe54 build/postcar/lib/lzmadecode.o
+ .debug_line    0x0000000000007b54       0x92 build/postcar/lib/memcmp.o
+ .debug_line    0x0000000000007be6      0x379 build/postcar/lib/prog_loaders.o
+ .debug_line    0x0000000000007f5f      0x108 build/postcar/lib/prog_ops.o
+ .debug_line    0x0000000000008067      0x103 build/postcar/lib/reset.o
+ .debug_line    0x000000000000816a      0x5ef build/postcar/lib/rmodule.o
+ .debug_line    0x0000000000008759      0x13e build/postcar/lib/romstage_handoff.o
+ .debug_line    0x0000000000008897      0x412 build/postcar/lib/string.o
+ .debug_line    0x0000000000008ca9      0x44a build/postcar/lib/timestamp.o
+ .debug_line    0x00000000000090f3       0x4b build/postcar/lib/version.o
+ .debug_line    0x000000000000913e      0x277 build/postcar/northbridge/intel/sandybridge/memmap.o
+ .debug_line    0x00000000000093b5       0x84 build/postcar/southbridge/intel/common/reset.o
+ .debug_line    0x0000000000009439      0x214 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x000000000000964d      0x284 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
 
-.debug_str      0x0000000000000000     0x785d
+.debug_str      0x0000000000000000     0x7894
  .debug_str     0x0000000000000000      0x55d build/postcar/arch/x86/boot.o
                                         0x63a (size before relaxing)
  .debug_str     0x000000000000055d       0x99 build/postcar/arch/x86/cf9_reset.o
@@ -2767,86 +2767,86 @@ OUTPUT(build/cbfs/fallback/postcar.debug elf32-i386)
                                         0x232 (size before relaxing)
  .debug_str     0x0000000000000ff4      0x30d build/postcar/commonlib/bsd/lz4_wrapper.o
                                         0x515 (size before relaxing)
- .debug_str     0x0000000000001301     0x2746 build/postcar/commonlib/cbfs.o
-                                       0x2a3d (size before relaxing)
- .debug_str     0x0000000000003a47      0x387 build/postcar/commonlib/region.o
+ .debug_str     0x0000000000001301     0x277d build/postcar/commonlib/cbfs.o
+                                       0x2a74 (size before relaxing)
+ .debug_str     0x0000000000003a7e      0x387 build/postcar/commonlib/region.o
                                         0x6a2 (size before relaxing)
- .debug_str     0x0000000000003dce      0x1a5 build/postcar/console/console.o
+ .debug_str     0x0000000000003e05      0x1a5 build/postcar/console/console.o
                                         0x3c6 (size before relaxing)
- .debug_str     0x0000000000003f73       0x3f build/postcar/console/die.o
+ .debug_str     0x0000000000003faa       0x3f build/postcar/console/die.o
                                         0x1ec (size before relaxing)
- .debug_str     0x0000000000003fb2      0x8fa build/postcar/console/init.o
+ .debug_str     0x0000000000003fe9      0x8fa build/postcar/console/init.o
                                         0xbcb (size before relaxing)
- .debug_str     0x00000000000048ac       0x22 build/postcar/console/post.o
+ .debug_str     0x00000000000048e3       0x22 build/postcar/console/post.o
                                         0x1e9 (size before relaxing)
- .debug_str     0x00000000000048ce      0x150 build/postcar/console/printk.o
+ .debug_str     0x0000000000004905      0x150 build/postcar/console/printk.o
                                         0x3df (size before relaxing)
- .debug_str     0x0000000000004a1e       0x6a build/postcar/console/vtxprintf.o
+ .debug_str     0x0000000000004a55       0x6a build/postcar/console/vtxprintf.o
                                         0x268 (size before relaxing)
- .debug_str     0x0000000000004a88       0x27 build/postcar/cpu/intel/car/non-evict/exit_car.o
+ .debug_str     0x0000000000004abf       0x27 build/postcar/cpu/intel/car/non-evict/exit_car.o
                                          0x50 (size before relaxing)
- .debug_str     0x0000000000004aaf       0xe7 build/postcar/cpu/intel/common/fsb.o
+ .debug_str     0x0000000000004ae6       0xe7 build/postcar/cpu/intel/common/fsb.o
                                         0x2df (size before relaxing)
- .debug_str     0x0000000000004b96       0x1d build/postcar/cpu/x86/lapic/boot_cpu.o
+ .debug_str     0x0000000000004bcd       0x1d build/postcar/cpu/x86/lapic/boot_cpu.o
                                         0x1ea (size before relaxing)
- .debug_str     0x0000000000004bb3       0x6a build/postcar/cpu/x86/mtrr/debug.o
+ .debug_str     0x0000000000004bea       0x6a build/postcar/cpu/x86/mtrr/debug.o
                                         0x238 (size before relaxing)
- .debug_str     0x0000000000004c1d       0xea build/postcar/cpu/x86/smm/tseg_region.o
+ .debug_str     0x0000000000004c54       0xea build/postcar/cpu/x86/smm/tseg_region.o
                                         0x392 (size before relaxing)
- .debug_str     0x0000000000004d07       0xe1 build/postcar/cpu/x86/tsc/delay_tsc.o
+ .debug_str     0x0000000000004d3e       0xe1 build/postcar/cpu/x86/tsc/delay_tsc.o
                                         0x2e1 (size before relaxing)
- .debug_str     0x0000000000004de8       0xec build/postcar/device/pci_ops.o
+ .debug_str     0x0000000000004e1f       0xec build/postcar/device/pci_ops.o
                                         0x973 (size before relaxing)
- .debug_str     0x0000000000004ed4      0x175 build/postcar/drivers/uart/uart8250io.o
+ .debug_str     0x0000000000004f0b      0x175 build/postcar/drivers/uart/uart8250io.o
                                         0x386 (size before relaxing)
- .debug_str     0x0000000000005049       0xa0 build/postcar/drivers/uart/util.o
+ .debug_str     0x0000000000005080       0xa0 build/postcar/drivers/uart/util.o
                                         0x300 (size before relaxing)
- .debug_str     0x00000000000050e9       0xd1 build/postcar/lib/boot_device.o
+ .debug_str     0x0000000000005120       0xd1 build/postcar/lib/boot_device.o
                                         0x35d (size before relaxing)
- .debug_str     0x00000000000051ba      0x211 build/postcar/lib/cbfs.o
+ .debug_str     0x00000000000051f1      0x211 build/postcar/lib/cbfs.o
                                        0x115b (size before relaxing)
- .debug_str     0x00000000000053cb       0x59 build/postcar/lib/cbmem_common.o
+ .debug_str     0x0000000000005402       0x59 build/postcar/lib/cbmem_common.o
                                         0x4a8 (size before relaxing)
- .debug_str     0x0000000000005424      0x11e build/postcar/lib/cbmem_console.o
+ .debug_str     0x000000000000545b      0x11e build/postcar/lib/cbmem_console.o
                                         0x5cd (size before relaxing)
- .debug_str     0x0000000000005542      0x1b8 build/postcar/lib/ext_stage_cache.o
+ .debug_str     0x0000000000005579      0x1b8 build/postcar/lib/ext_stage_cache.o
                                         0x628 (size before relaxing)
- .debug_str     0x00000000000056fa      0x1dc build/postcar/lib/fmap.o
+ .debug_str     0x0000000000005731      0x1dc build/postcar/lib/fmap.o
                                         0x8ae (size before relaxing)
- .debug_str     0x00000000000058d6       0x92 build/postcar/lib/gcc.o
+ .debug_str     0x000000000000590d       0x92 build/postcar/lib/gcc.o
                                         0x232 (size before relaxing)
- .debug_str     0x0000000000005968        0xf build/postcar/lib/halt.o
+ .debug_str     0x000000000000599f        0xf build/postcar/lib/halt.o
                                         0x11d (size before relaxing)
- .debug_str     0x0000000000005977      0x39a build/postcar/lib/imd.o
+ .debug_str     0x00000000000059ae      0x39a build/postcar/lib/imd.o
                                         0x6b4 (size before relaxing)
- .debug_str     0x0000000000005d11      0x60f build/postcar/lib/imd_cbmem.o
+ .debug_str     0x0000000000005d48      0x60f build/postcar/lib/imd_cbmem.o
                                         0x9a0 (size before relaxing)
- .debug_str     0x0000000000006320       0xb6 build/postcar/lib/lzma.o
+ .debug_str     0x0000000000006357       0xb6 build/postcar/lib/lzma.o
                                         0x2b8 (size before relaxing)
- .debug_str     0x00000000000063d6      0x14e build/postcar/lib/lzmadecode.o
+ .debug_str     0x000000000000640d      0x14e build/postcar/lib/lzmadecode.o
                                         0x3a2 (size before relaxing)
- .debug_str     0x0000000000006524       0x1b build/postcar/lib/memcmp.o
+ .debug_str     0x000000000000655b       0x1b build/postcar/lib/memcmp.o
                                         0x182 (size before relaxing)
- .debug_str     0x000000000000653f      0x116 build/postcar/lib/prog_loaders.o
+ .debug_str     0x0000000000006576      0x116 build/postcar/lib/prog_loaders.o
                                        0x107f (size before relaxing)
- .debug_str     0x0000000000006655       0x51 build/postcar/lib/prog_ops.o
+ .debug_str     0x000000000000668c       0x51 build/postcar/lib/prog_ops.o
                                         0x3cc (size before relaxing)
- .debug_str     0x00000000000066a6       0x1f build/postcar/lib/reset.o
+ .debug_str     0x00000000000066dd       0x1f build/postcar/lib/reset.o
                                         0x217 (size before relaxing)
- .debug_str     0x00000000000066c5      0x2ae build/postcar/lib/rmodule.o
+ .debug_str     0x00000000000066fc      0x2ae build/postcar/lib/rmodule.o
                                         0x771 (size before relaxing)
- .debug_str     0x0000000000006973       0x7c build/postcar/lib/romstage_handoff.o
+ .debug_str     0x00000000000069aa       0x7c build/postcar/lib/romstage_handoff.o
                                         0x299 (size before relaxing)
- .debug_str     0x00000000000069ef       0xc5 build/postcar/lib/string.o
+ .debug_str     0x0000000000006a26       0xc5 build/postcar/lib/string.o
                                         0x29d (size before relaxing)
- .debug_str     0x0000000000006ab4      0x1ad build/postcar/lib/timestamp.o
+ .debug_str     0x0000000000006aeb      0x1ad build/postcar/lib/timestamp.o
                                         0xf26 (size before relaxing)
- .debug_str     0x0000000000006c61       0x12 build/postcar/lib/version.o
+ .debug_str     0x0000000000006c98       0x12 build/postcar/lib/version.o
                                         0x263 (size before relaxing)
- .debug_str     0x0000000000006c73      0x199 build/postcar/northbridge/intel/sandybridge/memmap.o
+ .debug_str     0x0000000000006caa      0x199 build/postcar/northbridge/intel/sandybridge/memmap.o
                                         0xacd (size before relaxing)
- .debug_str     0x0000000000006e0c       0x25 build/postcar/southbridge/intel/common/reset.o
+ .debug_str     0x0000000000006e43       0x25 build/postcar/southbridge/intel/common/reset.o
                                         0x14a (size before relaxing)
- .debug_str     0x0000000000006e31      0xa2c /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x0000000000006e68      0xa2c /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivdi3.o)
                                         0xb42 (size before relaxing)
- .debug_str     0x000000000000785d      0xb38 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x0000000000007894      0xb38 /home/rhylx/Repos/coreboot/util/crossgcc/xgcc/lib/gcc/i386-elf/8.3.0/libgcc.a(_udivmoddi4.o)

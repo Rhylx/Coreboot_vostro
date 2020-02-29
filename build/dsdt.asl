@@ -587,6 +587,10 @@ Device (PEGP)
  {
   Name(_ADR, 0x00000000)
  }
+ Method (_PRT)
+ {
+  Return (\_SB.PCI0.IRQM (1))
+ }
 }
 Device (PEG1)
 {
@@ -598,6 +602,10 @@ Device (PEG1)
  Device (DEV0)
  {
   Name(_ADR, 0x00000000)
+ }
+ Method (_PRT)
+ {
+  Return (\_SB.PCI0.IRQM (2))
  }
 }
 Device (PEG2)
@@ -611,6 +619,10 @@ Device (PEG2)
  {
   Name(_ADR, 0x00000000)
  }
+ Method (_PRT)
+ {
+  Return (\_SB.PCI0.IRQM (3))
+ }
 }
 Device (PEG6)
 {
@@ -622,6 +634,10 @@ Device (PEG6)
  Device (DEV0)
  {
   Name(_ADR, 0x00000000)
+ }
+ Method (_PRT)
+ {
+  Return (\_SB.PCI0.IRQM (4))
  }
 }
 Device (PDRC)
@@ -1821,6 +1837,33 @@ Device (LNKH)
   }
  }
 }
+ Device (PS2K)
+ {
+  Name(_HID, EISAID("PNP0303"))
+  Name(_CID, EISAID("PNP030B"))
+  Name(_CRS, ResourceTemplate()
+  {
+   IO (Decode16, 0x60, 0x60, 0x01, 0x01)
+   IO (Decode16, 0x64, 0x64, 0x01, 0x01)
+   IRQ (Edge, ActiveHigh, Exclusive) { 0x01 }
+  })
+  Method (_STA, 0)
+  {
+   Return (0xf)
+  }
+ }
+ Device (PS2M)
+ {
+  Name(_HID, EISAID("PNP0F13"))
+  Name(_CRS, ResourceTemplate()
+  {
+   IRQ (Edge, ActiveHigh, Exclusive) { 0x0c }
+  })
+  Method(_STA, 0)
+  {
+   Return (0xf)
+  }
+ }
  Device (DMAC)
  {
   Name(_HID, EISAID("PNP0200"))

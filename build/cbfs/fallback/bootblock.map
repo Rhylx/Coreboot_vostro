@@ -247,8 +247,8 @@ ffff3740 t pch_gpio_set1_direction
 ffff3744 t pch_gpio_set1_mode
 ffff3770 T _eprogram
 ffff3770 T _etext
-ffffff38 R __id_start
-ffffff38 r ver
+ffffff32 R __id_start
+ffffff32 r ver
 ffffff4e r vendor
 ffffff58 r part
 ffffff80 R __id_end
