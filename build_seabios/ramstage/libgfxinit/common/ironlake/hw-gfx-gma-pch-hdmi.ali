@@ -1,0 +1,177 @@
+V "GNAT Lib v8"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK_05
+
+U hw.gfx.gma.pch.hdmi%b	hw-gfx-gma-pch-hdmi.adb	33a0a46a NE OO PK IU
+W gnat%s		gnat.ads		gnat.ali
+W gnat.source_info%s	g-souinf.ads		g-souinf.ali
+W hw%s			hw.ads			hw.ali
+W hw.debug%s		hw-debug.adb		hw-debug.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
+W hw.gfx.gma.registers%s  hw-gfx-gma-registers.adb  hw-gfx-gma-registers.ali
+
+U hw.gfx.gma.pch.hdmi%s	hw-gfx-gma-pch-hdmi.ads	51ede2f1 EE NE OO PK IU
+W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
+
+D gnat.ads		20200216164320 fd2ad2f1 gnat%s
+D g-souinf.ads		20200216164320 7fd67a54 gnat.source_info%s
+D hw.ads		20191211222205 349e873c hw%s
+D hw-config.ads		20200308171245 3df8aafb hw.config%s
+D hw-debug.ads		20191211222205 1328ccd5 hw.debug%s
+D hw-gfx.ads		20191211222205 d263ba5b hw.gfx%s
+D hw-gfx-framebuffer_filler.ads  20191211222205 0b5937f9 hw.gfx.framebuffer_filler%s
+D hw-gfx-gma.ads	20191211222205 32fe82ee hw.gfx.gma%s
+D hw-gfx-gma-config.ads	20200308171245 e700aa4c hw.gfx.gma.config%s
+D hw-gfx-gma-pch.ads	20191211222205 e6dc1f0f hw.gfx.gma.pch%s
+D hw-gfx-gma-pch-hdmi.ads  20191211222205 b731fdfe hw.gfx.gma.pch.hdmi%s
+D hw-gfx-gma-pch-hdmi.adb  20191211222205 1849c502 hw.gfx.gma.pch.hdmi%b
+D hw-gfx-gma-registers.ads  20191211222205 f0262a17 hw.gfx.gma.registers%s
+D hw-pci.ads		20191211222205 d2a0aee8 hw.pci%s
+D hw-port_io.ads	20191211222205 42e65734 hw.port_io%s
+D hw-time.ads		20191211222205 e7f4a790 hw.time%s
+D interfac.ads		20200216164320 8908571f interfaces%s
+D system.ads		20200216164320 21923ced system%s
+D s-unstyp.ads		20200216164320 9d58a4c0 system.unsigned_types%s
+D gnat.adc		20191211220911 00000000
+X 1 gnat.ads
+34K9*GNAT 37e9 12|18r6 58r37 81r37 116r37
+X 2 g-souinf.ads
+39K14*Source_Info 92e21 12|18w11 58r42 81r42 116r42
+68V13*Enclosing_Entity{string} 12|58s54 81s54 116s54
+X 3 hw.ads
+17K9*HW 91e7 11|15r9 25r5 12|15r6 17r6 20r14 123r5
+34M12*Word32{17|68M9} 12|34r34 52r27
+X 5 hw-debug.ads
+16K12*Debug 41e13 12|17w9 58r21 81r21 116r21
+19U14*Put_Line 12|58s27 81s27 116s27
+X 6 hw-gfx.ads
+21K12*GFX 3|17k9 6|217e11 11|15r12 25r8 12|15r9 20r17 123r8
+135b7*H_Sync_Active_High{boolean} 12|53r27
+136b7*V_Sync_Active_High{boolean} 12|55r27
+X 8 hw-gfx-gma.ads
+22K16*GMA 6|21k12 8|292e15 11|15r16 25r12 12|15r13 20r21 123r12
+248n7 PCH_HDMI_B{246E9} 12|44r7
+248n19 PCH_HDMI_C{246E9} 12|45r7
+248n31 PCH_HDMI_D{246E9} 12|46r7
+251E12 PCH_HDMI_Port{246E9} 11|22r26 12|42r34 77r26 118r19
+254R9 Port_Config 263e17 11|18r29 12|50r29
+257e10*PCH_Port{246E9} 12|63r44 69r50 71r46 72r50
+259r10*Mode{6|124R9} 12|53r22 55r22
+X 9 hw-gfx-gma-config.ads
+17K28*Config 501e22 12|83r14 100r14
+222V13*Has_Trans_DP_Ctl{boolean} 12|83s21 100s21
+X 10 hw-gfx-gma-pch.ads
+17K28*PCH 8|22k16 10|37e19 11|15r20 25r16 12|20r25 123r16
+19E9*FDI_Port_Type 19e47 11|18r53 12|50r53
+19n34*FDI_B{19E9} 12|89r48
+28V13*PCH_TRANSCODER_SELECT_MASK{3|34M12} 12|35s7
+31V13*PCH_TRANSCODER_SELECT{3|34M12} 12|66s25 89s25
+X 11 hw-gfx-gma-pch-hdmi.ads
+15K24*HDMI 10|17k28 11|25l20 25e24 12|20b29 123l20 123t24
+18U14*On 18>18 18>42 12|50b14 73l8 73t10
+18r18 Port_Cfg{8|254R9} 12|50b18 53r13 55r13 63r35 69r41 71r37 72r41
+18e42 FDI_Port{10|19E9} 12|50b42 66r48
+22U14*Off 22>19 12|77b14 111l8 111t11 119s10
+22e19 Port{8|251E12} 12|77b19 87r35 94r35 98r41 102r40 103r44 105r40 106r44
+. 107r42 108r44
+23U14*All_Off 12|113b14 121l8 121t15
+X 12 hw-gfx-gma-pch-hdmi.adb
+23N4 PCH_HDMI_ENABLE 36r7 65r25 71r57 88r25 102r47 105r47 107r49
+24N4 PCH_HDMI_COLOR_FORMAT_8BPC
+25N4 PCH_HDMI_COLOR_FORMAT_12BPC
+26N4 PCH_HDMI_COLOR_FORMAT_MASK 37r7
+27N4 PCH_HDMI_SDVO_ENCODING_SDVO
+28N4 PCH_HDMI_SDVO_ENCODING_HDMI 67r25
+29N4 PCH_HDMI_SDVO_ENCODING_MASK 38r7
+30N4 PCH_HDMI_VSYNC_ACTIVE_HIGH 40r7 56r13 97r25
+31N4 PCH_HDMI_HSYNC_ACTIVE_HIGH 39r7 54r13 96r25
+32N4 PCH_HDMI_PORT_DETECT
+34V13 PCH_HDMI_MASK{3|34M12} 64s25 95s25
+42A9 PCH_HDMI_Array(13|1636E12)<8|246E9> 43r24 43r42
+43a4 PCH_HDMI{42A9} 63r25 69r31 71r27 72r31 87r25 94r25 98r31 102r30 103r34
+. 105r30 106r34 107r32 108r34
+52m7 Polarity{3|34M12} 68r25
+79b7 With_Transcoder_B_Enabled{boolean} 90m25 100r47
+118e11 Port{8|251E12} 119r15
+X 13 hw-gfx-gma-registers.ads
+19K28*Registers 12|15w17 42r52 44r21 45r21 46r21 62r7 69r7 71r7 72r7 86r10
+. 93r7 98r7 102r10 103r10 105r10 106r10 107r10 108r10 13|1807e25
+643n7*PCH_HDMIB{36E9} 12|44r31
+644n7*PCH_HDMIC{36E9} 12|45r31
+645n7*PCH_HDMID{36E9} 12|46r31
+1636E12*Registers_Index{36E9} 12|42r62
+1665U14*Posting_Read 12|69s17 72s17 98s17 103s20 106s20 108s20
+1696U14*Is_Set_Mask 12|86s20
+1697e8 Register{1636E12} 12|87r13
+1698m8 Mask{3|34M12} 12|88r13
+1699b8 Result{boolean} 12|90r13
+1742U14*Set_Mask 12|71s17 102s20 105s20
+1746U14*Unset_Mask 12|107s20
+1750U14*Unset_And_Set_Mask 12|62s17 93s17
+1751e8 Register{1636E12} 12|63r11 94r11
+1752m8 Mask_Unset{3|34M12} 12|64r11 95r11
+1753m8 Mask_Set{3|34M12} 12|65r11 96r11
+X 17 interfac.ads
+68M9*Unsigned_32
+
