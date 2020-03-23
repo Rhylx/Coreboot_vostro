@@ -1,0 +1,288 @@
+V "GNAT Lib v8"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK_05
+
+U hw.gfx.gma.pch.dp%b	hw-gfx-gma-pch-dp.adb	90b40552 NE OO PK IU
+W ada%s			ada.ads			ada.ali
+Z ada.unchecked_conversion%s
+W gnat%s		gnat.ads		gnat.ali
+W gnat.source_info%s	g-souinf.ads		g-souinf.ali
+W hw%s			hw.ads			hw.ali
+W hw.debug%s		hw-debug.adb		hw-debug.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+Z hw.gfx.dp_aux_ch%s	hw-gfx-dp_aux_ch.adb	hw-gfx-dp_aux_ch.ali
+Z hw.gfx.dp_defs%s	hw-gfx-dp_defs.ads	hw-gfx-dp_defs.ali
+Z hw.gfx.dp_info%s	hw-gfx-dp_info.adb	hw-gfx-dp_info.ali
+W hw.gfx.dp_training%s	hw-gfx-dp_training.adb	hw-gfx-dp_training.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.dp_aux_ch%s  hw-gfx-gma-dp_aux_ch.ads  hw-gfx-gma-dp_aux_ch.ali
+W hw.gfx.gma.dp_info%s	hw-gfx-gma-dp_info.ads	hw-gfx-gma-dp_info.ali
+W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
+W hw.gfx.gma.registers%s  hw-gfx-gma-registers.adb  hw-gfx-gma-registers.ali
+Z hw.gfx.i2c%s		hw-gfx-i2c.ads		hw-gfx-i2c.ali
+Z hw.time%s		hw-time.adb		hw-time.ali
+
+U hw.gfx.gma.pch.dp%s	hw-gfx-gma-pch-dp.ads	54b4bee7 EE NE OO PK IU
+W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
+
+D ada.ads		20200320110301 3ffc8e18 ada%s
+D a-unccon.ads		20200320110301 f9eb8f06 ada.unchecked_conversion%s
+D gnat.ads		20200320110301 fd2ad2f1 gnat%s
+D g-souinf.ads		20200320110301 7fd67a54 gnat.source_info%s
+D hw.ads		20200320110229 349e873c hw%s
+D hw-config.ads		20200323160120 3df8aafb hw.config%s
+D hw-debug.ads		20200320110229 1328ccd5 hw.debug%s
+D hw-gfx.ads		20200320155934 d263ba5b hw.gfx%s
+D hw-gfx-dp_aux_ch.ads	20200320155934 e884c770 hw.gfx.dp_aux_ch%s
+D hw-gfx-dp_defs.ads	20200320155934 30f739dd hw.gfx.dp_defs%s
+D hw-gfx-dp_info.ads	20200320155934 445951f5 hw.gfx.dp_info%s
+D hw-gfx-dp_training.ads  20200320155934 c086c1de hw.gfx.dp_training%s
+D hw-gfx-dp_training.adb  20200320155934 78c2d18b hw.gfx.dp_training%b
+D hw-gfx-framebuffer_filler.ads  20200320155934 0b5937f9 hw.gfx.framebuffer_filler%s
+D hw-gfx-gma.ads	20200320155934 68ac5893 hw.gfx.gma%s
+D hw-gfx-gma-config.ads	20200323160120 3b69e186 hw.gfx.gma.config%s
+D hw-gfx-gma-dp_aux_ch.ads  20200320155934 53944791 hw.gfx.gma.dp_aux_ch%s
+D hw-gfx-gma-dp_aux_request.ads  20200320155934 d673ea1e hw.gfx.gma.dp_aux_request%s
+D hw-gfx-gma-dp_info.ads  20200320155934 38def494 hw.gfx.gma.dp_info%s
+D hw-gfx-gma-pch.ads	20200320155934 e6dc1f0f hw.gfx.gma.pch%s
+D hw-gfx-gma-pch-dp.ads	20200320155934 b268a1e8 hw.gfx.gma.pch.dp%s
+D hw-gfx-gma-pch-dp.adb	20200320155934 94f541fb hw.gfx.gma.pch.dp%b
+D hw-gfx-gma-registers.ads  20200320155934 711b211b hw.gfx.gma.registers%s
+D hw-gfx-i2c.ads	20200320155934 e54ab4f7 hw.gfx.i2c%s
+D hw-pci.ads		20200320110229 d2a0aee8 hw.pci%s
+D hw-port_io.ads	20200320110229 42e65734 hw.port_io%s
+D hw-time.ads		20200320110229 e7f4a790 hw.time%s
+D interfac.ads		20200320110301 8908571f interfaces%s
+D system.ads		20200320110301 21923ced system%s
+D s-unstyp.ads		20200320110301 9d58a4c0 system.unsigned_types%s
+D gnat.adc		20200320090809 00000000
+X 3 gnat.ads
+34K9*GNAT 37e9 22|21r6 141r37 216r37 237r37
+X 4 g-souinf.ads
+39K14*Source_Info 92e21 22|21w11 141r42 216r42 237r42
+68V13*Enclosing_Entity{string} 22|141s54 216s54 237s54
+X 5 hw.ads
+17K9*HW 91e7 21|15r9 28r5 22|15r6 16r6 17r6 18r6 20r6 23r14 244r5
+34M12*Word32{28|68M9} 22|45r43 48r71 58r14 62r10 66r72 70r10 73r67 77r10
+. 209r43 212r42
+35V13*Shift_Left=36:26{28|68M9} 22|50s36 51s36 52s36 53s36 54s36 61s14 69s14
+. 76s14
+54I12*Pos64{28|54I9}
+X 7 hw-debug.ads
+16K12*Debug 41e13 22|20w9 141r21 216r21 237r21
+19U14*Put_Line 22|141s27 216s27 237s27
+X 8 hw-gfx.ads
+21K12*GFX 5|17k9 8|217e11 21|15r12 28r8 22|15r9 16r9 17r9 18r9 23r17 244r8
+71E9*DP_Lane_Count 71e77 22|73r45
+72I12*DP_Lane_Count_Type{5|54I12}
+73A9*DP_Lane_Count_Integers(72I12)<71E9>
+74a4*Lane_Count_As_Integer{73A9} 22|77r18
+99R9*DP_Link 106e17 22|113r18 125r21
+102e10*Lane_Count{71E9} 22|222r53
+X 11 hw-gfx-dp_info.ads
+25E9 DP_Voltage_Swing 22|57r20[19|19] 62r26[19|19] 87r22[19|19]
+25n30*VS_Level_0{25E9[19|19]} 22|101r26[19|19]
+25n42*VS_Level_1{25E9[19|19]} 22|102r26[19|19]
+25n54*VS_Level_2{25E9[19|19]} 22|103r26[19|19]
+25n66*VS_Level_3{25E9[19|19]} 22|90r22[19|19] 104r26[19|19]
+27E9 DP_Pre_Emph 22|66r52[19|19] 70r26[19|19] 96r22[19|19]
+27n25*Emph_Level_0{27E9[19|19]} 22|104r48[19|19]
+27n39*Emph_Level_1{27E9[19|19]} 22|103r48[19|19]
+27n53*Emph_Level_2{27E9[19|19]} 22|102r48[19|19]
+27n67*Emph_Level_3{27E9[19|19]} 22|101r48[19|19]
+29R9*Train_Set 22|95r29[19|19] 126r29[19|19]
+30e7*Voltage_Swing{25E9[19|19]} 22|100r25[19|19] 133r60[19|19]
+31e7*Pre_Emph{27E9[19|19]} 22|134r61[19|19]
+34E9*Training_Pattern 22|48r46[19|19] 114r26[19|19]
+34n30*TP_1{34E9[19|19]} 22|50r23[19|19] 170r55[19|19] 224r49[19|19]
+34n36*TP_2{34E9[19|19]} 22|51r23[19|19]
+34n42*TP_3{34E9[19|19]} 22|52r23[19|19]
+34n48*TP_Idle{34E9[19|19]} 22|53r23[19|19] 156r52[19|19]
+34n57*TP_None{34E9[19|19]} 22|54r23[19|19]
+X 12 hw-gfx-dp_training.ads
+20b4 TPS3_Supported{boolean} 22|197r10
+22+9 T 22|198r10
+23+9 Aux_T 22|199r10
+25K17 Aux_Ch 22|200r10
+27K17 DP_Info 22|201r10
+29V18 To_Aux{23+9} 22|202r10
+31V18 Max_V_Swing{11|25E9[27]} 22|203r10
+33V18 Max_Pre_Emph{11|27E9[27]} 22|204r10
+38U19 Set_Pattern 22|205r10
+43U19 Set_Signal_Levels 22|206r10
+48U19 Off 22|207r10
+50k16*DP_Training 58e23 22|15w13 196r31
+53U14 Train_DP 22|226s16[196]
+54e7 Port{15|248E9} 22|227r10[196]
+55r7 Link{8|99R9} 22|228r10[196]
+56b7 Success{boolean} 22|229r10[196]
+X 15 hw-gfx-gma.ads
+22K16*GMA 8|21k12 15|298e15 21|15r16 28r12 22|16r13 17r13 18r13 23r21 244r12
+251n7 PCH_DP_B{248E9} 22|27r7 192r21
+251n17 PCH_DP_C{248E9} 22|28r7 193r21
+251n27 PCH_DP_D{248E9} 22|29r7 194r21
+254E12 PCH_DP_Port{248E9} 21|25r26 22|25r28 86r14 94r21 112r18 124r21 137r26
+. 187r30 198r31 239r19
+259R9 Port_Config 269e17 21|19r25 22|183r25
+262e10*PCH_Port{248E9} 22|219r39 227r31
+268r10*DP{8|99R9} 22|222r50 228r31
+275E9 DP_Port 275e44 22|187r50 199r31
+275n27 DP_B{275E9} 22|192r33
+275n33 DP_C{275E9} 22|193r33
+275n39 DP_D{275E9} 22|194r33
+X 16 hw-gfx-gma-config.ads
+17K28*Config 516e22 22|43r10 46r10 143r14 162r14 210r13 213r13
+223V13*Has_Trans_DP_Ctl{boolean} 22|43s17 46s17 143s21 162s21 210s20 213s20
+X 17 hw-gfx-gma-dp_aux_ch.ads
+19K28*DP_Aux_Ch[9|30] 22|16w17 200r31
+X 19 hw-gfx-gma-dp_info.ads
+19K28*DP_Info[11|23] 22|17w17 48r38 50r15 51r15 52r15 53r15 54r15 57r12 62r18
+. 66r44 70r18 87r14 90r14 95r21 96r14 101r18 101r40 102r18 102r40 103r18
+. 103r40 104r18 104r40 114r18 126r21 156r44 170r47 201r31 224r41
+X 20 hw-gfx-gma-pch.ads
+17K28*PCH 15|22k16 20|37e19 21|15r20 28r16 22|23r25 244r16
+19E9*FDI_Port_Type 19e47 21|20r25 22|184r25
+19n27*FDI_A{19E9} 22|169r51
+19n34*FDI_B{19E9} 22|149r48
+28V13*PCH_TRANSCODER_SELECT_MASK{5|34M12} 22|166s28
+31V13*PCH_TRANSCODER_SELECT{5|34M12} 22|149s25 169s28 211s22
+X 21 hw-gfx-gma-pch-dp.ads
+15K24*DP 20|17k28 21|28l20 28e22 22|23b29 244l20 244t22
+18U14*On 19>7 20>7 21<7 22|182b14 230l8 230t10
+19r7 Port_Cfg{15|259R9} 22|183b7 219r30 222r41 227r22 228r22
+20e7 FDI_Port{20|19E9} 22|184b7 211r45
+21b7 Success{boolean} 22|185b7 229m22
+25U14*Off 25>19 22|137b14 176l8 176t11 207r31 240s10
+25e19 Port{15|254E12} 22|137b19 147r33 154r33 157r39 159r37 160r39 165r36
+. 171r42 172r40 173r42
+26U14*All_Off 22|234b14 242l8 242t15
+X 22 hw-gfx-gma-pch-dp.adb
+25A9 DP_Array(23|1652E12)<15|248E9> 26r22
+26a4 DP_CTL{25A9} 118r25 130r25 147r25 154r25 157r31 159r29 160r31 165r28
+. 171r34 172r32 173r34 219r22
+31N4 DP_CTL_DISPLAY_PORT_ENABLE 148r25 159r44 168r28 172r47 220r22
+32N4 DP_CTL_VSWING_LEVEL_SET_SHIFT 63r10
+33N4 DP_CTL_VSWING_LEVEL_SET_MASK 131r25
+34N4 DP_CTL_PREEMPH_LEVEL_SET_SHIFT 70r49
+35N4 DP_CTL_PREEMPH_LEVEL_SET_MASK 132r25
+36N4 DP_CTL_PORT_WIDTH_SHIFT 78r10
+37N4 DP_CTL_ENHANCED_FRAMING_ENABLE 214r22
+38N4 DP_CTL_PORT_REVERSAL
+39N4 DP_CTL_AUDIO_OUTPUT_ENABLE
+40N4 DP_CTL_PORT_DETECT
+42V13 DP_CTL_LINK_TRAIN_SHIFT{natural} 50s51 51s51 52s51 53s51 54s51
+45V13 DP_CTL_LINK_TRAIN_MASK{5|34M12} 119s25 155s25 167s28
+48V13 DP_CTL_LINK_TRAIN{5|34M12} 48>32 120s25 156s25 170s28 224s22
+48e32 Pat{11|34E9[19|19]} 49r12
+56V13 DP_CTL_VSWING_LEVEL_SET{5|34M12} 56b13 57>7 64l8 64t31 133s25
+57e7 VS{11|25E9[19|19]} 62r48
+66V13 DP_CTL_PREEMPH_LEVEL_SET{5|34M12} 66b13 66>39 71l8 71t32 134s25
+66e39 PE{11|27E9[19|19]} 70r43
+73V13 DP_CTL_PORT_WIDTH{5|34M12} 73b13 73>32 79l8 79t25 222s22
+73e32 Lane_Count{8|71E9} 77r41
+85V13 Max_V_Swing{11|25E9[19|19]} 85b13 86>7 91l8 91t19 203r31
+86e7 Port{15|254E12}
+93V13 Max_Pre_Emph{11|27E9[19|19]} 93b13 94>7 95>7 105l8 105t20 204r31
+94e7 Port{15|254E12}
+95r7 Train_Set{11|29R9[19|19]} 100r15
+111U14 Set_Training_Pattern 111b14 112>7 113>7 114>7 121l8 121t28 205r31
+112e7 Port{15|254E12} 118r33
+113r7 Link{8|99R9}
+114e7 Pattern{11|34E9[19|19]} 120r44
+123U14 Set_Signal_Levels 123b14 124>7 125>7 126>7 135l8 135t25 206r31
+124e7 Port{15|254E12} 130r33
+125r7 Link{8|99R9}
+126r7 Train_Set{11|29R9[19|19]} 133r50 134r51
+139b7 With_Transcoder_B_Enabled{boolean} 150m25 162r47
+187V16 To_DP{15|275E9} 187b16 187>23 195l11 195t16 202r31
+187e23 Port{15|254E12} 191r18
+196K15 Training[12|50] 226r7
+209m7 DP_CTL_Transcoder_Select{5|34M12} 221r22
+212m7 DP_CTL_Enhanced_Framing{5|34M12} 223r22
+239e11 Port{15|254E12} 240r15
+X 23 hw-gfx-gma-registers.ads
+19K28*Registers 22|18w17 25r44 27r19 28r19 29r19 117r7 129r7 146r10 153r7
+. 157r7 159r7 160r7 164r10 171r10 172r10 173r10 218r7 23|1825e25
+668n7*PCH_DP_B{36E9} 22|27r29
+675n7*PCH_DP_C{36E9} 22|28r29
+682n7*PCH_DP_D{36E9} 22|29r29
+1652E12*Registers_Index{36E9} 22|25r54
+1683U14*Posting_Read 22|157s17 160s17 171s20 173s20
+1705U14*Write 22|218s17
+1706e8 Register{1652E12} 22|219r10
+1707m8 Value{5|34M12} 22|220r10
+1714U14*Is_Set_Mask 22|146s20
+1715e8 Register{1652E12} 22|147r13
+1716m8 Mask{5|34M12} 22|148r13
+1717b8 Result{boolean} 22|150r13
+1764U14*Unset_Mask 22|159s17 172s20
+1768U14*Unset_And_Set_Mask 22|117s17 129s17 153s17 164s20
+1769e8 Register{1652E12} 22|118r10 130r10 154r10 165r13
+1770m8 Mask_Unset{5|34M12} 22|119r10 131r10 155r10 166r13
+1771m8 Mask_Set{5|34M12} 22|120r10 133r10 156r10 168r13
+X 28 interfac.ads
+54I9*Integer_64<long_long_integer>
+68M9*Unsigned_32
+
