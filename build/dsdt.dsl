@@ -1,22 +1,22 @@
 /*
  * Intel ACPI Component Architecture
- * AML/ASL+ Disassembler version 20191018 (64-bit version)
- * Copyright (c) 2000 - 2019 Intel Corporation
+ * AML/ASL+ Disassembler version 20200110 (64-bit version)
+ * Copyright (c) 2000 - 2020 Intel Corporation
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of build/dsdt.aml, Mon Dec 16 22:35:01 2019
+ * Disassembly of build/dsdt.aml, Sat Feb 29 17:46:45 2020
  *
  * Original Table Header:
  *     Signature        "DSDT"
- *     Length           0x00002647 (9799)
+ *     Length           0x000027B3 (10163)
  *     Revision         0x02
- *     Checksum         0xF4
+ *     Checksum         0x9A
  *     OEM ID           "COREv4"
  *     OEM Table ID     "COREBOOT"
  *     OEM Revision     0x20141018 (538185752)
  *     Compiler ID      "INTL"
- *     Compiler Version 0x20191018 (538513432)
+ *     Compiler Version 0x20200110 (538968336)
  */
 DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
 {
@@ -94,6 +94,16 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
                 OSYS = 0x07D1
             }
 
+            If (_OSI ("Windows 2001.1"))
+            {
+                OSYS = 0x07D1
+            }
+
+            If (_OSI ("Windows 2001.1 SP1"))
+            {
+                OSYS = 0x07D1
+            }
+
             If (_OSI ("Windows 2001 SP2"))
             {
                 OSYS = 0x07D2
@@ -102,6 +112,26 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             If (_OSI ("Windows 2006"))
             {
                 OSYS = 0x07D6
+            }
+
+            If (_OSI ("Windows 2006 SP1"))
+            {
+                OSYS = 0x07D6
+            }
+
+            If (_OSI ("Windows 2006.1"))
+            {
+                OSYS = 0x07D6
+            }
+
+            If (_OSI ("Windows 2009"))
+            {
+                OSYS = 0x07D9
+            }
+
+            If (_OSI ("Windows 2012"))
+            {
+                OSYS = 0x07DC
             }
         }
     }
@@ -718,13 +748,17 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             Name (_ADR, 0x00010000)  // _ADR: Address
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                Local0 = (^^MCHC.DVEN >> 0x03)
-                Return ((Local0 & One))
+                Return ((((^^MCHC.DVEN >> 0x03) & One) * 0x0F))
             }
 
             Device (DEV0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (One))
             }
         }
 
@@ -733,13 +767,17 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             Name (_ADR, 0x00010001)  // _ADR: Address
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                Local0 = (^^MCHC.DVEN >> 0x02)
-                Return ((Local0 & One))
+                Return ((((^^MCHC.DVEN >> 0x02) & One) * 0x0F))
             }
 
             Device (DEV0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (0x02))
             }
         }
 
@@ -748,13 +786,17 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             Name (_ADR, 0x00010002)  // _ADR: Address
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                Local0 = (^^MCHC.DVEN >> One)
-                Return ((Local0 & One))
+                Return ((((^^MCHC.DVEN >> One) & One) * 0x0F))
             }
 
             Device (DEV0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (0x03))
             }
         }
 
@@ -763,13 +805,17 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
             Name (_ADR, 0x00060000)  // _ADR: Address
             Method (_STA, 0, NotSerialized)  // _STA: Status
             {
-                Local0 = (^^MCHC.DVEN >> 0x0D)
-                Return ((Local0 & One))
+                Return ((((^^MCHC.DVEN >> 0x0D) & One) * 0x0F))
             }
 
             Device (DEV0)
             {
                 Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Method (_PRT, 0, NotSerialized)  // _PRT: PCI Routing Table
+            {
+                Return (IRQM (0x04))
             }
         }
 
@@ -831,7 +877,7 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
                 CreateDWordField (PDRS, \_SB.PCI0.PDRC._Y04._BAS, XBR0)  // _BAS: Base Address
                 XBR0 = (^^MCHC.PXBR << 0x1A)
                 CreateDWordField (PDRS, \_SB.PCI0.PDRC._Y04._LEN, XSZ0)  // _LEN: Length
-                XSZ0 = (0x10000000 << ^^MCHC.PXSZ) /* \_SB_.PCI0.MCHC.PXSZ */
+                XSZ0 = (0x10000000 >> ^^MCHC.PXSZ) /* \_SB_.PCI0.MCHC.PXSZ */
                 Return (PDRS) /* \_SB_.PCI0.PDRC.PDRS */
             }
         }
@@ -2487,6 +2533,47 @@ DefinitionBlock ("", "DSDT", 2, "COREv4", "COREBOOT", 0x20141018)
                     {
                         Return (0x0B)
                     }
+                }
+            }
+
+            Device (PS2K)
+            {
+                Name (_HID, EisaId ("PNP0303") /* IBM Enhanced Keyboard (101/102-key, PS/2 Mouse) */)  // _HID: Hardware ID
+                Name (_CID, EisaId ("PNP030B"))  // _CID: Compatible ID
+                Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                {
+                    IO (Decode16,
+                        0x0060,             // Range Minimum
+                        0x0060,             // Range Maximum
+                        0x01,               // Alignment
+                        0x01,               // Length
+                        )
+                    IO (Decode16,
+                        0x0064,             // Range Minimum
+                        0x0064,             // Range Maximum
+                        0x01,               // Alignment
+                        0x01,               // Length
+                        )
+                    IRQ (Edge, ActiveHigh, Exclusive, )
+                        {1}
+                })
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    Return (0x0F)
+                }
+            }
+
+            Device (PS2M)
+            {
+                Name (_HID, EisaId ("PNP0F13") /* PS/2 Mouse */)  // _HID: Hardware ID
+                Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                {
+                    IRQ (Edge, ActiveHigh, Exclusive, )
+                        {12}
+                })
+                Method (_STA, 0, NotSerialized)  // _STA: Status
+                {
+                    Return (0x0F)
                 }
             }
 

@@ -1,12 +1,14 @@
 build/ramstage/cpu/x86/pae/pgtbl.o: src/cpu/x86/pae/pgtbl.c \
  src/include/kconfig.h build/config.h src/include/rules.h \
- src/commonlib/include/commonlib/compiler.h src/include/cbfs.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h src/include/cbfs.h \
  src/commonlib/include/commonlib/cbfs.h \
- src/commonlib/include/commonlib/cbfs_serialized.h src/include/stdint.h \
- src/commonlib/include/commonlib/region.h src/include/sys/types.h \
- src/include/sys/../types.h src/include/stdbool.h src/include/stddef.h \
- src/commonlib/include/commonlib/helpers.h \
- src/commonlib/include/commonlib/compiler.h \
+ src/commonlib/bsd/include/commonlib/bsd/cbfs_serialized.h \
+ src/include/stdint.h src/commonlib/include/commonlib/region.h \
+ src/include/sys/types.h src/include/sys/../types.h \
+ src/commonlib/bsd/include/commonlib/bsd/cb_err.h src/include/stdbool.h \
+ src/include/stddef.h src/commonlib/include/commonlib/helpers.h \
+ src/commonlib/bsd/include/commonlib/bsd/helpers.h \
+ src/commonlib/bsd/include/commonlib/bsd/compiler.h \
  src/commonlib/include/commonlib/mem_pool.h \
  3rdparty/vboot/firmware/include/vb2_api.h \
  3rdparty/vboot/firmware/include/../2lib/include/2api.h \

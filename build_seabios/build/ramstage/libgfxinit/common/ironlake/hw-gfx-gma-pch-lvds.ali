@@ -1,0 +1,160 @@
+V "GNAT Lib v8"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK_05
+
+U hw.gfx.gma.pch.lvds%b	hw-gfx-gma-pch-lvds.adb	8e5f59d0 NE OO PK IU
+W gnat%s		gnat.ads		gnat.ali
+W gnat.source_info%s	g-souinf.ads		g-souinf.ali
+W hw%s			hw.ads			hw.ali
+W hw.debug%s		hw-debug.adb		hw-debug.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.config%s	hw-gfx-gma-config.adb	hw-gfx-gma-config.ali
+W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
+W hw.gfx.gma.registers%s  hw-gfx-gma-registers.adb  hw-gfx-gma-registers.ali
+
+U hw.gfx.gma.pch.lvds%s	hw-gfx-gma-pch-lvds.ads	038cf85f EE NE OO PK IU
+W hw.gfx.gma.pch%s	hw-gfx-gma-pch.ads	hw-gfx-gma-pch.ali
+
+D gnat.ads		20200320110301 fd2ad2f1 gnat%s
+D g-souinf.ads		20200320110301 7fd67a54 gnat.source_info%s
+D hw.ads		20200320110229 349e873c hw%s
+D hw-config.ads		20200323155348 3df8aafb hw.config%s
+D hw-debug.ads		20200320110229 1328ccd5 hw.debug%s
+D hw-gfx.ads		20200320155934 d263ba5b hw.gfx%s
+D hw-gfx-framebuffer_filler.ads  20200320155934 0b5937f9 hw.gfx.framebuffer_filler%s
+D hw-gfx-gma.ads	20200320155934 68ac5893 hw.gfx.gma%s
+D hw-gfx-gma-config.ads	20200323155348 3b69e186 hw.gfx.gma.config%s
+D hw-gfx-gma-pch.ads	20200320155934 e6dc1f0f hw.gfx.gma.pch%s
+D hw-gfx-gma-pch-lvds.ads  20200320155934 e550e750 hw.gfx.gma.pch.lvds%s
+D hw-gfx-gma-pch-lvds.adb  20200320155934 4d83c89c hw.gfx.gma.pch.lvds%b
+D hw-gfx-gma-registers.ads  20200320155934 711b211b hw.gfx.gma.registers%s
+D hw-pci.ads		20200320110229 d2a0aee8 hw.pci%s
+D hw-port_io.ads	20200320110229 42e65734 hw.port_io%s
+D hw-time.ads		20200320110229 e7f4a790 hw.time%s
+D interfac.ads		20200320110301 8908571f interfaces%s
+D system.ads		20200320110301 21923ced system%s
+D s-unstyp.ads		20200320110301 9d58a4c0 system.unsigned_types%s
+D gnat.adc		20200320090809 00000000
+X 1 gnat.ads
+34K9*GNAT 37e9 12|20r6 51r37 69r37
+X 2 g-souinf.ads
+39K14*Source_Info 92e21 12|20w11 51r42 69r42
+68V13*Enclosing_Entity{string} 12|51s54 69s54
+X 3 hw.ads
+17K9*HW 91e7 11|15r9 22r5 12|16r6 17r6 19r6 22r14 78r5
+34M12*Word32{17|68M9} 12|41r32 47r30
+49I12*Int64{17|54I9}
+54I12*Pos64{17|54I9}
+X 5 hw-debug.ads
+16K12*Debug 41e13 12|19w9 51r21 52r45 69r21
+19U14*Put_Line 12|51s27 52s51 69s27
+X 6 hw-gfx.ads
+21K12*GFX 3|17k9 6|217e11 11|15r12 22r8 12|16r9 17r9 22r17 78r8
+36I12*BPC_Type{3|49I12}
+69I12*Frequency_Type{3|54I12}
+126i7*Dotclock{69I12} 12|48r27
+135b7*H_Sync_Active_High{boolean} 12|42r27
+136b7*V_Sync_Active_High{boolean} 12|44r27
+137i7*BPC{36I12} 12|52r35
+X 8 hw-gfx-gma.ads
+22K16*GMA 6|21k12 8|298e15 11|15r16 22r12 12|16r13 17r13 22r21 78r12
+259R9 Port_Config 269e17 11|18r29 12|39r29
+265r10*Mode{6|124R9} 12|42r22 44r22 48r22 52r30
+X 9 hw-gfx-gma-config.ads
+17K28*Config 516e22 12|16w17 48r39
+56N4*LVDS_Dual_Threshold 12|48r46
+X 10 hw-gfx-gma-pch.ads
+17K28*PCH 8|22k16 10|37e19 11|15r20 22r16 12|22r25 78r16
+19E9*FDI_Port_Type 19e47 11|18r53 12|39r53
+31V13*PCH_TRANSCODER_SELECT{3|34M12} 12|58s22
+X 11 hw-gfx-gma-pch-lvds.ads
+15K24*LVDS 10|17k28 11|22l20 22e24 12|22b29 78l20 78t24
+18U14*On 18>18 18>42 12|39b14 62l8 62t10
+18r18 Port_Cfg{8|259R9} 12|39b18 42r13 44r13 48r13 52r21
+18e42 FDI_Port{10|19E9} 12|39b42 58r45
+20U14*Off 12|66b14 76l8 76t11
+X 12 hw-gfx-gma-pch-lvds.adb
+24N4 PCH_LVDS_ENABLE 57r22
+25N4 PCH_LVDS_VSYNC_POLARITY_INVERT 45r15
+26N4 PCH_LVDS_HSYNC_POLARITY_INVERT 43r15
+27N4 PCH_LVDS_CLK_A_DATA_A0A2_POWER_MASK
+28N4 PCH_LVDS_CLK_A_DATA_A0A2_POWER_DOWN 73r22
+29N4 PCH_LVDS_CLK_A_DATA_A0A2_POWER_UP 60r22
+30N4 PCH_LVDS_CLK_B_POWER_MASK
+31N4 PCH_LVDS_CLK_B_POWER_DOWN 74r22
+32N4 PCH_LVDS_CLK_B_POWER_UP 49r13
+33N4 PCH_LVDS_DATA_B0B2_POWER_MASK
+34N4 PCH_LVDS_DATA_B0B2_POWER_DOWN 75r22
+35N4 PCH_LVDS_DATA_B0B2_POWER_UP 49r40
+41m7 Sync_Polarity{3|34M12} 59r22
+47m7 Two_Channel{3|34M12} 61r22
+X 13 hw-gfx-gma-registers.ads
+19K28*Registers 12|17w17 55r7 56r22 71r7 72r22 13|1825e25
+654n7*PCH_LVDS{36E9} 12|56r32 72r32
+1705U14*Write 12|55s17 71s17
+1706e8 Register{1652E12} 12|56r10 72r10
+1707m8 Value{3|34M12} 12|57r10 73r10
+X 17 interfac.ads
+54I9*Integer_64<long_long_integer>
+68M9*Unsigned_32
+

@@ -1,0 +1,168 @@
+V "GNAT Lib v8"
+A -gnatwa
+A -nostdinc
+A -Os
+A -Wuninitialized
+A -Wall
+A -Werror
+A -Wstrict-aliasing
+A -Wshadow
+A --RTS=build/libgnat-x86_32/
+A -gnatp
+A -g
+A -fno-common
+A -fomit-frame-pointer
+A -ffunction-sections
+A -fdata-sections
+A -gnatwa
+A -gnatw.e
+A -gnatwe
+A -gnatwD
+A -gnatw.H
+A -gnatwH
+A -gnatwT
+A -gnatwU
+A -gnatw.U
+A -gnatw.W
+A -gnatw.Y
+A -gnatyN
+A -m32
+A -fuse-ld=bfd
+A -fno-stack-protector
+A -mtune=i386
+A -march=i386
+P FX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_CALENDAR
+RR NO_DISPATCH
+RR NO_EXCEPTION_HANDLERS
+RR NO_FIXED_POINT
+RR NO_FLOATING_POINT
+RR NO_IO
+RR NO_IMPLICIT_DYNAMIC_CODE
+RR NO_IMPLICIT_HEAP_ALLOCATIONS
+RR NO_INITIALIZE_SCALARS
+RR NO_LOCAL_ALLOCATORS
+RR NO_RECURSION
+RR NO_SECONDARY_STACK
+RR NO_STREAMS
+RR NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RR STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RR NO_WIDE_CHARACTERS
+RV SPARK_05
+
+U hw.gfx.gma.power_and_clocks_ironlake%b  hw-gfx-gma-power_and_clocks_ironlake.adb  8bd100e5 NE OO PK IU
+W hw%s			hw.ads			hw.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.config%s	hw-gfx-gma-config.adb	hw-gfx-gma-config.ali
+W hw.gfx.gma.registers%s  hw-gfx-gma-registers.adb  hw-gfx-gma-registers.ali
+W hw.time%s		hw-time.adb		hw-time.ali
+
+U hw.gfx.gma.power_and_clocks_ironlake%s  hw-gfx-gma-power_and_clocks_ironlake.ads  b21439e7 EE NE OO PK IU
+W hw%s			hw.ads			hw.ali
+W hw.gfx%s		hw-gfx.ads		hw-gfx.ali
+W hw.gfx.gma%s		hw-gfx-gma.adb		hw-gfx-gma.ali
+W hw.gfx.gma.config_helpers%s  hw-gfx-gma-config_helpers.adb  hw-gfx-gma-config_helpers.ali
+
+D hw.ads		20200320110229 349e873c hw%s
+D hw-config.ads		20200323155348 3df8aafb hw.config%s
+D hw-gfx.ads		20200320155934 d263ba5b hw.gfx%s
+D hw-gfx-framebuffer_filler.ads  20200320155934 0b5937f9 hw.gfx.framebuffer_filler%s
+D hw-gfx-gma.ads	20200320155934 68ac5893 hw.gfx.gma%s
+D hw-gfx-gma-config.ads	20200323155348 3b69e186 hw.gfx.gma.config%s
+D hw-gfx-gma-config_helpers.ads  20200320155934 da346c78 hw.gfx.gma.config_helpers%s
+D hw-gfx-gma-power_and_clocks_ironlake.ads  20200320155934 008c0d0c hw.gfx.gma.power_and_clocks_ironlake%s
+D hw-gfx-gma-power_and_clocks_ironlake.adb  20200320155934 26db6ae4 hw.gfx.gma.power_and_clocks_ironlake%b
+D hw-gfx-gma-registers.ads  20200320155934 711b211b hw.gfx.gma.registers%s
+D hw-pci.ads		20200320110229 d2a0aee8 hw.pci%s
+D hw-port_io.ads	20200320110229 42e65734 hw.port_io%s
+D hw-time.ads		20200320110229 e7f4a790 hw.time%s
+D interfac.ads		20200320110301 8908571f interfaces%s
+D system.ads		20200320110301 21923ced system%s
+D s-unstyp.ads		20200320110301 9d58a4c0 system.unsigned_types%s
+D gnat.adc		20200320090809 00000000
+X 1 hw.ads
+17K9*HW 91e7 8|15r6 17r17 42r5 9|15r6 16r6 17r6 19r14 68r5
+34M12*Word32{14|68M9}
+54I12*Pos64{14|54I9}
+X 3 hw-gfx.ads
+21K12*GFX 1|17k9 3|217e11 8|15r9 17r20 42r8 9|16r9 17r9 19r17 68r8
+69I12*Frequency_Type{1|54I12}
+X 5 hw-gfx-gma.ads
+22K16*GMA 3|21k12 5|298e15 8|15r13 17r24 42r12 9|16r13 17r13 19r21 68r12
+55n7*eDP{52E9} 9|45r29
+94A9*Pipe_Configs(87R9)<93E9> 8|22r31 28r45 35r38 37r51 39r66 9|60r31
+X 6 hw-gfx-gma-config.ads
+17K28*Config 516e22 9|16w17 45r10 54r7 54r23 55r7 55r27 56r7 56r27 64r48
+66I12*CDClk_Range{3|69I12}
+70A9*Valid_Port_Array(boolean)<5|52E9>
+90a4*Valid_Port{70A9} 9|45r17
+91i4*CDClk{66I12} 9|54m14 64r55
+92i4*Max_CDClk{66I12} 9|55m14
+93i4*Raw_Clock{3|69I12} 9|56m14
+326V13*Default_CDClk_Freq{66I12} 9|54s30 55s34
+336V13*Default_RawClk_Freq{3|69I12} 9|56s34
+X 7 hw-gfx-gma-config_helpers.ads
+18K28*Config_Helpers 91e30 8|15w17 9|64r7
+85U14*Limit_Dotclocks 9|64s22
+X 8 hw-gfx-gma-power_and_clocks_ironlake.ads
+17K28*Power_And_Clocks_Ironlake 5|22k16 8|42l16 42e41 9|19b25 68l16 68t41
+19U14*Initialize 9|35b14 57l8 57t18
+21U14*Limit_Dotclocks 22=7 23<7 9|59b14 66l8 66t23
+22a7 Configs{5|94A9} 9|60b7 64m39
+23b7 CDClk_Switch{boolean} 9|61b7 65m7
+28U14*Update_CDClk 28=28
+28a28 Configs{5|94A9}
+29U14*Enable_CDClk
+31U14*Pre_All_Off
+33U14*Post_All_Off
+35U14*Power_Set_To 35>28
+35a28 Configs{5|94A9}
+37U14*Power_Up 37>24 37>37
+37a24 Old_Configs{5|94A9}
+37a37 New_Configs{5|94A9}
+39U14*Power_Down 39>26 39>39 39>52
+39a26 Old_Configs{5|94A9}
+39a39 Tmp_Configs{5|94A9}
+39a52 New_Configs{5|94A9}
+X 9 hw-gfx-gma-power_and_clocks_ironlake.adb
+21N4 PCH_DREF_CONTROL_120MHZ_CPU_OUTPUT_MASK
+22N4 PCH_DREF_CONTROL_120MHZ_CPU_OUTPUT_SSC 49r25
+23N4 PCH_DREF_CONTROL_120MHZ_CPU_OUTPUT_NONSSC
+24N4 PCH_DREF_CONTROL_120MHZ_SSC_EN_MASK
+25N4 PCH_DREF_CONTROL_120MHZ_SSC_EN 40r22
+26N4 PCH_DREF_CONTROL_120MHZ_NONSSC_EN_MASK
+27N4 PCH_DREF_CONTROL_120MHZ_NONSSC_EN 41r22
+28N4 PCH_DREF_CONTROL_120MHZ_SSC4_EN_MASK
+29N4 PCH_DREF_CONTROL_120MHZ_SSC4_EN
+30N4 PCH_DREF_CONTROL_120MHZ_SSC4_DOWNSPREAD
+31N4 PCH_DREF_CONTROL_120MHZ_SSC4_CENTERSPREAD
+32N4 PCH_DREF_CONTROL_120MHZ_SSC_MODULATION_EN 42r22
+33N4 PCH_DREF_CONTROL_120MHZ_SSC4_MODULATION_EN
+X 10 hw-gfx-gma-registers.ads
+19K28*Registers 9|17w17 38r7 39r22 43r7 43r31 47r10 48r25 50r10 50r34 10|1825e25
+609n7*PCH_DREF_CONTROL{36E9} 9|39r32 43r41 48r35 50r44
+1683U14*Posting_Read 9|43s17 50s20
+1705U14*Write 9|38s17
+1706e8 Register{1652E12} 9|39r10
+1707m8 Value{1|34M12} 9|40r10
+1760U14*Set_Mask 9|47s20
+1761e8 Register{1652E12} 9|48r13
+1762m8 Mask{1|34M12} 9|49r13
+X 13 hw-time.ads
+15K12*Time 9|15w9 44r7 51r10 13|74e12
+52U14*U_Delay 9|44s12 51s15
+X 14 interfac.ads
+54I9*Integer_64<long_long_integer>
+68M9*Unsigned_32
+

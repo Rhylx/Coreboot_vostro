@@ -25,6 +25,7 @@ package CB.Config is
    COVERAGE                                       : constant boolean := false;
    UBSAN                                          : constant boolean := false;
    RELOCATABLE_RAMSTAGE                           : constant boolean := true;
+   NO_STAGE_CACHE                                 : constant boolean := false;
    TSEG_STAGE_CACHE                               : constant boolean := true;
    UPDATE_IMAGE                                   : constant boolean := false;
    BOOTSPLASH_IMAGE                               : constant boolean := false;
@@ -74,6 +75,7 @@ package CB.Config is
    VENDOR_SIEMENS                                 : constant boolean := false;
    VENDOR_SIFIVE                                  : constant boolean := false;
    VENDOR_SUPERMICRO                              : constant boolean := false;
+   VENDOR_SYSTEM76                                : constant boolean := false;
    VENDOR_TI                                      : constant boolean := false;
    VENDOR_UP                                      : constant boolean := false;
    MAINBOARD_VENDOR                               : constant string  := "Dell Inc.";
@@ -92,7 +94,7 @@ package CB.Config is
    DRAM_RESET_GATE_GPIO                           : constant         := 60;
    DEVICETREE                                     : constant string  := "devicetree.cb";
    PRERAM_CBMEM_CONSOLE_SIZE                      : constant         := 16#0c00#;
-   CBFS_SIZE                                      : constant         := 16#0010_0000#;
+   CBFS_SIZE                                      : constant         := 16#0040_0000#;
    POST_IO                                        : constant boolean := true;
    USBDEBUG_HCD_INDEX                             : constant         := 2;
    OVERRIDE_DEVICETREE                            : constant string  := "";
@@ -114,7 +116,7 @@ package CB.Config is
    MAINBOARD_SMBIOS_PRODUCT_NAME                  : constant string  := "Dell System Vostro 3360";
    HAVE_IFD_BIN                                   : constant boolean := false;
    MAINBOARD_VERSION                              : constant string  := "1.0";
-   DRIVERS_PS2_KEYBOARD                           : constant boolean := false;
+   DRIVERS_PS2_KEYBOARD                           : constant boolean := true;
    DRIVERS_UART_8250IO                            : constant boolean := true;
    PCIEXP_L1_SUB_STATE                            : constant boolean := false;
    NO_POST                                        : constant boolean := false;
@@ -132,6 +134,7 @@ package CB.Config is
    COREBOOT_ROMSIZE_KB_1024                       : constant boolean := false;
    COREBOOT_ROMSIZE_KB_2048                       : constant boolean := false;
    COREBOOT_ROMSIZE_KB_4096                       : constant boolean := false;
+   COREBOOT_ROMSIZE_KB_5120                       : constant boolean := false;
    COREBOOT_ROMSIZE_KB_6144                       : constant boolean := false;
    COREBOOT_ROMSIZE_KB_8192                       : constant boolean := true;
    COREBOOT_ROMSIZE_KB_10240                      : constant boolean := false;
@@ -322,11 +325,7 @@ package CB.Config is
    ARCH_ROMSTAGE_X86_32                           : constant boolean := true;
    ARCH_POSTCAR_X86_32                            : constant boolean := true;
    ARCH_RAMSTAGE_X86_32                           : constant boolean := true;
-   ARCH_BOOTBLOCK_X86_64                          : constant boolean := false;
-   ARCH_VERSTAGE_X86_64                           : constant boolean := false;
-   ARCH_ROMSTAGE_X86_64                           : constant boolean := false;
    ARCH_POSTCAR_X86_64                            : constant boolean := false;
-   ARCH_RAMSTAGE_X86_64                           : constant boolean := false;
    USE_MARCH_586                                  : constant boolean := false;
    AP_IN_SIPI_WAIT                                : constant boolean := false;
    X86_RESET_VECTOR                               : constant         := 16#ffff_fff0#;
@@ -345,6 +344,8 @@ package CB.Config is
    POSTCAR_STAGE                                  : constant boolean := true;
    VERSTAGE_DEBUG_SPINLOOP                        : constant boolean := false;
    ROMSTAGE_DEBUG_SPINLOOP                        : constant boolean := false;
+   BOOTBLOCK_SIMPLE                               : constant boolean := true;
+   BOOTBLOCK_NORMAL                               : constant boolean := false;
    ACPI_HAVE_PCAT_8259                            : constant boolean := true;
    COLLECT_TIMESTAMPS_NO_TSC                      : constant boolean := false;
    COLLECT_TIMESTAMPS_TSC                         : constant boolean := true;
@@ -367,9 +368,12 @@ package CB.Config is
    --
    -- Display
    --
-   VGA_TEXT_FRAMEBUFFER                           : constant boolean := true;
-   GENERIC_LINEAR_FRAMEBUFFER                     : constant boolean := false;
-   SMBUS_HAS_AUX_CHANNELS                         : constant boolean := false;
+   VGA_TEXT_FRAMEBUFFER                           : constant boolean := false;
+   GENERIC_LINEAR_FRAMEBUFFER                     : constant boolean := true;
+   LINEAR_FRAMEBUFFER                             : constant boolean := true;
+   BOOTSPLASH                                     : constant boolean := false;
+   LINEAR_FRAMEBUFFER_MAX_WIDTH                   : constant         := 1366;
+   LINEAR_FRAMEBUFFER_MAX_HEIGHT                  : constant         := 768;
    PCI                                            : constant boolean := true;
    NO_MMCONF_SUPPORT                              : constant boolean := false;
    MMCONF_SUPPORT                                 : constant boolean := true;
@@ -380,6 +384,7 @@ package CB.Config is
    CARDBUS_PLUGIN_SUPPORT                         : constant boolean := true;
    AZALIA_PLUGIN_SUPPORT                          : constant boolean := false;
    PCIEXP_PLUGIN_SUPPORT                          : constant boolean := true;
+   PCIEXP_HOTPLUG                                 : constant boolean := false;
    EARLY_PCI_BRIDGE                               : constant boolean := false;
    INTEL_GMA_ADD_VBT                              : constant boolean := false;
    SOFTWARE_I2C                                   : constant boolean := false;
@@ -406,7 +411,8 @@ package CB.Config is
    SPI_FLASH                                      : constant boolean := true;
    SPI_SDCARD                                     : constant boolean := false;
    BOOT_DEVICE_SPI_FLASH_RW_NOMMAP                : constant boolean := true;
-   BOOT_DEVICE_SPI_FLASH_RW_NOMMAP_EARLY          : constant boolean := true;
+   BOOT_DEVICE_SPI_FLASH_RW_NOMMAP_EARLY          : constant boolean := false;
+   SPI_FLASH_DONT_INCLUDE_ALL_DRIVERS             : constant boolean := false;
    SPI_FLASH_NO_FAST_READ                         : constant boolean := false;
    SPI_FLASH_ADESTO                               : constant boolean := true;
    SPI_FLASH_AMIC                                 : constant boolean := true;
@@ -417,7 +423,6 @@ package CB.Config is
    SPI_FLASH_SPANSION                             : constant boolean := true;
    SPI_FLASH_SST                                  : constant boolean := true;
    SPI_FLASH_STMICRO                              : constant boolean := true;
-   SPI_FLASH_FAST_READ_DUAL_OUTPUT_3B             : constant boolean := false;
    SPI_FLASH_HAS_VOLATILE_GROUP                   : constant boolean := false;
    HAVE_SPI_CONSOLE_SUPPORT                       : constant boolean := false;
    DRIVERS_UART                                   : constant boolean := true;
@@ -438,6 +443,7 @@ package CB.Config is
    DRIVERS_GENERIC_WIFI                           : constant boolean := true;
    USE_SAR                                        : constant boolean := false;
    DRIVERS_AMD_PI                                 : constant boolean := false;
+   DRIVERS_GENERIC_CBFS_SERIAL                    : constant boolean := false;
    DRIVERS_GENERIC_GFX                            : constant boolean := false;
    DRIVERS_I2C_MAX98373                           : constant boolean := false;
    DRIVERS_I2C_MAX98927                           : constant boolean := false;
@@ -477,7 +483,6 @@ package CB.Config is
    DRIVERS_MC146818                               : constant boolean := true;
    LPC_TPM                                        : constant boolean := false;
    MAINBOARD_HAS_LPC_TPM                          : constant boolean := false;
-   VGA                                            : constant boolean := true;
    DRIVERS_RICOH_RCE822                           : constant boolean := false;
    DRIVER_SIEMENS_NC_FPGA                         : constant boolean := false;
    NC_FPGA_NOTIFY_CB_READY                        : constant boolean := false;
@@ -537,8 +542,7 @@ package CB.Config is
    CONSOLE_NE2K                                   : constant boolean := false;
    CONSOLE_CBMEM                                  : constant boolean := true;
    CONSOLE_CBMEM_BUFFER_SIZE                      : constant         := 16#0002_0000#;
-   CONSOLE_SPI_FLASH                              : constant boolean := true;
-   CONSOLE_SPI_FLASH_BUFFER_SIZE                  : constant         := 16#0002_0000#;
+   CONSOLE_SPI_FLASH                              : constant boolean := false;
    DEFAULT_CONSOLE_LOGLEVEL_8                     : constant boolean := true;
    DEFAULT_CONSOLE_LOGLEVEL_7                     : constant boolean := false;
    DEFAULT_CONSOLE_LOGLEVEL_6                     : constant boolean := false;
@@ -558,6 +562,7 @@ package CB.Config is
    NO_EARLY_BOOTBLOCK_POSTCODES                   : constant boolean := false;
    HWBASE_DEBUG_CB                                : constant boolean := true;
    HAVE_ACPI_RESUME                               : constant boolean := true;
+   DISABLE_ACPI_HIBERNATE                         : constant boolean := false;
    RESUME_PATH_SAME_AS_BOOT                       : constant boolean := true;
    NO_MONOTONIC_TIMER                             : constant boolean := false;
    HAVE_MONOTONIC_TIMER                           : constant boolean := true;
@@ -581,16 +586,22 @@ package CB.Config is
    -- Payload
    --
    PAYLOAD_NONE                                   : constant boolean := false;
-   PAYLOAD_ELF                                    : constant boolean := true;
+   PAYLOAD_ELF                                    : constant boolean := false;
    PAYLOAD_FILO                                   : constant boolean := false;
-   PAYLOAD_GRUB2                                  : constant boolean := false;
+   PAYLOAD_GRUB2                                  : constant boolean := true;
    PAYLOAD_LINUXBOOT                              : constant boolean := false;
    PAYLOAD_SEABIOS                                : constant boolean := false;
    PAYLOAD_UBOOT                                  : constant boolean := false;
    PAYLOAD_YABITS                                 : constant boolean := false;
    PAYLOAD_LINUX                                  : constant boolean := false;
    PAYLOAD_TIANOCORE                              : constant boolean := false;
-   PAYLOAD_FILE                                   : constant string  := "payloads/coreinfo/build/coreinfo.elf";
+   PAYLOAD_FILE                                   : constant string  := "payloads/external/GRUB2/grub2/build/default_payload.elf";
+   GRUB2_STABLE                                   : constant boolean := true;
+   GRUB2_MASTER                                   : constant boolean := false;
+   GRUB2_REVISION                                 : constant boolean := false;
+   GRUB2_EXTRA_MODULES                            : constant string  := "all_video usbserial_ftdi usbserial_pl2303";
+   GRUB2_INCLUDE_RUNTIME_CONFIG_FILE              : constant boolean := true;
+   GRUB2_RUNTIME_CONFIG_FILE                      : constant string  := "grub.cfg";
    PAYLOAD_OPTIONS                                : constant string  := "";
    PXE                                            : constant boolean := false;
    COMPRESSED_PAYLOAD_LZMA                        : constant boolean := true;
@@ -637,7 +648,6 @@ package CB.Config is
    HWBASE_DYNAMIC_MMIO                            : constant boolean := true;
    HWBASE_DEFAULT_MMCONF                          : constant         := 16#f000_0000#;
    HWBASE_DIRECT_PCIDEV                           : constant boolean := true;
-   ENABLE_APIC_EXT_ID                             : constant boolean := false;
    WARNINGS_ARE_ERRORS                            : constant boolean := true;
    POWER_BUTTON_DEFAULT_ENABLE                    : constant boolean := false;
    POWER_BUTTON_DEFAULT_DISABLE                   : constant boolean := false;
