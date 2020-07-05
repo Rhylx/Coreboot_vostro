@@ -1,0 +1,704 @@
+*** Pre-CBMEM romstage console overflowed, log truncated! ***
+robe channel1, slot0
+SPD probe channel1, slot1
+SPD probe channel1, slot0
+  Row    addr bits  : 15
+  Column addr bits  : 10
+  Number of ranks   : 1
+  DIMM Capacity     : 2048 MB
+  CAS latencies     : 5 6 7 8 9 10 11
+  tCKmin            :   1.250 ns
+  tAAmin            :  13.125 ns
+  tWRmin            :  15.000 ns
+  tRCDmin           :  13.125 ns
+  tRRDmin           :   6.000 ns
+  tRPmin            :  13.125 ns
+  tRASmin           :  35.000 ns
+  tRCmin            :  48.125 ns
+  tRFCmin           : 160.000 ns
+  tWTRmin           :   7.500 ns
+  tRTPmin           :   7.500 ns
+  tFAWmin           :  30.000 ns
+channel[1] rankmap = 0x1
+SPD probe channel1, slot1
+Starting Ivybridge RAM training (0).
+100MHz reference clock support: no
+Trying CAS 9, tCK 384.
+Found compatible clock, CAS pair.
+Selected DRAM frequency: 666 MHz
+Selected CAS latency   : 9T
+PLL busy... done in 30 us
+MCU frequency is set at : 666 MHz
+Selected CWL latency   : 7T
+Selected tRCD          : 9T
+Selected tRP           : 9T
+Selected tRAS          : 24T
+Selected tWR           : 10T
+Selected tFAW          : 20T
+Selected tRRD          : 4T
+Selected tRTP          : 5T
+Selected tWTR          : 5T
+Selected tRFC          : 107T
+Done dimm mapping
+Update PCI-E configuration space:
+PCI(0, 0, 0)[a0] = 0
+PCI(0, 0, 0)[a4] = 1
+PCI(0, 0, 0)[bc] = 82a00000
+PCI(0, 0, 0)[a8] = 7d600000
+PCI(0, 0, 0)[ac] = 1
+PCI(0, 0, 0)[b8] = 80000000
+PCI(0, 0, 0)[b0] = 80a00000
+PCI(0, 0, 0)[b4] = 80800000
+Done memory map
+Done io registers
+Done jedec reset
+Done MRS commands
+t123: 1912, 6000, 7620
+ME: Wrong mode : 2
+ME: FWS2: 0x160a0140
+ME:  Bist in progress: 0x0
+ME:  ICC Status      : 0x0
+ME:  Invoke MEBx     : 0x0
+ME:  CPU replaced    : 0x0
+ME:  MBP ready       : 0x0
+ME:  MFS failure     : 0x1
+ME:  Warm reset req  : 0x0
+ME:  CPU repl valid  : 0x1
+ME:  (Reserved)      : 0x0
+ME:  FW update req   : 0x0
+ME:  (Reserved)      : 0x0
+ME:  Current state   : 0xa
+ME:  Current PM event: 0x6
+ME:  Progress code   : 0x1
+PASSED! Tell ME that DRAM is ready
+ME: ME is reporting as disabled, so not waiting for a response.
+ME: FWS2: 0x160a0140
+ME:  Bist in progress: 0x0
+ME:  ICC Status      : 0x0
+ME:  Invoke MEBx     : 0x0
+ME:  CPU replaced    : 0x0
+ME:  MBP ready       : 0x0
+ME:  MFS failure     : 0x1
+ME:  Warm reset req  : 0x0
+ME:  CPU repl valid  : 0x1
+ME:  (Reserved)      : 0x0
+ME:  FW update req   : 0x0
+ME:  (Reserved)      : 0x0
+ME:  Current state   : 0xa
+ME:  Current PM event: 0x6
+ME:  Progress code   : 0x1
+ME: Requested BIOS Action: No DID Ack received
+memcfg DDR3 ref clock 133 MHz
+memcfg DDR3 clock 1330 MHz
+memcfg channel assignment: A: 0, B  1, C  2
+memcfg channel[0] config (00600008):
+   ECC inactive
+   enhanced interleave mode on
+   rank interleave on
+   DIMMA 2048 MB width x8 single rank, selected
+   DIMMB 0 MB width x8 single rank
+memcfg channel[1] config (00600008):
+   ECC inactive
+   enhanced interleave mode on
+   rank interleave on
+   DIMMA 2048 MB width x8 single rank, selected
+   DIMMB 0 MB width x8 single rank
+CBMEM:
+IMD: root @ 0x7ffff000 254 entries.
+IMD: root @ 0x7fffec00 62 entries.
+External stage cache:
+IMD: root @ 0x803ff000 254 entries.
+IMD: root @ 0x803fec00 62 entries.
+CBMEM entry for DIMM info: 0x7fffe960
+SMM Memory Map
+SMRAM       : 0x80000000 0x800000
+ Subregion 0: 0x80000000 0x300000
+ Subregion 1: 0x80300000 0x100000
+ Subregion 2: 0x80400000 0x400000
+MTRR Range: Start=7f800000 End=80000000 (Size 800000)
+MTRR Range: Start=80000000 End=80800000 (Size 800000)
+MTRR Range: Start=ff800000 End=0 (Size 800000)
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'fallback/postcar'
+CBFS: Found @ offset 314c0 size 4814
+Decompressing stage fallback/postcar @ 0x7ffb1fc0 (34864 bytes)
+Loading module at 0x7ffb2000 with entry 0x7ffb2000. filesize: 0x4510 memsize: 0x87f0
+Processing 170 relocs. Offset value of 0x7dfb2000
+BS: romstage times (exec / console): total (unknown) / 2 ms
+
+
+coreboot-4.11-1730-g53f17dd8d7-dirty Sat Mar 21 18:30:29 UTC 2020 postcar starting (log level: 0)...
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'fallback/ramstage'
+CBFS: Found @ offset 186c0 size 18928
+Decompressing stage fallback/ramstage @ 0x7ff69fc0 (289784 bytes)
+Loading module at 0x7ff6a000 with entry 0x7ff6a000. filesize: 0x31a38 memsize: 0x46bb8
+Processing 3369 relocs. Offset value of 0x7f16a000
+BS: postcar times (exec / console): total (unknown) / 0 ms
+
+
+coreboot-4.11-1730-g53f17dd8d7-dirty Sat Mar 21 18:30:29 UTC 2020 ramstage starting (log level: 0)...
+Normal boot
+Enumerating buses...
+Root Device scanning...
+CPU_CLUSTER: 0 enabled
+DOMAIN: 0000 enabled
+DOMAIN: 0000 scanning...
+PCI: pci_scan_bus for bus 00
+PCI: 00:00.0 [8086/0154] enabled
+PCI: 00:01.0 [8086/0151] disabled
+PCI: 00:02.0 [8086/0156] enabled
+PCI: 00:04.0 [8086/0153] enabled
+PCI: 00:14.0 [8086/1e31] enabled
+PCI: 00:16.0: Disabling device
+PCI: 00:16.0 [8086/1e3a] disabled
+PCI: 00:16.1: Disabling device
+PCI: 00:16.2: Disabling device
+PCI: 00:16.3: Disabling device
+PCI: 00:19.0: Disabling device
+PCI: 00:1a.0 [8086/1e2d] enabled
+PCI: 00:1b.0 [8086/1e20] enabled
+PCH: PCIe Root Port coalescing is enabled
+PCI: 00:1c.0 [8086/1e10] enabled
+PCI: 00:1c.1: Disabling device
+PCI: 00:1c.1 [8086/1e12] disabled
+PCI: 00:1c.2: Disabling device
+PCI: 00:1c.2 [8086/1e14] disabled
+PCI: 00:1c.3: Disabling device
+PCH: Remap PCIe function 4 to 1
+PCI: 00:1c.4 [8086/1e18] enabled
+PCI: 00:1c.5: Disabling device
+PCI: 00:1c.5 [8086/1e1a] disabled
+PCI: 00:1c.6: Disabling device
+PCI: 00:1c.7: Disabling device
+PCH: PCIe map 1c.1 -> 1c.4
+PCH: PCIe map 1c.4 -> 1c.1
+PCI: 00:1d.0 [8086/1e26] enabled
+PCI: 00:1e.0: Disabling device
+PCI: 00:1e.0 [8086/2448] disabled
+PCI: 00:1f.0 [8086/1e57] enabled
+PCI: 00:1f.2 [8086/1e01] enabled
+PCI: 00:1f.3 [8086/1e22] enabled
+PCI: 00:1f.5: Disabling device
+PCI: 00:1f.5 [8086/1e09] disabled No operations
+PCI: 00:1f.6: Disabling device
+PCI: 00:1f.6 [8086/1e24] disabled No operations
+PCI: Leftover static devices:
+PCI: 00:16.1
+PCI: 00:16.2
+PCI: 00:16.3
+PCI: 00:19.0
+PCI: 00:1c.3
+PCI: 00:1c.6
+PCI: 00:1c.7
+PCI: Check your devicetree.cb.
+PCI: 00:1c.0 scanning...
+PCI: pci_scan_bus for bus 01
+PCI: 01:00.0 [14e4/4365] enabled
+Enabling Common Clock Configuration
+ASPM: Enabled L0s and L1
+PCIe: Max_Payload_Size adjusted to 128
+Failed to enable LTR for dev = PCI: 01:00.0
+scan_bus: bus PCI: 00:1c.0 finished in 0 msecs
+PCI: 00:1c.1 scanning...
+PCI: pci_scan_bus for bus 02
+PCI: 02:00.0 [1969/1091] enabled
+Enabling Common Clock Configuration
+ASPM: Enabled L0s and L1
+PCIe: Max_Payload_Size adjusted to 128
+Failed to enable LTR for dev = PCI: 02:00.0
+scan_bus: bus PCI: 00:1c.1 finished in 0 msecs
+PCI: 00:1f.0 scanning...
+scan_bus: bus PCI: 00:1f.0 finished in 0 msecs
+PCI: 00:1f.3 scanning...
+scan_bus: bus PCI: 00:1f.3 finished in 0 msecs
+scan_bus: bus DOMAIN: 0000 finished in 0 msecs
+scan_bus: bus Root Device finished in 0 msecs
+done
+BS: BS_DEV_ENUMERATE run times (exec / console): 1 / 0 ms
+FMAP: area RW_MRC_CACHE found @ 400000 (65536 bytes)
+MRC: Checking cached data update for 'RW_MRC_CACHE'.
+Manufacturer: ef
+SF: Detected ef 4017 with sector size 0x1000, total 0x800000
+MRC: no data in 'RW_MRC_CACHE'
+MRC: cache data 'RW_MRC_CACHE' needs update.
+BS: BS_DEV_ENUMERATE exit times (exec / console): 6 / 0 ms
+found VGA at PCI: 00:02.0
+Setting up VGA for PCI: 00:02.0
+Setting PCI_BRIDGE_CTL_VGA for bridge DOMAIN: 0000
+Setting PCI_BRIDGE_CTL_VGA for bridge Root Device
+Allocating resources...
+Reading resources...
+Adding PCIe enhanced config space BAR 0xf0000000-0xf4000000.
+Done reading resources.
+Setting resources...
+TOUUD 0x17d600000 TOLUD 0x82a00000 TOM 0x100000000
+MEBASE 0x7ffff00000
+IGD decoded, subtracting 32M UMA and 2M GTT
+TSEG base 0x80000000 size 8M
+Available memory below 4GB: 2048M
+Available memory above 4GB: 2006M
+PCI: 00:02.0 10 <- [0x00e0000000 - 0x00e03fffff] size 0x00400000 gran 0x16 mem64
+PCI: 00:02.0 18 <- [0x00d0000000 - 0x00dfffffff] size 0x10000000 gran 0x1c prefmem64
+PCI: 00:02.0 20 <- [0x0000002000 - 0x000000203f] size 0x00000040 gran 0x06 io
+PCI: 00:04.0 10 <- [0x00e0610000 - 0x00e0617fff] size 0x00008000 gran 0x0f mem64
+PCI: 00:14.0 10 <- [0x00e0600000 - 0x00e060ffff] size 0x00010000 gran 0x10 mem64
+PCI: 00:1a.0 10 <- [0x00e061d000 - 0x00e061d3ff] size 0x00000400 gran 0x0a mem
+PCI: 00:1b.0 10 <- [0x00e0618000 - 0x00e061bfff] size 0x00004000 gran 0x0e mem64
+PCI: 00:1c.0 1c <- [0x000000ffff - 0x000000fffe] size 0x00000000 gran 0x0c bus 01 io
+PCI: 00:1c.0 24 <- [0x00efffffff - 0x00effffffe] size 0x00000000 gran 0x14 bus 01 prefmem
+PCI: 00:1c.0 20 <- [0x00e0400000 - 0x00e04fffff] size 0x00100000 gran 0x14 bus 01 mem
+PCI: 01:00.0 10 <- [0x00e0400000 - 0x00e0407fff] size 0x00008000 gran 0x0f mem64
+PCI: 00:1c.1 1c <- [0x0000001000 - 0x0000001fff] size 0x00001000 gran 0x0c bus 02 io
+PCI: 00:1c.1 24 <- [0x00efffffff - 0x00effffffe] size 0x00000000 gran 0x14 bus 02 prefmem
+PCI: 00:1c.1 20 <- [0x00e0500000 - 0x00e05fffff] size 0x00100000 gran 0x14 bus 02 mem
+PCI: 02:00.0 10 <- [0x00e0500000 - 0x00e053ffff] size 0x00040000 gran 0x12 mem64
+PCI: 02:00.0 18 <- [0x0000001000 - 0x000000107f] size 0x00000080 gran 0x07 io
+PCI: 00:1d.0 10 <- [0x00e061e000 - 0x00e061e3ff] size 0x00000400 gran 0x0a mem
+PCI: 00:1f.2 10 <- [0x0000002060 - 0x0000002067] size 0x00000008 gran 0x03 io
+PCI: 00:1f.2 14 <- [0x0000002070 - 0x0000002073] size 0x00000004 gran 0x02 io
+PCI: 00:1f.2 18 <- [0x0000002068 - 0x000000206f] size 0x00000008 gran 0x03 io
+PCI: 00:1f.2 1c <- [0x0000002074 - 0x0000002077] size 0x00000004 gran 0x02 io
+PCI: 00:1f.2 20 <- [0x0000002040 - 0x000000205f] size 0x00000020 gran 0x05 io
+PCI: 00:1f.2 24 <- [0x00e061c000 - 0x00e061c7ff] size 0x00000800 gran 0x0b mem
+PCI: 00:1f.3 10 <- [0x00e061f000 - 0x00e061f0ff] size 0x00000100 gran 0x08 mem64
+Done setting resources.
+Done allocating resources.
+BS: BS_DEV_RESOURCES run times (exec / console): 1 / 0 ms
+Enabling resources...
+PCI: 00:00.0 subsystem <- 1028/055c
+PCI: 00:00.0 cmd <- 06
+PCI: 00:02.0 subsystem <- 1028/055c
+PCI: 00:02.0 cmd <- 03
+PCI: 00:04.0 cmd <- 02
+PCI: 00:14.0 subsystem <- 1028/055c
+PCI: 00:14.0 cmd <- 102
+PCI: 00:1a.0 subsystem <- 1028/055c
+PCI: 00:1a.0 cmd <- 102
+PCI: 00:1b.0 subsystem <- 1028/055c
+PCI: 00:1b.0 cmd <- 102
+PCI: 00:1c.0 bridge ctrl <- 0013
+PCI: 00:1c.0 subsystem <- 1028/055c
+PCI: 00:1c.0 cmd <- 106
+PCI: 00:1c.1 bridge ctrl <- 0013
+PCI: 00:1c.1 subsystem <- 1028/055c
+PCI: 00:1c.1 cmd <- 107
+PCI: 00:1d.0 subsystem <- 1028/055c
+PCI: 00:1d.0 cmd <- 102
+PCI: 00:1f.0 subsystem <- 1028/055c
+PCI: 00:1f.0 cmd <- 107
+PCI: 00:1f.2 subsystem <- 1028/055c
+PCI: 00:1f.2 cmd <- 03
+PCI: 00:1f.3 subsystem <- 1028/055c
+PCI: 00:1f.3 cmd <- 103
+PCI: 01:00.0 cmd <- 02
+PCI: 02:00.0 cmd <- 03
+done.
+Initializing devices...
+Root Device init
+Vostro3360: Initializing keyboard.
+Root Device init finished in 0 msecs
+CPU_CLUSTER: 0 init
+MTRR: Physical address space:
+0x0000000000000000 - 0x00000000000a0000 size 0x000a0000 type 6
+0x00000000000a0000 - 0x00000000000c0000 size 0x00020000 type 0
+0x00000000000c0000 - 0x0000000080000000 size 0x7ff40000 type 6
+0x0000000080000000 - 0x00000000d0000000 size 0x50000000 type 0
+0x00000000d0000000 - 0x00000000e0000000 size 0x10000000 type 1
+0x00000000e0000000 - 0x0000000100000000 size 0x20000000 type 0
+0x0000000100000000 - 0x000000017d600000 size 0x7d600000 type 6
+MTRR: Fixed MSR 0x250 0x0606060606060606
+MTRR: Fixed MSR 0x258 0x0606060606060606
+MTRR: Fixed MSR 0x259 0x0000000000000000
+MTRR: Fixed MSR 0x268 0x0606060606060606
+MTRR: Fixed MSR 0x269 0x0606060606060606
+MTRR: Fixed MSR 0x26a 0x0606060606060606
+MTRR: Fixed MSR 0x26b 0x0606060606060606
+MTRR: Fixed MSR 0x26c 0x0606060606060606
+MTRR: Fixed MSR 0x26d 0x0606060606060606
+MTRR: Fixed MSR 0x26e 0x0606060606060606
+MTRR: Fixed MSR 0x26f 0x0606060606060606
+CPU physical address size: 36 bits
+MTRR: default type WB/UC MTRR counts: 4/3.
+MTRR: UC selected as default type.
+MTRR: 0 base 0x0000000000000000 mask 0x0000000f80000000 type 6
+MTRR: 1 base 0x00000000d0000000 mask 0x0000000ff0000000 type 1
+MTRR: 2 base 0x0000000100000000 mask 0x0000000f80000000 type 6
+
+MTRR check
+Fixed MTRRs   : Enabled
+Variable MTRRs: Enabled
+
+CPU has 2 cores, 2 threads enabled.
+Setting up SMI for CPU
+Will perform SMM setup.
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'cpu_microcode_blob.bin'
+CBFS: Found @ offset 11e40 size 6800
+microcode: sig=0x306a9 pf=0x10 revision=0x21
+CPU: Intel(R) Celeron(R) CPU 1017U @ 1.60GHz.
+Loading module at 0x00030000 with entry 0x00030000. filesize: 0x170 memsize: 0x170
+Processing 16 relocs. Offset value of 0x00030000
+Attempting to start 1 APs
+Waiting for 10ms after sending INIT.
+Waiting for 1st SIPI to complete...done.
+Waiting for 2nd SIPI to complete...done.
+AP: slot 1 apic_id 2.
+Loading module at 0x00038000 with entry 0x00038000. filesize: 0x1b8 memsize: 0x1b8
+Processing 13 relocs. Offset value of 0x00038000
+SMM Module: stub loaded at 0x00038000. Will call 0x7ff859b1(0x00000000)
+Installing SMM handler to 0x80000000
+Loading module at 0x80010000 with entry 0x80010298. filesize: 0x1208 memsize: 0x5230
+Processing 58 relocs. Offset value of 0x80010000
+Loading module at 0x80008000 with entry 0x80008000. filesize: 0x1b8 memsize: 0x1b8
+Processing 13 relocs. Offset value of 0x80008000
+SMM Module: placing jmp sequence at 0x80007c00 rel16 0x03fd
+SMM Module: stub loaded at 0x80008000. Will call 0x80010298(0x00000000)
+Initializing Southbridge SMI...
+
+New SMBASE 0x80000000
+In relocation handler: cpu 0
+New SMBASE=0x80000000 IEDBASE=0x80400000
+Writing SMRR. base = 0x80000006, mask=0xff800800
+Relocation complete.
+microcode: Update skipped, already up-to-date
+New SMBASE 0x7ffffc00
+In relocation handler: cpu 1
+New SMBASE=0x7ffffc00 IEDBASE=0x80400000
+Writing SMRR. base = 0x80000006, mask=0xff800800
+Relocation complete.
+microcode: Update skipped, already up-to-date
+Initializing CPU #0
+CPU: vendor Intel device 306a9
+CPU: family 06, model 3a, stepping 09
+Enabling cache
+CPU: Intel(R) Celeron(R) CPU 1017U @ 1.60GHz.
+CPU: platform id 4
+CPU: cpuid(1) 0x306a9
+CPU: AES NOT supported
+CPU: TXT NOT supported
+CPU: VT supported
+Setting up local APIC...
+ apic_id: 0x00 done.
+IA32_FEATURE_CONTROL already locked; VMX status: enabled
+IA32_FEATURE_CONTROL already locked
+model_x06ax: energy policy set to 6
+model_x06ax: frequency set to 1600
+Turbo is unavailable
+CPU #0 initialized
+Initializing CPU #1
+CPU: vendor Intel device 306a9
+CPU: family 06, model 3a, stepping 09
+Enabling cache
+CPU: Intel(R) Celeron(R) CPU 1017U @ 1.60GHz.
+CPU: platform id 4
+CPU: cpuid(1) 0x306a9
+CPU: AES NOT supported
+CPU: TXT NOT supported
+CPU: VT supported
+Setting up local APIC...
+ apic_id: 0x02 done.
+IA32_FEATURE_CONTROL already locked; VMX status: enabled
+IA32_FEATURE_CONTROL already locked
+model_x06ax: energy policy set to 6
+model_x06ax: frequency set to 1600
+CPU #1 initialized
+bsp_do_flight_plan done after 5 msecs.
+Initializing southbridge SMI...
+SMI_STS: 
+GPE0_STS: GPIO15 GPIO14 GPIO12 GPIO11 GPIO10 GPIO9 GPIO5 GPIO4 
+ALT_GP_SMI_STS: GPI15 GPI14 GPI12 GPI11 GPI10 GPI9 GPI7 GPI5 GPI4 GPI3 GPI1 GPI0 
+TCO_STS: 
+Locking SMM.
+CPU_CLUSTER: 0 init finished in 18 msecs
+PCI: 00:00.0 init
+Disabling PEG12.
+Disabling PEG11.
+Disabling PEG10.
+Disabling PEG60.
+Disabling Device 7.
+Disabling PEG IO clock.
+Set BIOS_RESET_CPL
+CPU TDP: 17 Watts
+PCI: 00:00.0 init finished in 1 msecs
+PCI: 00:02.0 init
+GT Power Management Init
+IVB GT1 Power Meter Weights
+GT Power Management Init (post VBIOS)
+PCI: 00:02.0 init finished in 42 msecs
+PCI: 00:04.0 init
+PCI: 00:04.0 init finished in 0 msecs
+PCI: 00:14.0 init
+XHCI: Setting up controller.. done.
+PCI: 00:14.0 init finished in 0 msecs
+PCI: 00:1a.0 init
+EHCI: Setting up controller.. done.
+PCI: 00:1a.0 init finished in 0 msecs
+PCI: 00:1b.0 init
+Azalia: base = e0618000
+Azalia: codec_mask = 09
+Azalia: Initializing codec #3
+Azalia: codec viddid: 80862806
+Azalia: verb_size: 16
+Azalia: verb loaded.
+Azalia: Initializing codec #0
+Azalia: codec viddid: 10134213
+Azalia: verb_size: 24
+Azalia: verb loaded.
+PCI: 00:1b.0 init finished in 3 msecs
+PCI: 00:1c.0 init
+Initializing PCH PCIe bridge.
+PCI: 00:1c.0 init finished in 0 msecs
+PCI: 00:1c.1 init
+Initializing PCH PCIe bridge.
+PCI: 00:1c.1 init finished in 0 msecs
+PCI: 00:1d.0 init
+EHCI: Setting up controller.. done.
+PCI: 00:1d.0 init finished in 0 msecs
+PCI: 00:1f.0 init
+pch: lpc_init
+PCH: detected HM77, device id: 0x1e57, rev id 0x4
+IOAPIC: Initializing IOAPIC at 0xfec00000
+IOAPIC: Bootstrap Processor Local APIC = 0x00
+IOAPIC: ID = 0x02
+Set power off after power failure.
+NMI sources disabled.
+PantherPoint PM init
+RTC: failed = 0x0
+RTC Init
+Disabling ACPI via APMC:
+done.
+pch_spi_init
+PCI: 00:1f.0 init finished in 0 msecs
+PCI: 00:1f.2 init
+SATA: Initializing...
+SATA: Controller in AHCI mode.
+ABAR: 0xe061c000
+PCI: 00:1f.2 init finished in 0 msecs
+PCI: 00:1f.3 init
+PCI: 00:1f.3 init finished in 0 msecs
+PCI: 01:00.0 init
+PCI: 01:00.0 init finished in 0 msecs
+PCI: 02:00.0 init
+PCI: 02:00.0 init finished in 0 msecs
+Devices initialized
+BS: BS_DEV_INIT run times (exec / console): 66 / 0 ms
+Finalize devices...
+PCI: 00:1f.0 final
+Devices finalized
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'fallback/dsdt.aml'
+CBFS: Found @ offset 35d40 size 27bd
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'fallback/slic'
+CBFS: 'fallback/slic' not found.
+ACPI: Writing ACPI tables at 7ff2d000.
+ACPI:    * FACS
+ACPI:    * DSDT
+ACPI:    * FADT
+ACPI: added table 1/32, length now 40
+ACPI:     * SSDT
+Generating ACPI PIRQ entries
+Found 1 CPU(s) with 2 core(s) each.
+PSS: 1600MHz power 17000 control 0x1000 status 0x1000
+PSS: 1400MHz power 14532 control 0xe00 status 0xe00
+PSS: 1200MHz power 12163 control 0xc00 status 0xc00
+PSS: 1000MHz power 9902 control 0xa00 status 0xa00
+PSS: 800MHz power 7743 control 0x800 status 0x800
+PSS: 1600MHz power 17000 control 0x1000 status 0x1000
+PSS: 1400MHz power 14532 control 0xe00 status 0xe00
+PSS: 1200MHz power 12163 control 0xc00 status 0xc00
+PSS: 1000MHz power 9902 control 0xa00 status 0xa00
+PSS: 800MHz power 7743 control 0x800 status 0x800
+ACPI: added table 2/32, length now 44
+ACPI:    * MCFG
+ACPI: added table 3/32, length now 48
+ACPI:    * MADT
+ACPI: added table 4/32, length now 52
+current = 7ff30820
+ACPI:    * HPET
+ACPI: added table 5/32, length now 56
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'vbt.bin'
+CBFS: 'vbt.bin' not found.
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'pci8086,0156.rom'
+CBFS: 'pci8086,0156.rom' not found.
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'pci8086,0106.rom'
+CBFS: 'pci8086,0106.rom' not found.
+PCI Option ROM loading disabled for PCI: 00:02.0
+GMA: VBT couldn't be found
+ACPI: done.
+ACPI tables: 14432 bytes.
+smbios_write_tables: 7ff2b000
+Create SMBIOS type 17
+SMBIOS tables: 778 bytes.
+Writing table forward entry at 0x00000500
+Wrote coreboot table at: 0x00000500, 0x10 bytes, checksum 6fe9
+Writing coreboot table at 0x7ff51000
+ 0. 0000000000000000-0000000000000fff: CONFIGURATION TABLES
+ 1. 0000000000001000-000000000009ffff: RAM
+ 2. 00000000000a0000-00000000000fffff: RESERVED
+ 3. 0000000000100000-000000007ff2afff: RAM
+ 4. 000000007ff2b000-000000007ff69fff: CONFIGURATION TABLES
+ 5. 000000007ff6a000-000000007ffb0fff: RAMSTAGE
+ 6. 000000007ffb1000-000000007fffffff: CONFIGURATION TABLES
+ 7. 0000000080000000-00000000829fffff: RESERVED
+ 8. 00000000f0000000-00000000f3ffffff: RESERVED
+ 9. 0000000100000000-000000017d5fffff: RAM
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+Wrote coreboot table at: 0x7ff51000, 0x360 bytes, checksum 4ef5
+coreboot table: 888 bytes.
+IMD ROOT    0. 0x7ffff000 0x00001000
+IMD SMALL   1. 0x7fffe000 0x00001000
+CONSOLE     2. 0x7ffbe000 0x00040000
+TIME STAMP  3. 0x7ffbd000 0x00000910
+MRC DATA    4. 0x7ffbc000 0x000005d4
+ROMSTG STCK 5. 0x7ffbb000 0x00001000
+AFTER CAR   6. 0x7ffb1000 0x0000a000
+RAMSTAGE    7. 0x7ff69000 0x00048000
+SMM BACKUP  8. 0x7ff59000 0x00010000
+COREBOOT    9. 0x7ff51000 0x00008000
+ACPI       10. 0x7ff2d000 0x00024000
+ACPI GNVS  11. 0x7ff2c000 0x00001000
+SMBIOS     12. 0x7ff2b000 0x00000800
+IMD small region:
+  IMD ROOT    0. 0x7fffec00 0x00000400
+  FMAP        1. 0x7fffeb20 0x000000e0
+  MEM INFO    2. 0x7fffe960 0x000001b9
+  ROMSTAGE    3. 0x7fffe940 0x00000004
+BS: BS_WRITE_TABLES run times (exec / console): 3 / 0 ms
+FMAP: area COREBOOT found @ 410200 (4128256 bytes)
+CBFS: Locating 'fallback/payload'
+CBFS: Found @ offset 38580 size 61be9
+Checking segment from ROM address 0xffc487b8
+Checking segment from ROM address 0xffc487d4
+Checking segment from ROM address 0xffc487f0
+Loading segment from ROM address 0xffc487b8
+  code (compression=1)
+  New segment dstaddr 0x00009000 memsize 0x17834 srcaddr 0xffc4880c filesize 0x8328
+Loading Segment: addr: 0x00009000 memsz: 0x0000000000017834 filesz: 0x0000000000008328
+using LZMA
+Clearing Segment: addr: 0x0000000000018e0b memsz: 0x0000000000007a29
+Loading segment from ROM address 0xffc487d4
+  code (compression=1)
+  New segment dstaddr 0x00100000 memsize 0x126b98 srcaddr 0xffc50b34 filesize 0x5986d
+Loading Segment: addr: 0x00100000 memsz: 0x0000000000126b98 filesz: 0x000000000005986d
+using LZMA
+Loading segment from ROM address 0xffc487f0
+  Entry Point 0x00009000
+BS: BS_PAYLOAD_LOAD run times (exec / console): 235 / 0 ms
+ICH-NM10-PCH: watchdog disabled
+Jumping to boot code at 0x00009000(0x7ff51000)
+script/script.c:65: free 0x7fce5fa0
+script/script.c:65: free 0x7fce5fc0
+script/script.c:65: free 0x7fce5fe0
+script/script.c:65: free 0x7fce5d10
+script/script.c:65: free 0x7fce5d40
+script/script.c:65: free 0x7fce5d60
+script/script.c:65: free 0x7fce5d90
+script/script.c:65: free 0x7fce5dc0
+script/script.c:65: free 0x7fce5e80
+script/script.c:65: free 0x7fce5ef0
+script/script.c:65: free 0x7fce5f20
+script/script.c:65: free 0x7fce5f40
+script/lexer.c:321: token 288 text [insmod]
+script/script.c:50: malloc 0x7fce5f20
+script/script.c:50: malloc 0x7fce5f00
+script/script.c:163: arglist
+script/script.c:50: malloc 0x7fce5ed0
+script/lexer.c:321: token 288 text [at_keyboard]
+script/script.c:50: malloc 0x7fce5ea0
+script/script.c:50: malloc 0x7fce5e70
+script/script.c:163: arglist
+script/script.c:50: malloc 0x7fce5e40
+script/lexer.c:321: token 259 text [
+]
+script/script.c:50: malloc 0x7fce5e10
+script/script.c:50: malloc 0x7fce5df0
+script/script.c:198: cmdline
+script/script.c:50: malloc 0x7fce5dc0
+script/lexer.c:321: token 0 text []
+script/script.c:50: malloc 0x7fce5fe0
+script/script.c:50: malloc 0x7fce5fc0
+script/script.c:294: append command
+script/script.c:50: malloc 0x7fce5da0
+kern/disk.c:196: Opening `memdisk'...
+kern/fs.c:56: Detecting tarfs...
+commands/verifiers.c:88: file:
+(memdisk)/boot/grub/i386-corebo
+ot/at_keyboard.mod type: 1
+kern/disk.c:295: Closing `memdisk'.
+kern/dl.c:601: module at 0x7fce6f00, size 0x116c
+kern/dl.c:626: relocating to 0x7fce93e0
+kern/disk.c:196: Opening `memdisk'...
+kern/fs.c:56: Detecting tarfs...
+commands/verifiers.c:88: file: (memdisk)/boot/grub/i386-coreboot/keylayouts.mod
+type: 1
+kern/disk.c:295: Closing `memdisk'.
+kern/dl.c:601: module at 0x7fce4a00, size 0x1390
+kern/dl.c:626: relocating to 0x7fce9270
+kern/dl.c:555: flushing 0x1184 bytes at 0x7fce3860
+kern/dl.c:649: module name: keylayouts
+kern/dl.c:650: init function: 0x7fce3aab
+kern/dl.c:555: flushing 0xecf bytes at 0x7fce6020
+kern/dl.c:649: module name: at_keyboard
+kern/dl.c:650: init function: 0x7fce639c
+script/script.c:65: free 0x7fce5da0
+script/script.c:65: free 0x7fce5fc0
+script/script.c:65: free 0x7fce5fe0
+script/script.c:65: free 0x7fce5dc0
+script/script.c:65: free 0x7fce5df0
+script/script.c:65: free 0x7fce5e10
+script/script.c:65: free 0x7fce5e40
+script/script.c:65: free 0x7fce5e70
+script/script.c:65: free 0x7fce5ea0
+script/script.c:65: free 0x7fce5ed0
+script/script.c:65: free 0x7fce5f00
+script/script.c:65: free 0x7fce5f20
+script/lexer.c:321: token 288 text [configfile]
+script/script.c:50: malloc 0x7fce15a0
+script/script.c:50: malloc 0x7fce1570
+script/script.c:163: arglist
+script/script.c:50: malloc 0x7fce1540
+script/lexer.c:321: token 289 text [(ahci0,3)/boot/grub/grub.cfg]
+script/script.c:50: malloc 0x7fce13e0
+script/script.c:50: malloc 0x7fce13a0
+script/script.c:163: arglist
+script/script.c:50: malloc 0x7fce1370
+script/lexer.c:321: token 259 text [
+]
+script/script.c:50: malloc 0x7fce1340
+script/script.c:50: malloc 0x7fce1320
+script/script.c:198: cmdline
+script/script.c:50: malloc 0x7fce12f0
+script/lexer.c:321: token 0 text []
+script/script.c:50: malloc 0x7fce1680
+script/script.c:50: malloc 0x7fce1660
+script/script.c:294: append command
+script/script.c:50: malloc 0x7fce1640
+kern/disk.c:196: Opening `memdisk'...
+kern/fs.c:56: Detecting tarfs...
+commands/verifiers.c:88: file: (memdisk)/boot/grub/i386-coreboot/configfile.mod
+type: 1
+kern/disk.c:295: Closing `memdisk'.
+kern/dl.c:601: module at 0x7fce7790, size 0x8d8
+kern/dl.c:626: relocating to 0x7fce9210
+kern/dl.c:555: flushing 0x6d7 bytes at 0x7fce8ae0
+kern/dl.c:649: module name: configfile
+kern/dl.c:650: init function: 0x7fce8b83
+
+error: file `/boot/grub/fonts/unicode.pf2' not found.
+error: terminal `console' isn't found.
+error: no suitable video mode found.
+GNU GRUB  version 2.05
+
++----------------------------------------------------------------------------+||||||||||||||||||||||+----------------------------------------------------------------------------+     Use the ^ and v keys to select which entry is highlighted.          
+      Press enter to boot the selected OS, `e' to edit the commands       
+      before booting or `c' for a command-line. ESC to return             
+      previous menu.                                                       *Arch Linux                                                                 ? Advanced options for Arch Linux                                            ?                                                                            ?                                                                            ?                                                                            ?                                                                            ?                                                                            ?                                                                            ?                                                                            ?                                                                            ?                                                                            ?    The highlighted entry will be executed automatically in 2s.                    The highlighted entry will be executed automatically in 1s.                    The highlighted entry will be executed automatically in 0s.                   Booting `Arch Linux'
+
+Loading Linux linux ...
+Loading initial ramdisk ...
+
